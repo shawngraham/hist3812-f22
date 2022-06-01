@@ -7,7 +7,7 @@ weight: 5
 ---
 
 {{< rawhtml >}}
-<img src="/images/illustrations/pointing.svg"align="right" width="40%"></img>{{< /rawhtml >}}
+<img src="/images/illustrations/pixeltrue-time-management-1.png"align="right" width="50%"></img>{{< /rawhtml >}}
 
 The course is divided into three parts, with three interstitial weeks where we build things. We meet Mondays and Wednesdays 13.05-14.25 in TB 208. See below for further details. Mondays are generally days where I set the scene. Wednesdays require your active presence & participation as we try things.
 
