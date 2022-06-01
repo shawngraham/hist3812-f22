@@ -1,0 +1,12 @@
+[
+    {
+        "name": "Github",
+        "link": "https://github.com/shawngraham/hist3812-f22",
+        "image": "images/social/github.svg"
+    },
+    {
+        "name": "Twitter",
+        "link": "https://twitter.com/electricarchaeo",
+        "image": "images/social/twitter.svg"
+    }
+]
