@@ -36,6 +36,7 @@ A template for a 'game design document' by Rosa Carbo-Mascarell can be found [he
 + Sept 19: **Storytelling in Museums and other sites of Public History**.
   - Have read for today:
     - Cook Inlet Tribal Council. 2017. 'Storytelling for the Next Generation: How a non-profit in Alaska harnessed the power of video games to share and celebrate cultures' in Mol et al. eds, _The Interactive Pasts_. 21-32. [link](https://www.sidestone.com/openaccess/9789088904363.pdf)
+    - Evans, Jennifer. 2018. 'Sound, listening and the queer art of history' _Rethinking History_ 22.1: 25-43. [link](https://journals-scholarsportal-info.proxy.library.carleton.ca/details/13642529/v22i0001/25_latqaoh.xml)
 + Sept 21: Visual storytelling on the web with [Mural](https://getmural.io).
 
 ## M1.3
