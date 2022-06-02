@@ -30,6 +30,7 @@ A template for a 'game design document' by Rosa Carbo-Mascarell can be found [he
 + Sept 12: **Fiction, Non-Fiction, Creative Non-Fiction, Lies, and Counterfactuals**.
   - Have read for today:
     - Kelly, T. Mills. 2014. True Facts or False Facts - Which Are More Authentic? in K. Kee, ed. _Pastplay_. U Michigan Press. [Permalink](https://www.jstor.org/stable/j.ctv65swr0.19 ).
+    - Kavanagh, Erin. 2019 'Writing wonders - Poetry as archaeological method?' in Daniël van Helden and Robert Witcher, ed. _Research the Archaeological Past through Imagined Narratives_ Routledge: London. 184-209 [link to volume; scroll down to chapter](https://www-taylorfrancis-com.proxy.library.carleton.ca/books/edit/10.4324/9780203730904/researching-archaeological-past-imagined-narratives-dani%C3%ABl-van-helden-robert-witcher)
 + Sept 14: We'll play some 'barely' games. We'll also play ['Domino City'](https://ewanmatthews.itch.io/domino-city). What stories might we tell using this system?
 
 ## M1.2

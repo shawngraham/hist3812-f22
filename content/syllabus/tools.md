@@ -10,7 +10,15 @@ weight: 3
 <img src="/images/pixeltrue-idea-1.png" align="right" width="20%"></img>
 {{< /rawhtml >}} There are a lot of resources out there to help us. I try to suggest free and/or open source tools whenever possible. You might know some tools that could be helpful too, so annotate this message with the Hypothes.is toolbar if you want to make any suggestions!
 
-## Tools 
+## Tools
+
+### General
+
++ [tiny tools](https://tinytools.directory/) a directory for a multitude of tools useful for games/websites/interactives
+
+### Sound & Audio
+
++ [echoes.xyz](https://echoes.xyz) 'sound mapping and spatial audio' for soundwalks
 
 
 ## Tutorials & Walkthroughs
