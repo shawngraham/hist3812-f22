@@ -7,14 +7,20 @@ weight: 3
 ---
 
 {{< rawhtml >}}
-<img src="/images/pixeltrue-idea-1.png" align="right" width="20%"></img>
-{{< /rawhtml >}} There are a lot of resources out there to help us. I try to suggest free and/or open source tools whenever possible. You might know some tools that could be helpful too, so annotate this message with the Hypothes.is toolbar if you want to make any suggestions!
+<img src="/images/pixeltrue-idea-1.png" align="right" width="30%"></img>
+{{< /rawhtml >}} There are a lot of resources out there to help us. I try to suggest free and/or open source tools whenever possible. You might know some tools that could be helpful too, so annotate this passage with the Hypothes.is toolbar if you want to make any suggestions!
 
 ## Tools
 
 ### General
 
 + [tiny tools](https://tinytools.directory/) a directory for a multitude of tools useful for games/websites/interactives
+
+### Templates
+
+A [glitch.com template](https://glitch.com/edit/#!/tangy-boundless-noodle?path=readme.md%3A1%3A0) for creating a website powered by [Tracery.io](https://tracery.io)
+
+A [series of glitch.com templates for XR](https://glitch.com/@glitch/get-started-with-web-xr)
 
 ### Sound & Audio
 
@@ -31,3 +37,7 @@ weight: 3
 [3d platformer in unity](https://projects.raspberrypi.org/en/pathways/unity-intro)
 
 [A twine tutorial](https://pinnguaq.com/learn/introduction-to-twine). And there's [this one, which has a lot of videos too](http://www.adamhammond.com/twineguide/).
+
+[Interactive Fiction in the Humanities Classroom](https://programminghistorian.org/en/lessons/interactive-text-games-using-twine)
+
+[Creating Mobile Augmented Reality Experiences in Unity](https://programminghistorian.org/en/lessons/creating-mobile-augmented-reality-experiences-in-unity)
