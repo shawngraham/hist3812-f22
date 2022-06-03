@@ -35,21 +35,21 @@ _Guidance on using the conventions of markdown in a text file (eg a text file wh
 
 Points to ponder:
   - are things well documented? Could you pick up where you left off? (logs)
-  - is there evidence of careful, reflexive thinking? Is there evidence of taking in the discussions, making connections between what the student has done/heard/read? (reflections)
-  - is there evidence for how feedback has been considered? Is there evidence for a developing sophistication in the work?
+  - is there evidence of careful, reflexive thinking? Is there evidence of taking in the discussions, making connections between what you have done/heard/read? Explicitly cite materials that underpin your thinking using Harvard author-date contextual citations. (reflections)
+  - is there evidence for how feedback has been considered, adopted, adapted? Is there evidence for a developing sophistication in the work?
 
 Assessment will be along the spectrum “unsatisfactory - satisfactory - exceptional”. Numerically, this translates as:
-+ unsatisfactory: 0-2 points
-+ satisfactory: 3-4 points
-+ exceptional: 5 points
++ unsatisfactory: 0-2 points (ie, F-D range)
++ satisfactory: 3-4 points (ie, C-B range)
++ exceptional: 5 points (ie, A-A+ range)
 
 _Do not let ‘points’ distract you from the serious effort this course requires._
 
-I will return feedback as soon as possible.
+I will return feedback as soon as possible, usually within a week.
 
 ## Unessay
 
-Your [unessay](https://people.uleth.ca/~daniel.odonnell/Teaching/the-unessay) is a creative engagement around a historical or archaeological micro-episode. Through your unessay, you will provide an answer to the [main questions of this course](goals). I expect that most of you will use a game engine/technolgy, although  other 'immersive' digital approaches are welcome. I am open to many suggestions; discuss with me sooner rather than later.
+Your [unessay](https://people.uleth.ca/~daniel.odonnell/Teaching/the-unessay) is a creative engagement around a historical or archaeological micro-episode. Through your unessay, you will provide an answer to the [main questions of this course](goals). I expect that most of you will use a game engine/technology, although  other 'immersive' digital approaches are welcome. I am open to many suggestions; discuss with me sooner rather than later.
 
 - It should contain at least 30 minutes of immersive experience, broadly conceived
 - Its source code should be stored in a github repo (public or private; but if set to private, add 'shawngraham' as a collaborator)

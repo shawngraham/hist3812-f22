@@ -18,9 +18,16 @@ weight: 3
 
 ### Sound & Audio
 
-+ [echoes.xyz](https://echoes.xyz) 'sound mapping and spatial audio' for soundwalks
++ [echoes.xyz](https://echoes.xyz/echoes-creative-apps#creator) 'sound mapping and spatial audio' for soundwalks
 
+### Art Assetts
+
+[Ren'Py sprite creator](https://spiralatlas.itch.io/renpy-sprite-creator)
 
 ## Tutorials & Walkthroughs
 
 [making a roll and write](https://gamingthepast.net/2021/11/05/making-a-roll-and-write-for-history-class-using-roll-through-the-ages-as-a-guide/)
+
+[3d platformer in unity](https://projects.raspberrypi.org/en/pathways/unity-intro)
+
+[A twine tutorial](https://pinnguaq.com/learn/introduction-to-twine). And there's [this one, which has a lot of videos too](http://www.adamhammond.com/twineguide/).
