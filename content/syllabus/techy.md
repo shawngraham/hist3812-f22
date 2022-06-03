@@ -7,7 +7,7 @@ weight: 1
 ---
 
 {{< rawhtml >}}
-<img src="/images/pixeltrue-idea-1.png" align="right" width="20%"></img>
+<img src="/images/pixeltrue-idea-1.png" align="right" width="30%"></img>
 {{< /rawhtml >}} In a word, **no**! You do have to be willing to be comfortable with experimentation, with things that break, and with asking for help from your peers or from the prof.
 
 # My 'Technical' Objectives for You

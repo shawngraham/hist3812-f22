@@ -4,7 +4,7 @@ date: 2018-02-22T17:01:34+07:00
 
 ---
 {{< rawhtml >}}
-<img src="/images/illustrations/pixeltrue-web-development-1.png" align="right" width="20%"></img>
+<img src="/images/illustrations/pixeltrue-web-development-1.png" align="right" width="30%"></img>
 {{< /rawhtml >}}
 
 **How do we write 'good history' through playful engagements? What does 'good history' look like, how is it constructed, and what happens when it meets digital technologies?**
@@ -29,18 +29,18 @@ You will likely produce a final, (potentially) collaborative project that will a
 
 3. **There will be collaboration (which is not 'group work')**
 
-Digital humanities projects often require collaboration among scholars who bring different intellectual and technical skills to expansive projects. This class will require you to work together both in class and for some of your assignments, distributing responsibilities and sharing credit.
+Digital humanities projects often require collaboration among scholars who bring different intellectual and technical skills to expansive projects. This class will require you to work together in class and to support each other. Indeed, I am not bothered at all should you find help and support outside this class with regard to the technical aspects of the course - learning how to distribute responsibilities, and acknowledging and sharing credit is part of the point here.
 
 4. **You will be required to acquire some technical skills (old and new)**
 
-I do not require or assume any particular technical experience as we begin this course, but I will expect you to be willing to experiment with new tools and learn new technical skills throughout the semester. In this course, those skills will run the gamut from the historical to the contemporary. “I’m not very technical” will not excuse you from the hands-on portions of the course any more than “I’m not poetic” would excuse you from reading Dickinson in a survey of American literature. Some of the tools we test you may find useful for your research program; some you will not. But I expect you to try them with enthusiasm and an open mind.
+[I do not require](/syllabus/techy/) or assume any particular technical experience as we begin this course, but I will expect you to be willing to experiment with new tools and learn new technical skills throughout the semester. “I’m not very technical” will not excuse you from the hands-on portions of the course any more than “I’m not poetic” would excuse you from reading Dickinson in a survey of American literature. Some of the tools we play with you may find useful for your research interests; some you will not. But I expect you to try them with enthusiasm and an open mind. _Document everything_ and soon you'll be quite techy indeed!
 
 ## Code of Conduct
 
-The code of conduct for this course borrows directly from the stellar model outlined by Northeastern’s Feminist Coding Collective. Their Code of Conduct and Community Guidelines are well worth consulting in full, but I have copied and lightly adapted those items most pertinent to the work we will do in our class.
+The code of conduct for this course borrows directly from the stellar model outlined by Northeastern University’s Feminist Coding Collective. Their Code of Conduct and Community Guidelines are well worth consulting in full, but I have copied and lightly adapted those items most pertinent to the work we will do in our class.
 
   + **It’s okay not to know**: Assume that no one inherently knows what we’re learning. We all come to this class with different backgrounds and abilities; none of us (including the instructor) will know everything and that is okay! Encourage a space where it’s okay to ask questions.
-  + **Be respectful**: Do not use harmful language or stereos that target people of all different gender, abilities, races, ages, ethnicities, languages, socioeconomic classes, body s, sexualities, and other aspects of identity.
+  + **Be respectful**: Do not use harmful language or stereos that target people of all different gender, abilities, races, ages, ethnicities, languages, socioeconomic classes, bodies, sexualities, and other aspects of identity.
   + **Online spaces**: Respect each other in both physical and digital spaces.
   + **Collaborative and inclusive interactions**: Avoid speaking over each other. Instead, we want to practice listening to each other and speaking with each other, not at each other.
   + **Use “I” statements**: focusing on your own interpretation of a situation, rather than placing blame or critiquing someone else.
