@@ -12,6 +12,8 @@ intro_image_hide_on_mobile: false
 
 In a game, you never read the rulebook. You just jump right in. There might be a tutorial level though first. [Here's the tutorial level for this class](cyoa).
 
-**Please complete that level before we meet on Monday September 12.**
+Our first meeting is on September 7; I will set the scene, and then:
 
-And then make sure you go through the various sections below:
+**please complete the 'tutorial level' before we meet on Monday September 12.**
+
+Make sure you go through -and understand- the various sections below:
