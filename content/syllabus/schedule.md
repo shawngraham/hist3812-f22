@@ -123,7 +123,7 @@ Your **Reflection** will include your thoughts on all of the work in this module
   - Have read for today:
     - Graham, Shawn. 2020 An Approach to the Ethics of Archaeogaming, Internet Archaeology 55. https://doi.org/10.11141/ia.55.2
     - Nicholls, Florence Smith, and Michael Cook. 'The Dark Souls of Archaeology: Recording Elden Ring' arxiv.org [link](https://arxiv.org/pdf/2204.10949.pdf)
-+ Nov 23 - to be determined.
++ Nov 23 - Build a quick 'archaeogame' with [Bitsy](http://make.bitsy.org/).
 
 ## M3.3
 + Nov 28 - **Games that Play Themselves**
