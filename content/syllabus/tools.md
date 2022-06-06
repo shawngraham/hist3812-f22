@@ -41,3 +41,7 @@ A [series of glitch.com templates for XR](https://glitch.com/@glitch/get-started
 [Interactive Fiction in the Humanities Classroom](https://programminghistorian.org/en/lessons/interactive-text-games-using-twine)
 
 [Creating Mobile Augmented Reality Experiences in Unity](https://programminghistorian.org/en/lessons/creating-mobile-augmented-reality-experiences-in-unity)
+
+[Basic browser based augmented reality with A-Frame](https://digiarch.netlify.app/week/11/augmented-reality/) from my previous class 'Introduction to Digital Archaeology'
+
+[video tutorial on using A-Frame for AR](https://www.youtube.com/watch?v=ktjMCanKNLk&list=PL8MkBHej75fJD-HveDzm4xKrciC5VfYuV) Make sure to consult the video's description for updated code.

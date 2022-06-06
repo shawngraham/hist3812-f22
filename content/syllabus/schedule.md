@@ -70,6 +70,7 @@ Your **Reflection** will include your thoughts on all of the work in this module
 + Oct 12 - **Theories of Play**
   - Have read for today:
     - Chapter 1 & 2, in [Nguyen, C. Thi. Games : Agency as Art. New York, NY: Oxford University Press, 2020](https://ocul-crl.primo.exlibrisgroup.com/permalink/01OCUL_CRL/1gqvnf4/alma991022774628305153)
+    - Morgan, Colleen. 2019. 'Avatars, Monsters, and Machines: A Cyborg Archaeology' _European Journal of Archaeology_ 22.3. [https://doi.org/10.1017/eaa.2019.22](https://doi.org/10.1017/eaa.2019.22) (Remember to access through the library)
 
 ## M2.2
 - Oct 17 - **History is a Remix**
@@ -85,6 +86,7 @@ Your **Reflection** will include your thoughts on all of the work in this module
 + Oct 31 - **Studying Play**
   - Have read for today:
     - McCall, Jeremiah. 2020. ['The Historical Problem Space Framework: Games as Historical Medium'](http://gamestudies.org/2003/articles/mccall) _Game Studies_ 20.3.
+    - Jayanth, Meghna. 2022. 'Game Design in the Imperial Mode #CGSA 2022' [Keynote, Canadian Game Studies Association 2022](https://medium.com/@betterthemask/game-design-in-the-imperial-mode-cgsa-2022-e5a9a6a57859) (You might also want to read/watch their 2021 DIGRA piece, 'White Protagonism and Imperial Pleasures in Game Design' [here](https://medium.com/@betterthemask/white-protagonism-and-imperial-pleasures-in-game-design-digra21-a4bdb3f5583c).)
 + Nov 2 - **The Historical Problem Space (HPS) Framework**
   - Have read for today:
     - Dream of Darkness, 2022. 'Can the Historical Problem Space framework help us make better history games?' [dreamofdarkness.com](https://www.dreamofdarkness.com/dev-journal/can-the-historical-problem-space-framework-help-us-make-better-history-games).
