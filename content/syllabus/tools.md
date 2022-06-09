@@ -16,7 +16,13 @@ weight: 3
 
 + [tiny tools](https://tinytools.directory/) a directory for a multitude of tools useful for games/websites/interactives
 
++ [Twine](https://twinery.org) Use online or download; saves your work in the browser cache so remember to 'publish to file' periodically.
++ [Ren'Py](https://www.renpy.org/)
++ [Ink](https://www.inklestudios.com/ink/) Note that what you're after is the [Editor](https://github.com/inkle/inky). On the main Ink page there are tutorials & also assets for integrating Ink with [Unity](https://unity3d.com/get-unity/download).
+
 ### Templates
+
+[Periodic Table of Storytelling](https://jamesharris.design/periodic/)
 
 A [glitch.com template](https://glitch.com/edit/#!/tangy-boundless-noodle?path=readme.md%3A1%3A0) for creating a website powered by [Tracery.io](https://tracery.io)
 
