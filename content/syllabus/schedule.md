@@ -77,6 +77,7 @@ Your **Reflection** will include your thoughts on all of the work in this module
   - Have read for today:
     - Kelly, T. 2011. '"But Mine's Better": Teaching History in a Remix Culture' _The History Teacher_ 44.3 369-377. [link](https://www.jstor.org/stable/41303990)
     - Perry, S. 2019. 'The Enchantment of the Archaeological Record.' _European Journal of Archaeology_ 22.3 [link](https://www-cambridge-org.proxy.library.carleton.ca/core/journals/european-journal-of-archaeology/article/enchantment-of-the-archaeological-record/6B71DCDB28D3FABE22660EEA860ED7FE)
+    - Watch: Ferguson, Kirby. 2015. Everyting is a Remix (remastered). [youtube](https://brokenpromises.tech/).
 
 + Oct 19 - In this session, I want _you_ to teach _me_ something new, something enchanting, something that remixes 'history' (broadly conceived) via a medium or technology that you know well. Come prepared to collaborate with your peers to create and teach.
 

@@ -22,11 +22,13 @@ weight: 3
 
 ### Templates
 
-[Periodic Table of Storytelling](https://jamesharris.design/periodic/)
++ [Periodic Table of Storytelling](https://jamesharris.design/periodic/)
 
-A [glitch.com template](https://glitch.com/edit/#!/tangy-boundless-noodle?path=readme.md%3A1%3A0) for creating a website powered by [Tracery.io](https://tracery.io)
++ A [glitch.com template](https://glitch.com/edit/#!/tangy-boundless-noodle?path=readme.md%3A1%3A0) for creating a website powered by [Tracery.io](https://tracery.io)
 
-A [series of glitch.com templates for XR](https://glitch.com/@glitch/get-started-with-web-xr)
++ A [series of glitch.com templates for XR](https://glitch.com/@glitch/get-started-with-web-xr)
+
++ [StepWorks](https://step.works/index.php/site) a system for engaging media-rich compositions, powered by a Google spreadsheet
 
 ### Sound & Audio
 
@@ -34,20 +36,22 @@ A [series of glitch.com templates for XR](https://glitch.com/@glitch/get-started
 
 ### Art Assetts
 
-[Ren'Py sprite creator](https://spiralatlas.itch.io/renpy-sprite-creator)
++ [Ren'Py sprite creator](https://spiralatlas.itch.io/renpy-sprite-creator)
 
 ## Tutorials & Walkthroughs
 
-[making a roll and write](https://gamingthepast.net/2021/11/05/making-a-roll-and-write-for-history-class-using-roll-through-the-ages-as-a-guide/)
++ [making a roll and write](https://gamingthepast.net/2021/11/05/making-a-roll-and-write-for-history-class-using-roll-through-the-ages-as-a-guide/)
 
-[3d platformer in unity](https://projects.raspberrypi.org/en/pathways/unity-intro)
++ [3d platformer in unity](https://projects.raspberrypi.org/en/pathways/unity-intro)
 
-[A twine tutorial](https://pinnguaq.com/learn/introduction-to-twine). And there's [this one, which has a lot of videos too](http://www.adamhammond.com/twineguide/).
++ [A twine tutorial](https://pinnguaq.com/learn/introduction-to-twine). And there's [this one, which has a lot of videos too](http://www.adamhammond.com/twineguide/).
 
-[Interactive Fiction in the Humanities Classroom](https://programminghistorian.org/en/lessons/interactive-text-games-using-twine)
++ [Interactive Fiction in the Humanities Classroom](https://programminghistorian.org/en/lessons/interactive-text-games-using-twine)
 
-[Creating Mobile Augmented Reality Experiences in Unity](https://programminghistorian.org/en/lessons/creating-mobile-augmented-reality-experiences-in-unity)
++ [Creating Mobile Augmented Reality Experiences in Unity](https://programminghistorian.org/en/lessons/creating-mobile-augmented-reality-experiences-in-unity)
 
-[Basic browser based augmented reality with A-Frame](https://digiarch.netlify.app/week/11/augmented-reality/) from my previous class 'Introduction to Digital Archaeology'
++ [Basic browser based augmented reality with A-Frame](https://digiarch.netlify.app/week/11/augmented-reality/) from my previous class 'Introduction to Digital Archaeology'
 
-[video tutorial on using A-Frame for AR](https://www.youtube.com/watch?v=ktjMCanKNLk&list=PL8MkBHej75fJD-HveDzm4xKrciC5VfYuV) Make sure to consult the video's description for updated code.
++ [video tutorial on using A-Frame for AR](https://www.youtube.com/watch?v=ktjMCanKNLk&list=PL8MkBHej75fJD-HveDzm4xKrciC5VfYuV) Make sure to consult the video's description for updated code.
+
++ [stepworks story: Rewriting, Relearing: Creative Collaborations in the Digital Humanities](https://step.works/index.php/show/rewriting-relearning-1) ... contains the source code so you can see how you might adapt it yourself.
