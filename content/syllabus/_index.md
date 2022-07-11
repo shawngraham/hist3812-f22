@@ -10,7 +10,7 @@ intro_image_hide_on_mobile: false
 
 *also known as the syllabus.
 
-In a game, you never read the rulebook. You just jump right in. There might be a tutorial level though first. [Here's the tutorial level for this class](cyoa).
+In a game, you never read the rulebook. You just jump right in. There might be a tutorial level though first. [Here's the tutorial level for this class](https://shawngraham.github.io/hist3812-tutorial-level/src/).
 
 Our first meeting is on September 7; I will set the scene, and then:
 
