@@ -22,12 +22,12 @@ According to section 2 of FASS Undergraduate Teaching Regulations and Procedures
 
 ## An Example Repo
 
-An example github repository showing the structure to follow for your interestitials is [here](#). A similar repo showing the broad structure for your unessay is [here](#).
+An example github repository showing the structure to follow for your interestitials is [here](https://github.com/shawngraham/hist3812-starter). The organization of the layout for your unessay will depend on the form it takes.
 
 ## Criteria for Interstitials
-The focus of these interstitial exercises and your recording of your thinking is on the development of your process, on your evolution in the course.
+The focus of these interstitial exercises and your recording of your thinking is on the development of your process, on your evolution in the course - _not_ on your technical prowess.
 
-> For each interstitial, you will create a separate repository in Github into which you will place your log.md, your reflection.md, and any other supporting files (screenshots, etc) as necessary.
+> For each interstitial, you will you will place your various log.md files, your reflection.md, and any other supporting files (screenshots, etc) as necessary.
 
 _Guidance on using Github and getting it set up is available from my 'crafting digital history' course materials [here](https://craftingdh.netlify.app/tutorials/github/)._
 
@@ -56,8 +56,6 @@ Your [unessay](https://people.uleth.ca/~daniel.odonnell/Teaching/the-unessay) is
 - All of the research and process notes should be provided, showing the evolution of the project from initial concept through to submitted 'thing'. These can be text files in mardown format, in a subfolder of the repo.
 - There should be a game design document (or similar).
 - There should be a paradata document that situates what the experience is trying to do: use the HPS framework (or adapt it) to the situation.
-
-An empty example Github repository with all of these elements is available [here](#).
 
 The unessay will be assessed on how compelling and effective it is (following Paul Daniel O'Donnell):
 

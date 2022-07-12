@@ -24,6 +24,8 @@ The course is divided into three parts, with three interstitial weeks where we b
 
 + Sept 7: **Praelude**. Introducing the course, its themes, and how everything works. A summary will be posted [here](supports/sept7) afterwards.
   + [Complete this tutorial level before the Sept 12 meeting](https://shawngraham.github.io/hist3812-tutorial-level/src/)
+  + OPTIONAL: Download and install the [Obsidian](https://obsidian.md) thinking and note-taking environment; open that and explore the 'help' vault to get a sense of what's going on.
+    + You can open this [course handbook](#) vault in Obsidian; it contains a number of useful plugins and templates. When it asks you if you trust the author of the notebook, say YES. Then hit the `x` to close the info box. 
 
 A template for a 'game design document' by Rosa Carbo-Mascarell can be found [here](https://glamorous-save-06a.notion.site/Game-design-template-0132383574dd4c2dbff5d14e3a90761c). Information about 'paradata' can be found [here, section 4.6](http://www.londoncharter.org/principles/documentation.html). Look over all the course materials and start thinking now about your unessay. More information is available on the [assessment](/syllabus/assessment) page.
 
