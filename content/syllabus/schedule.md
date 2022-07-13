@@ -27,7 +27,9 @@ The course is divided into three parts, with three interstitial weeks where we b
   + OPTIONAL but strongly recommended: Download and install the [Obsidian](https://obsidian.md) thinking and note-taking environment; open that and explore the 'help' vault to get a sense of what's going on.
     + You can download this [course handbook](https://github.com/shawngraham/hist3812-f22/blob/main/static/obsidian/hist3812-obsidian-course-handbook.zip) as a vault (ie, folder) for Obsidian. Hit the download button, then unzip it somewhere sensible. Start obsidian or hit the 'open vault' button, and select the vault you just downloaded. It contains a number of useful plugins and templates. When it asks you if you trust the author of the notebook, say YES. Then hit the `x` to close the info box. 
 
-A template for a 'game design document' by Rosa Carbo-Mascarell can be found [here](https://glamorous-save-06a.notion.site/Game-design-template-0132383574dd4c2dbff5d14e3a90761c). Information about 'paradata' can be found [here, section 4.6](http://www.londoncharter.org/principles/documentation.html). Look over all the course materials and start thinking now about your unessay. More information is available on the [assessment](/syllabus/assessment) page.
+An Obsidian-powered template for a 'game design document' based on one by Rosa Carbo-Mascarell can be found [here](https://github.com/shawngraham/obsidian-game-design-vault). You might wish to adapt this for your Unessay (not all parts will be useful, depending on what you do, and so should be modified as you wish.) 
+
+Information about 'paradata' can be found [here, section 4.6](http://www.londoncharter.org/principles/documentation.html). Look over all the course materials and start thinking now about your unessay. More information is available on the [assessment](/syllabus/assessment) page.
 
 ## M1.1
 + Sept 12: **Fiction, Non-Fiction, Creative Non-Fiction, Lies, and Counterfactuals**.

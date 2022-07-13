@@ -22,7 +22,7 @@ According to section 2 of FASS Undergraduate Teaching Regulations and Procedures
 
 ## An Example Repo
 
-An example github repository showing the structure to follow for your interestitials is [here](https://github.com/shawngraham/hist3812-starter). The organization of the layout for your unessay will depend on the form it takes.
+An example github repository showing the structure to follow for your interestitials is [here](https://github.com/shawngraham/hist3812-starter). The organization of the layout for your unessay will depend on the form it takes. You might wish to use [this vault for Obsidian](https://github.com/shawngraham/obsidian-game-design-vault) to organize the development of your Unessay. NB a 'vault' = 'folder of text files.' Download that folder, and use [Obsidiah](https://obsidian.md) to explore/modify it.
 
 ## Criteria for Interstitials
 The focus of these interstitial exercises and your recording of your thinking is on the development of your process, on your evolution in the course - _not_ on your technical prowess.
