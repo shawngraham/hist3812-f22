@@ -20,14 +20,24 @@ According to section 2 of FASS Undergraduate Teaching Regulations and Procedures
 + interstitial 3: 30%
 + unessay:  40%
 
+## Real Names Policy
+
+I will ask you to use Github as an online repository for many of the things you'll build/make. You do not need to use your real name or identity on any public-facing work that you do in this course. Nor do you need to explain to me that you wish to use a pseudonym. It is sufficient that you send an email to me with the following message:
+
+‘I would like to use the following username in all public-facing work: xxxxxxxx’
+
+…where xxxxx is the name you have selected. For safety’s sake, if you decide to use a pseudonym, do not use one that you have used on any other website or social media platform.
+
+Nor do you have to make a repository 'public'; you may set the repo to 'private' but make sure to invite `shawngraham` as a collaborato (that's my Github username; my avatar is a minion, by the way).
+
 ## An Example Repo
 
-An example github repository showing the structure to follow for your interestitials is [here](https://github.com/shawngraham/hist3812-starter). The organization of the layout for your unessay will depend on the form it takes. You might wish to use [this vault for Obsidian](https://github.com/shawngraham/obsidian-game-design-vault) to organize the development of your Unessay. NB a 'vault' = 'folder of text files.' Download that folder, and use [Obsidiah](https://obsidian.md) to explore/modify it.
+An example github repository showing the structure to follow for your interestitials is [here](https://github.com/shawngraham/hist3812-starter). The organization of the layout for your unessay will depend on the form it takes. You might wish to use [this vault for Obsidian](https://github.com/shawngraham/obsidian-game-design-vault) to organize the development of your Unessay. NB a 'vault' = 'folder of text files.' Download that folder, and use [Obsidian](https://obsidian.md) to explore/modify it.
 
 ## Criteria for Interstitials
 The focus of these interstitial exercises and your recording of your thinking is on the development of your process, on your evolution in the course - _not_ on your technical prowess.
 
-> For each interstitial, you will you will place your various log.md files, your reflection.md, and any other supporting files (screenshots, etc) as necessary.
+> For each interstitial, you will you will place your various log.md files, your reflection.md, and any other supporting files (screenshots, etc) as necessary into a private or public github repo, and then [submit the link to the repo to me via an online form](https://forms.gle/hFzXKvMku23AuY9XA). Remember: Upload to github; send me the link.
 
 _Guidance on using Github and getting it set up is available from my 'crafting digital history' course materials [here](https://craftingdh.netlify.app/tutorials/github/)._
 

@@ -43,7 +43,7 @@ Information about 'paradata' can be found [here, section 4.6](http://www.londonc
   - Have read for today:
     - Cook Inlet Tribal Council. 2017. 'Storytelling for the Next Generation: How a non-profit in Alaska harnessed the power of video games to share and celebrate cultures' in Mol et al. eds, _The Interactive Pasts_. 21-32. [link](https://www.sidestone.com/openaccess/9789088904363.pdf)
     - Evans, Jennifer. 2018. 'Sound, listening and the queer art of history' _Rethinking History_ 22.1: 25-43. [link](https://journals-scholarsportal-info.proxy.library.carleton.ca/details/13642529/v22i0001/25_latqaoh.xml)
-+ Sept 21: Visual storytelling on the web with [Mural](https://getmural.io).
++ Sept 21: Visual storytelling on the web with [Mural](https://getmural.io). Download and install prior to class.
 
 ## M1.3
 + Sept 26: **Storytelling in Games (Video, Board, AR, ARGS)**.
@@ -64,9 +64,11 @@ Take a paper that you have written elsewhere at Carleton that you really enjoyed
 
 Your **Reflection** will include your thoughts on all of the work in this module; tie what you've read and heard  to what you've done. What is the main message of this module? How does it connect with your ideas for your Unessay? Your **Log** will be your record of your digital work in this module (including any Unessay work) - hiccups, successes, help found, help given. **Ephemera** is anything else you want to keep a record of, files created, screenshots, whatever.
 
-> Upload your Reflection, Log, and Ephemera for Interstitial Work 1 to your Github Repository by the end of this week (Sunday night); **notify me** that you have done so using the form at [this link](#).
+> Upload your Reflection, Log, and Ephemera for Interstitial Work 1 to your Github Repository by the end of this week (Sunday night); **notify me** that you have done so using the form at [this link](https://forms.gle/hFzXKvMku23AuY9XA).
 
+<div align="center">
 `******************************`
+</div>
 
 # Module 2: Playfulness
 
@@ -98,7 +100,9 @@ Your **Reflection** will include your thoughts on all of the work in this module
     - Dream of Darkness, 2022. 'Can the Historical Problem Space framework help us make better history games?' [dreamofdarkness.com](https://www.dreamofdarkness.com/dev-journal/can-the-historical-problem-space-framework-help-us-make-better-history-games).
   - We'll play [_Nothing Besides Remains_](https://cutgarnetgames.itch.io/nothing-beside-remains) and consider it in the light of the HPS framework. Then, we'll consider your own Unessays and how you might use this framework to design/analyze your work.
 
+<div align="center">
 `******************************`
+</div>
 
 # Interstitial 2
 
@@ -110,9 +114,11 @@ In these two sessions, you will engage in some playful computing. We'll try some
 
 Your **Reflection** will include your thoughts on all of the work in this module; tie what you've read and heard  to what you've done. What is the main message of this module? How does it connect with your ideas for your Unessay? Your **Log** will be your record of your digital work in this module (including any Unessay work) - hiccups, successes, help found, help given. **Ephemera** is anything else you want to keep a record of, files created, screenshots, whatever.
 
-> Upload your Reflection, Log, and Ephemera for Interstitial Work 2 to your Github Repository by the end of this week (Sunday night); **notify me** that you have done so using the form at [this link](#).
+> Upload your Reflection, Log, and Ephemera for Interstitial Work 2 to your Github Repository by the end of this week (Sunday night); **notify me** that you have done so using the form at [this link](https://forms.gle/hFzXKvMku23AuY9XA).
 
+<div align="center">
 `******************************`
+</div>
 
 # Module 3: Computation
 
@@ -150,7 +156,7 @@ At this point, you should have made significant progress on your Unessays. Durin
 
 Your **Reflection** will include your thoughts on all of the work in this module; tie what you've read and heard  to what you've done. What is the main message of this module? How does it connect with your ideas for your Unessay? Your **Log** will be your record of your digital work in this module (including any Unessay work) - hiccups, successes, help found, help given. **Ephemera** is anything else you want to keep a record of, files created, screenshots, whatever.
 
-> Upload your Reflection, Log, and Ephemera for Interstitial Work 2 to your Github Repository by the end of this week (Sunday night); **notify me** that you have done so using the form at [this link](#).
+> Upload your Reflection, Log, and Ephemera for Interstitial Work 2 to your Github Repository by the end of this week (Sunday night); **notify me** that you have done so using the form at [this link](https://forms.gle/hFzXKvMku23AuY9XA).
 
 `******************************`
 
@@ -160,4 +166,4 @@ There is no take home exam in the sense of a bunch of questions to answer. But w
 
 Submit by Dec 17 please.
 
-> Upload all materials to your Github Repo or elsewhere as appropriate to the format of your Unessay, and notify me that you have done so using the form at [this link](#).
+> Upload all materials to your Github Repo or elsewhere as appropriate to the format of your Unessay, and notify me that you have done so using the form at [this link](https://forms.gle/hFzXKvMku23AuY9XA).
