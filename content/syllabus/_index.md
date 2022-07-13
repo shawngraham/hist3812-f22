@@ -14,6 +14,6 @@ In a game, you never read the rulebook. You just jump right in. There might be a
 
 Our first meeting is on September 7; I will set the scene, and then:
 
-**please complete the 'tutorial level' before we meet on Monday September 12.**
+**Please complete the 'tutorial level' before we meet on Monday September 12.**
 
 Make sure you go through -and understand- the various sections below:
