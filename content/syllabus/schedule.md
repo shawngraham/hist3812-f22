@@ -56,7 +56,7 @@ Information about 'paradata' can be found [here, section 4.6](http://www.londonc
 
 # Interstitial 1
 
-Oct 3 & Oct 5 - We will explore [Twine](https://twinery.org) and [Ren'Py](https://www.renpy.org/) on these two dates. Twine runs in the browser. Have Ren'Py installed on a computer. If you don't have one, pair up with someone in the class who does.
+Oct 3 & Oct 5 - We will explore [Twine](https://twinery.org) and [Ren'Py](https://www.renpy.org/) on these two dates. Twine runs in the browser. Have Ren'Py installed on a computer. If you don't have one, pair up with someone in the class who does. If access to a machine of some sort presents an obstacle, please let me know before this date and we'll figure out something together.
 
 Before class on October 3rd, read [Interactive Fiction in the Humanities Classroom](https://programminghistorian.org/en/lessons/interactive-text-games-using-twine), a Programming Historian tutorial by Gabi Kiriloff.
 
@@ -80,7 +80,7 @@ Your **Reflection** will include your thoughts on all of the work in this module
 ## M2.2
 - Oct 17 - **History is a Remix**
   - Have read for today:
-    - Kelly, T. 2011. '"But Mine's Better": Teaching History in a Remix Culture' _The History Teacher_ 44.3 369-377. [link](https://www.jstor.org/stable/41303990)
+    - Kelly, M. 2011. '"But Mine's Better": Teaching History in a Remix Culture' _The History Teacher_ 44.3 369-377. [link](https://www.jstor.org/stable/41303990)
     - Perry, S. 2019. 'The Enchantment of the Archaeological Record.' _European Journal of Archaeology_ 22.3 [link](https://www-cambridge-org.proxy.library.carleton.ca/core/journals/european-journal-of-archaeology/article/enchantment-of-the-archaeological-record/6B71DCDB28D3FABE22660EEA860ED7FE)
     - Watch: Ferguson, Kirby. 2015. Everyting is a Remix (remastered). [youtube](https://brokenpromises.tech/).
 
