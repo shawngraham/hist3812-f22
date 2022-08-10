@@ -22,7 +22,7 @@ The course is divided into three parts, with three interstitial weeks where we b
 
 # Module 1: Storytelling
 
-+ Sept 7: **Praelude**. Introducing the course, its themes, and how everything works. A summary will be posted [here](supports/sept7) afterwards.
++ Sept 7: **Praelude**. Introducing the course, its themes, and how everything works. Follow along [here](https://hist3812.netlify.app/slides/sept7.html)
   + [Complete this tutorial level before the Sept 12 meeting](https://shawngraham.github.io/hist3812-tutorial-level/src/)
   + OPTIONAL but strongly recommended: Download and install the [Obsidian](https://obsidian.md) thinking and note-taking environment; open that and explore the 'help' vault to get a sense of what's going on.
     + You can download this [course handbook](https://github.com/shawngraham/hist3812-f22/blob/main/static/obsidian/hist3812-obsidian-course-handbook.zip) as a vault (ie, folder) for Obsidian. Hit the download button, then unzip it somewhere sensible. Start obsidian or hit the 'open vault' button, and select the vault you just downloaded. It contains a number of useful plugins and templates. When it asks you if you trust the author of the notebook, say YES. Then hit the `x` to close the info box. 
