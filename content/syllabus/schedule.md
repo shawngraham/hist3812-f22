@@ -127,6 +127,7 @@ Your **Reflection** will include your thoughts on all of the work in this module
   - Have read for today:
     - Reed, Aaron. 2021. '2017: The Oregon Trail' _50 Years of Text Games_ [link](https://if50.substack.com/p/1971-the-oregon-trail?s=r)
     - Reed, Aaron. 2021. '2019: A.I. Dungeon' _50 Years of Text Games_ [link](https://if50.substack.com/p/2019-ai-dungeon?s=r)
+    - Dzieza, Josh. 2022. 'The Great Fiction of AI - The strange world of high-speed semi-automated genre fiction' _The Verge_ [link](https://www.theverge.com/c/23194235/ai-fiction-writing-amazon-kindle-sudowrite-jasper)
 + Nov 16 Raising the Dead with GPT-2
   - Blog post & Google Colab notebook by Max Woolf [here](https://minimaxir.com/2019/09/howto-gpt2/). We'll raise the dead.
   - We'll also play some [AI Dungeon](https://play.aidungeon.io/main/home). Can we co-create with the machine an interesting historical experience?
