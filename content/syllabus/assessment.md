@@ -30,9 +30,15 @@ I will ask you to use Github as an online repository for many of the things you'
 
 Nor do you have to make a repository 'public'; you may set the repo to 'private' but make sure to invite `shawngraham` as a collaborato (that's my Github username; my avatar is a minion, by the way).
 
-## An Example Repo
+## Example Repos and Vaults
 
-An example github repository showing the structure to follow for your interestitials is [here](https://github.com/shawngraham/hist3812-starter). The organization of the layout for your unessay will depend on the form it takes. You might wish to use [this vault for Obsidian](https://github.com/shawngraham/obsidian-game-design-vault) to organize the development of your Unessay. NB a 'vault' = 'folder of text files.' Download that folder, and use [Obsidian](https://obsidian.md) to explore/modify it.
+An example github repository showing the structure to follow for depositing your interestitial work online is [here](https://github.com/shawngraham/hist3812-f22/blob/main/static/obsidian/hist3812-obsidian-course-handbook.zip). 
+
+The organization of the layout for your unessay will depend on the form it takes. You might wish to use [this vault for Obsidian](https://github.com/shawngraham/obsidian-game-design-vault) to organize the development of your Unessay. NB a 'vault' = 'folder of text files.' Download that folder, and use [Obsidian](https://obsidian.md) to explore/modify it.
+
+The 'course handbook' Obsidian vault is available [here](https://github.com/shawngraham/hist3812-f22/blob/main/static/obsidian/hist3812-obsidian-course-handbook.zip); unzip that. You can drag and drop from your computer to your github repo any notes you make. You could also copy all of the files from the game design vault (folder) and drop them into your course vault (folder) so that everything is in one place.
+
+Remember: drag files using your file explorer (pc) or finder (mac) onto your github repository webpage to upload; hit the green 'commit' button on that page once they've uploaded. Then fill in the google form to alert me that there is material you'd like me to look at.
 
 ## Criteria for Interstitials
 The focus of these interstitial exercises and your recording of your thinking is on the development of your process, on your evolution in the course - _not_ on your technical prowess.
