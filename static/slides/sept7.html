@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title></title>
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/night.css" id="theme" />
+    <link rel="stylesheet" href="plugin/highlight/zenburn.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="plugin/customcontrols/style.css">
+
+
+    <script defer src="dist/fontawesome/all.min.js"></script>
+
+	<script type="text/javascript">
+		var forgetPop = true;
+		function onPopState(event) {
+			if(forgetPop){
+				forgetPop = false;
+			} else {
+				parent.postMessage(event.target.location.href, "app://obsidian.md");
+			}
+        }
+		window.onpopstate = onPopState;
+		window.onmessage = event => {
+			if(event.data == "reload"){
+				window.document.location.reload();
+			}
+			forgetPop = true;
+		}
+
+		function fitElements(){
+			const itemsToFit = document.getElementsByClassName('fitText');
+			for (const item in itemsToFit) {
+				if (Object.hasOwnProperty.call(itemsToFit, item)) {
+					var element = itemsToFit[item];
+					fitElement(element,1, 1000);
+					element.classList.remove('fitText');
+				}
+			}
+		}
+
+		function fitElement(element, start, end){
+
+			let size = (end + start) / 2;
+			element.style.fontSize = `${size}px`;
+
+			if(Math.abs(start - end) < 1){
+				while(element.scrollHeight > element.offsetHeight){
+					size--;
+					element.style.fontSize = `${size}px`;
+				}
+				return;
+			}
+
+			if(element.scrollHeight > element.offsetHeight){
+				fitElement(element, start, size);
+			} else {
+				fitElement(element, size, end);
+			}		
+		}
+
+
+		document.onreadystatechange = () => {
+			fitElements();
+			if (document.readyState === 'complete') {
+				if (window.location.href.indexOf("?export") != -1){
+					parent.postMessage(event.target.location.href, "app://obsidian.md");
+				}
+				if (window.location.href.indexOf("print-pdf") != -1){
+					let stateCheck = setInterval(() => {
+						clearInterval(stateCheck);
+						window.print();
+					}, 250);
+				}
+			}
+	};
+
+
+        </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template">
+
+<!-- .slide: data-background-opacity="0.5" data-background-image="https://hist3812.netlify.app/images/illustrations/old-school-game-controller-vector.svg" -->
+
+<div align="right">
+
+# _Praelude_ 
+
+### Playful Engagement With The Past
+#### HIST 3812
+Sept 7 w/ Dr. Graham
+
+</div>
+
+
+</script></section><section  data-markdown><script type="text/template">
+<!-- .slide: data-background-opacity="0.5" data-background-image="33210.jpg" -->
+
+<div align="right">
+There is a vast <br>conspiracy in the world.
+
+You know who is involved -  confess. <br>Names out of history: who?
+
+<aside class="notes"><p>play aliens &amp; vampires. now - what was good history here? what made this fun? where was the history?</p>
+</div></aside></script></section><section  data-markdown><script type="text/template">
+History is important. Serious.
+<br>But what if it was also... playful?
+</script></section><section  data-markdown><script type="text/template">
+<!-- .slide: data-background-opacity="0.5" data-background-image="timetravelhistorian.webp" -->
+
+Time Travel.
+
+<aside class="notes"><ul>
+<li>am interested in playful engagements with the past because of disenchantment (&#39;objective&#39;) vs enchantment (&#39;subjective&#39;)</li>
+<li>because the world is on fire and &#39;eat your broccoli&#39; isn&#39;t working</li>
+<li></li>
+</ul>
+</aside></script></section><section  data-markdown><script type="text/template">
+<!-- .slide: data-background-opacity="0.5" data-background-image="futility.webp" -->
+
+Raising the Dead.
+</script></section><section  data-markdown><script type="text/template">
+<!-- .slide: data-background-opacity="0.5" data-background-image="https://image.tmdb.org/t/p/original/6MZYe9Tg7mF8ydgLps5nyj2o5CQ.jpg" -->
+
+Excellent Adventures.
+</script></section><section  data-markdown><script type="text/template">
+I wrote a book. You don't have to buy it. But this class emerges from that process of writing.
+
+<p style="line-height: 0" class="reset-paragraph image-paragraph"><img src="https://www.berghahnbooks.com/covers/GrahamEnchantment.jpg" alt="" ></img></p>
+
+
+<aside class="notes"><p>entry of the uncanny into the world. qs I had when writing, my own progression.</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+<div align="right">
+
+**How do we write ‘good history’ through playful engagements? What does ‘good history’ look like, how is it constructed, and what happens when it meets digital technologies?**
+
+</div>
+
+<aside class="notes"><p>ask &#39;em this, see what we come up with.</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+We'll use various immersive technologies
+
+(here's a small [list of tools](https://hist3812.netlify.app/syllabus/tools/))
+</script></section><section  data-markdown><script type="text/template">
+## end goal
+
+- create your own immersive, playful history
+	- can use video game techs (actual games: ok!)
+	- can use AR/XR/VR techs (eg [locative stuff](http://picturinglebretonflats.ca/))
+	- playful renderings (generative art, [sound](http://songsoftheottawa.ca/),  etc)
+	- low tech: board, card game - maybe.
+	- functional is a bonus
+- via a [design document](https://github.com/shawngraham/obsidian-game-design-vault)
+
+<aside class="notes"><p>show them the obsidian gdd?
+    tech element: is in the planning, laying out</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+<!-- .slide: data-background-opacity="0.5" data-background-image="bluebricks.png" -->
+
+
+# The point 
+
+<split even gap="3">
+
+You'll need to think about process, paradata, design.
+
+You'll need to think about the  _why_ at all times.
+
+Experiments are OK. Encouraged, even!
+</script></section><section  data-markdown><script type="text/template">
+<!-- .slide: data-background-opacity="0.5" data-background-image="bluebricks.png" -->
+
+Your unessay should answer the big ticket question of the class. 
+
+Maybe not _the_ definitive answer, but... _an_ answer!
+</script></section><section  data-markdown><script type="text/template">
+<!-- .slide: data-background-image="https://i.ytimg.com/vi/m5gVQvYNUdI/maxresdefault.jpg" -->
+
+<br><Br><Br><Br><Br><br><Br><Br><Br>
+<div align="left">
+I don't care if tech breaks.
+
+I care that you [try](https://hist3812.netlify.app/syllabus/assessment/).
+</div>
+
+<aside class="notes"><h1 id="fails">Fails?</h1>
+<p>I wrote a whole g*d&#39;d book on <a href="https://thedigitalpress.org/failing-gloriously/">Failing Gloriously</a>.</p>
+<p>There are no fails. There are only experiments. </p>
+<p>IF AND ONLY IF you document your process, paradata, and thinking.</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+Logic of Git & Github
+</script></section><section  data-markdown><script type="text/template">
+- repos can be 'private' but add user ```shawngraham``` as collaborator
+</script></section><section  data-markdown><script type="text/template">
+Obsidian & Markdown
+
+[example vault for keeping track in this course](https://github.com/shawngraham/hist3812-starter)
+
+[example vault for designing your unessay](https://github.com/shawngraham/obsidian-game-design-vault)
+
+<span>
+            
+        <svg viewBox="0 0 100 100" width="150" height="150">
+                <defs>
+                    <linearGradient id="a" x1="82.85" y1="30.41" x2="51.26" y2="105.9" gradientTransform="matrix(1, 0, 0, -1, -22.41, 110.97)" gradientUnits="userSpaceOnUse">
+                        <stop offset="0" stop-color="#6c56cc"></stop>
+                        <stop offset="1" stop-color="#9785e5"></stop>
+                    </linearGradient>
+                </defs>
+                <polygon points="44.61 0 12.91 17.52 0 45.45 19.57 90.47 47.35 100 52.44 89.8 63 26.39 44.61 0" fill="#34208c"></polygon>
+                <polygon points="63 26.39 43.44 14.41 16.43 35.7 47.35 100 52.44 89.8 63 26.39" fill="url(#a)"></polygon>
+                <polygon points="63 26.39 63 26.39 44.61 0 43.44 14.41 63 26.39" fill="#af9ff4"></polygon>
+                <polygon points="43.44 14.41 44.61 0 12.91 17.52 16.43 35.7 43.44 14.41" fill="#4a37a0"></polygon>
+                <polygon points="16.43 35.7 19.57 90.47 47.35 100 16.43 35.7" fill="#4a37a0"></polygon>
+            </svg>
+</span>
+
+</script></section><section  data-markdown><script type="text/template">
+Grading / Ungrading / [Unessays](https://hist3812.netlify.app/syllabus/assessment/#unessay)
+</script></section><section  data-markdown><script type="text/template">
+## Pseudonymns
+- for public facing work: ok.
+	- just tell me who you are
+</script></section><section  data-markdown><script type="text/template">
+"Dear Dr. Graham..."
+
+shawn.graham@carleton.ca
+
+Student hours tbd.</script></section><section  data-markdown><script type="text/template">
+# COVID
+
+It's going to happen.
+
+I'll **always** be masked. If we truly believe in making university accessible for everyone, you should too: we protect the vulnerable, together.</script></section><section  data-markdown><script type="text/template">
+The plan for when/if you get sick:
+
+## I trust you.
+
+I do not need or want to see dr's notes.
+
+If something is up, just email me with 'something's up' in the subject line. 
+
+I **do not** need to know the details.
+
+We can roll with pretty much anything and will find a solution.
+</script></section><section  data-markdown><script type="text/template">
+The plan for when/if I get sick:
+
+- Your TA will communicate with you things that you can read to help as you build your unessays
+</script></section><section  data-markdown><script type="text/template">
+The plan for when/if we all shift back to online:
+
+- discord for fully asynchronous work (screw zoom)
+- collaboration is **always** welcome, no matter the circumstances: simply acknowledge it
+- I will cook up detailed instructions & short help videos
+</script></section><section  data-markdown><script type="text/template">
+## By next class:
+
+- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Complete the tutorial level - including the tasks you'll discover within it.
+	- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->I will know if you have ;)
+- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->Download and install Obsidian
+- &shy;<!-- .element: class="fragment" data-fragment-index="4" -->Explore the course website & schedule fully
+	- &shy;<!-- .element: class="fragment" data-fragment-index="5" -->use hypothesis to annotate the site with any comments/questions, in the 3812 reading group ([join here https://hypothes.is/groups/MP67BLk7/hist3812](https://hypothes.is/groups/MP67BLk7/hist3812)
+	- &shy;<!-- .element: class="fragment" data-fragment-index="6" -->_or_ send any questions to me; I will collate & answer them.
+
+</script></section><section  data-markdown><script type="text/template">
+'Blue Bricks' by [Patrick Tommaso](https://unsplash.com/photos/QMDap1TAu0g)
+
+Hardboiled detective from [wallpaperset.com](https://wallpaperset.com/film-noir-wallpapers)</script></section></div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/zoom/zoom.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/math/math.js"></script>
+	<script src="plugin/mermaid/mermaid.js"></script>
+	<script src="plugin/chart/chart.min.js"></script>
+	<script src="plugin/chart/plugin.js"></script>
+	<script src="plugin/menu/menu.js"></script>
+	<script src="plugin/customcontrols/plugin.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+	  function isLight(color) {
+		let hex = color.replace('#', '');
+
+		// convert #fff => #ffffff
+		if(hex.length == 3){
+			hex = `${hex[0]}${hex[0]}${hex[1]}${hex[1]}${hex[2]}${hex[2]}`;
+		}
+
+		const c_r = parseInt(hex.substr(0, 2), 16);
+		const c_g = parseInt(hex.substr(2, 2), 16);
+		const c_b = parseInt(hex.substr(4, 2), 16);
+		const brightness = ((c_r * 299) + (c_g * 587) + (c_b * 114)) / 1000;
+		return brightness > 155;
+	}
+
+	var bgColor = getComputedStyle(document.documentElement).getPropertyValue('--r-background-color').trim();
+
+	if(isLight(bgColor)){
+		document.body.classList.add('has-light-background');
+	} else {
+		document.body.classList.add('has-dark-background');
+	}
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealZoom,
+          RevealNotes,
+          RevealMath.MathJax3,
+		  RevealMermaid,
+		  RevealChart,
+		  RevealCustomControls,
+		  RevealMenu,
+        ],
+
+		mathjax3: {
+			mathjax: 'plugin/math/mathjax/tex-mml-chtml.js',
+		},
+
+		customcontrols: {
+			controls: [
+				{id: 'toggle-overview',
+				title: 'Toggle overview (O)',
+				icon: '<i class="fa fa-th"></i>',
+				action: 'Reveal.toggleOverview();'
+				},
+			]
+		},
+		menu: {
+			loadIcons: false
+		}
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal().getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"width":960,"height":700,"margin":0.04,"controls":true,"progress":true,"slideNumber":true,"transition":"slide","transitionSpeed":"default"}, queryOptions);
+    </script>
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
