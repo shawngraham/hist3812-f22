@@ -36,7 +36,8 @@ Information about 'paradata' can be found [here, section 4.6](http://www.londonc
   - Have read for today:
     - Kelly, T. Mills. 2014. True Facts or False Facts - Which Are More Authentic? in K. Kee, ed. _Pastplay_. U Michigan Press. [Permalink](https://www.jstor.org/stable/j.ctv65swr0.19 ).
     - Kavanagh, Erin. 2019 'Writing wonders - Poetry as archaeological method?' in Daniël van Helden and Robert Witcher, ed. _Research the Archaeological Past through Imagined Narratives_ Routledge: London. 184-209 [link to volume; scroll down to chapter](https://www-taylorfrancis-com.proxy.library.carleton.ca/books/edit/10.4324/9780203730904/researching-archaeological-past-imagined-narratives-dani%C3%ABl-van-helden-robert-witcher)
-+ Sept 14: We'll play some 'barely' games. We'll also play ['Domino City'](https://ewanmatthews.itch.io/domino-city). What stories might we tell using this system?
+    - Saidiya Hartman. 2008. 'Venus in Two Acts' _Small Axe_ 12(2): 1–14. doi: https://doi.org/10.1215/-12-2-1 (A version remediated into a zine is available from MoMA [here](https://www.moma.org/momaorg/shared/pdfs/docs/learn/venus-in-two-acts-cassandra.pdf)) 
++ Sept 14: Tech Check-in; Obsidian; GDD; and we might play some 'barely' games, maybe also play ['Domino City'](https://ewanmatthews.itch.io/domino-city). What stories might we tell using this system?
 
 ## M1.2
 + Sept 19: **Storytelling in Museums and other sites of Public History**.
