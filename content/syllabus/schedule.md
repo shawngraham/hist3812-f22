@@ -61,7 +61,7 @@ Oct 3 & Oct 5 - We will explore [Twine](https://twinery.org) and [Ren'Py](https:
 
 Before class on October 3rd, read [Interactive Fiction in the Humanities Classroom](https://programminghistorian.org/en/lessons/interactive-text-games-using-twine), a Programming Historian tutorial by Gabi Kiriloff.
 
-Take a paper that you have written elsewhere at Carleton that you really enjoyed and the material for which you know well. We will be considering how to express the argument of your paper via these two different platforms.
+Take a Wikipedia article for some historic event that captures your imagination. We'll storyboard and consider how to express the story via these two different platforms (taking into account what we've discussed in prior meetings).
 
 Your **Reflection** will include your thoughts on all of the work in this module; tie what you've read and heard  to what you've done. What is the main message of this module? How does it connect with your ideas for your Unessay? Your **Log** will be your record of your digital work in this module (including any Unessay work) - hiccups, successes, help found, help given. **Ephemera** is anything else you want to keep a record of, files created, screenshots, whatever.
 
