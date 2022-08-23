@@ -42,7 +42,6 @@ Information about 'paradata' can be found [here, section 4.6](http://www.londonc
 ## M1.2
 + Sept 19: **Storytelling in Museums and other sites of Public History**.
   - Have read for today:
-    - Cook Inlet Tribal Council. 2017. 'Storytelling for the Next Generation: How a non-profit in Alaska harnessed the power of video games to share and celebrate cultures' in Mol et al. eds, _The Interactive Pasts_. 21-32. [link](https://www.sidestone.com/openaccess/9789088904363.pdf)
     - Evans, Jennifer. 2018. 'Sound, listening and the queer art of history' _Rethinking History_ 22.1: 25-43. [link](https://journals-scholarsportal-info.proxy.library.carleton.ca/details/13642529/v22i0001/25_latqaoh.xml)
 + Sept 21: Visual storytelling on the web with [Mural](https://getmural.io). Download and install prior to class.
 
@@ -50,6 +49,7 @@ Information about 'paradata' can be found [here, section 4.6](http://www.londonc
 + Sept 26: **Storytelling in Games (Video, Board, AR, ARGS)**.
   - Have read for today:
     - McCall, Jeremiah. 2019. Playing with the past: history and video games (and why it might matter) _Journal of Geek Studies_ [link](https://jgeekstudies.org/2019/04/22/playing-with-the-past-history-and-video-games-and-why-it-might-matter/)
+    - Cook Inlet Tribal Council. 2017. 'Storytelling for the Next Generation: How a non-profit in Alaska harnessed the power of video games to share and celebrate cultures' in Mol et al. eds, _The Interactive Pasts_. 21-32. [link](https://www.sidestone.com/openaccess/9789088904363.pdf)
     - Nowviskie, Bethany. 2014. "Ludic Algorithms" in K. Kee, ed. _Pastplay_. U Michigan Press. [permalink](https://www.jstor.org/stable/j.ctv65swr0.11 ).
 + Sept 27: We'll play some [Action Castle](http://www.memento-mori.com/), and we'll also try some 'storytelling' games.
 

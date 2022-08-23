@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title></title>
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/night.css" id="theme" />
+    <link rel="stylesheet" href="plugin/highlight/zenburn.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="plugin/customcontrols/style.css">
+
+
+    <script defer src="dist/fontawesome/all.min.js"></script>
+
+	<script type="text/javascript">
+		var forgetPop = true;
+		function onPopState(event) {
+			if(forgetPop){
+				forgetPop = false;
+			} else {
+				parent.postMessage(event.target.location.href, "app://obsidian.md");
+			}
+        }
+		window.onpopstate = onPopState;
+		window.onmessage = event => {
+			if(event.data == "reload"){
+				window.document.location.reload();
+			}
+			forgetPop = true;
+		}
+
+		function fitElements(){
+			const itemsToFit = document.getElementsByClassName('fitText');
+			for (const item in itemsToFit) {
+				if (Object.hasOwnProperty.call(itemsToFit, item)) {
+					var element = itemsToFit[item];
+					fitElement(element,1, 1000);
+					element.classList.remove('fitText');
+				}
+			}
+		}
+
+		function fitElement(element, start, end){
+
+			let size = (end + start) / 2;
+			element.style.fontSize = `${size}px`;
+
+			if(Math.abs(start - end) < 1){
+				while(element.scrollHeight > element.offsetHeight){
+					size--;
+					element.style.fontSize = `${size}px`;
+				}
+				return;
+			}
+
+			if(element.scrollHeight > element.offsetHeight){
+				fitElement(element, start, size);
+			} else {
+				fitElement(element, size, end);
+			}		
+		}
+
+
+		document.onreadystatechange = () => {
+			fitElements();
+			if (document.readyState === 'complete') {
+				if (window.location.href.indexOf("?export") != -1){
+					parent.postMessage(event.target.location.href, "app://obsidian.md");
+				}
+				if (window.location.href.indexOf("print-pdf") != -1){
+					let stateCheck = setInterval(() => {
+						clearInterval(stateCheck);
+						window.print();
+					}, 250);
+				}
+			}
+	};
+
+
+        </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template">
+
+<!-- .slide: data-background-opacity="0.5" data-background-image="https://hist3812.netlify.app/images/illustrations/old-school-game-controller-vector.svg" -->
+
+<div align="right">
+
+#### Storytelling in Museums and Other Sites of Public History
+
+### Playful Engagement With The Past
+#### HIST 3812
+Sept 12 w/ Dr. Graham
+
+</div>
+</script></section><section ><section data-markdown><script type="text/template">
+Previously
+</script></section><section data-markdown><script type="text/template">
+- we talked about truth/lies/fiction/fabulation
+	-in context of academic writing/teaching
+</script></section><section data-markdown><script type="text/template">- today we shift gears to storytelling in the wild
+	- the wild is more than 'IRL'
+	- the web is a real place, too
+</script></section></section><section  data-markdown><script type="text/template">
+Where are the sites of public history?
+
+<aside class="notes"><p>what the hell is public history anyway
+who is the public? gov&#39;t vs people</p>
+<p>picture: disney world is a site of public history - it presents a vision of the past...</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+<p style="line-height: 0" class="reset-paragraph image-paragraph"><img src="slides/map-of-ikea-004.webp" alt="" style="width: 900px"></img></p>
+
+
+Consider... Ikea.
+
+<aside class="notes"><p><a href="https://journals-sagepub-com.proxy.library.carleton.ca/doi/pdf/10.1177/1206331208325599">https://journals-sagepub-com.proxy.library.carleton.ca/doi/pdf/10.1177/1206331208325599</a></p>
+<p>Ursula Lindqvist explores how Ikea is an &#39;archive&#39; in the original sense of the word - &#39;: the house where the superior magistrates lived, where the official documents were kept, and where those with the nomological agency to interpret the contents of those documents lived. Archive, then, engenders the idea of a house, a space that is both public and private and that signifies both political power and cultural authority.&#39;</p>
+<p>I&#39;d say it&#39;s a museum - a museum to a constructed vision of swedish identity and like lindqvist says, a monument to a particular vision of a particular kind of democracy. It tells a story: and moving through the space of an Ikea you are forced to read it in particular ways. Keep this idea of forced pathways = a particular reading in mind. Further - an archive suggests that there are silences, acts of violence, things cast out that do not belong. In Ikea&#39;s case, it&#39;s Sweden&#39;s participation in transatlantic slave trade and eugenics, and its own founder&#39;s family&#39;s history.</p>
+<p><a href="https://www.theguardian.com/science/blog/2011/jan/31/shop-design-layout-impulse-purchasing">https://www.theguardian.com/science/blog/2011/jan/31/shop-design-layout-impulse-purchasing</a></p>
+</aside></script></section><section  data-markdown><script type="text/template">
+We read the site through movement. We embody its message.
+</script></section><section  data-markdown><script type="text/template">
+<split even>
+so... keeping in mind how we move through sites of memory:
+
+what was a standout experience for you, in terms of museum or public history?
+
+what was a standout _digital_ experience for you, in terms of museum or public history?
+
+</split>
+
+What unites these two experiences?
+
+
+<aside class="notes"><p>so much broken tech in museums - the VR booth at CSTM for instance. mimensis - trying to replicate in new tech things we already understand from old tech. we had horseless carriages long before we had cars, right?</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+Movement & Enchantment
+
+<aside class="notes"><p>picture of something mysterious</p>
+<p>how do we read the landscape? through movement. how does movement create moments for enchantment? by encounters with the eruptions of deep time into the present, by the uncanny, by the emotional, by the emergent</p>
+<p>enchantment as a mood;  disenchantment is where the enlightenment, modernism gets us: emotional detachment from the world. it produces alienation. Jane Bennet on the other hand argues for enchantment, a rediscovery of wonder, as something that would propel ethical engagement with the world. per bennet, enchantment is to be &#39;struck and shaken by the extraordinary that lives amid the everyday&#39;. To find enchantment, we need to playfully reconfigure things to be alive to chance operations: ties into complexity theory, emergence.</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+'narrative structure pervades our very experience of time and social existence' Carr, _Time, Narrative, and History_, 1986
+
+"Museums convey authority through their existence." Wyman et al 2011
+
+<aside class="notes"><p>story is told through movement in a museum or historic site. what comes first, what view is framed... eg how king&#39;s landing, upper canada village frame the travel-back-in-time transition/liminal space between the parking lot and the park. think of how fort henry used to do that vs what they do now (literally splitting one part of the fort off as &#39;not museum&#39; but &#39;money maker&#39;)</p>
+<p>maybe discuss:
+<a href="https://www.thestar.com/news/gta/2016/11/09/rom-apologizes-for-racist-1989-african-exhibit.html">https://www.thestar.com/news/gta/2016/11/09/rom-apologizes-for-racist-1989-african-exhibit.html</a></p>
+<p>wyman: 
+<a href="https://onlinelibrary.wiley.com/doi/pdf/10.1111/j.2151-6952.2011.00110.x?casa_token=anPmUESm_toAAAAA:JqPhrpgTAmKfH5ISV7_N_x1ECB5Zp5PTNiSTxa89iQFe494p_Z83K4U4jbZ8-7iqhvvhZPG27A0FIiPJ">https://onlinelibrary.wiley.com/doi/pdf/10.1111/j.2151-6952.2011.00110.x?casa_token=anPmUESm_toAAAAA:JqPhrpgTAmKfH5ISV7_N_x1ECB5Zp5PTNiSTxa89iQFe494p_Z83K4U4jbZ8-7iqhvvhZPG27A0FIiPJ</a></p>
+</aside></script></section><section  data-markdown><script type="text/template">
+Ok, fair enough, right? The question then becomes: how do digital technologies complicate this, and where might we find enchantment in this?
+
+<aside class="notes"><p>&#39;The most widely implemented and traditional of these types is the <em>passive linear nodal narrative</em> structure, while <em>active multilinear, nodal networks</em> and <em>emergent narratives</em> are less widely implemented. This article seeks to analyse what kind of engagement a variety of narrative structures facilitate in heritage spaces; how these narrative forms shape the relationship between the creator, media and consumer; and how digital media and interactive technology affordances are being leveraged within this design.&#39;
+Copplestone &amp; Dunne - <a href="https://intarch.ac.uk/journal/issue44/2/index.html">https://intarch.ac.uk/journal/issue44/2/index.html</a></p>
+</aside></script></section><section  data-markdown><script type="text/template">
+<aside class="notes"><p>&quot;the media form one chooses to create, store or present data or ideas in dictates how the narratives can manifest, thus in turn making the media form reflexively and irrevocably bound to the instance of the narrative under consideration&quot; - Copplestone &amp; Dunne</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+<split even>
+<p style="line-height: 0" class="reset-paragraph image-paragraph"><img src="https://intarch.ac.uk/journal/issue44/2/images/figure2.gif" alt="Image|300" style="width: 300px" class="fragment"></img></p>
+
+<p style="line-height: 0" class="reset-paragraph image-paragraph"><img src="https://intarch.ac.uk/journal/issue44/2/images/figure3.gif" alt="Image|300" style="width: 300px" class="fragment"></img></p>
+
+</split>
+
+<small>Kinds of narrative structures, within a museum. Audience is in blue, options are in green. <br> Copplestone, T. and Dunne, D. 2017 Digital Media, Creativity, Narrative Structure and Heritage, Internet Archaeology 44. https://doi.org/10.11141/ia.44.2</small>
+
+<aside class="notes"><p>1 linear nodal narrative progression.
+2 interaction within a nodal network structure.</p>
+</aside></script></section><section  data-markdown><script type="text/template"><split even>
+<p style="line-height: 0" class="reset-paragraph image-paragraph"><img src="https://intarch.ac.uk/journal/issue44/2/images/figure4.gif" alt="Image|300" style="width: 300px" class="fragment"></img></p>
+
+<p style="line-height: 0" class="reset-paragraph image-paragraph"><img src="https://intarch.ac.uk/journal/issue44/2/images/figure5.gif" alt="Image|300" style="width: 300px" class="fragment"></img></p>
+
+<p style="line-height: 0" class="reset-paragraph image-paragraph"><img src="https://intarch.ac.uk/journal/issue44/2/images/figure7.gif" alt="Image|300" style="width: 300px" class="fragment"></img></p>
+
+</split>
+
+<small>Kinds of narrative structures, that leverage media affordances. Audience is in blue, options are in green. <br> Copplestone, T. and Dunne, D. 2017 Digital Media, Creativity, Narrative Structure and Heritage, Internet Archaeology 44. https://doi.org/10.11141/ia.44.2</small>
+
+<aside class="notes"><p>3 active multilinear nodal narrative schema - interactive fiction a la twine, ren&#39;py
+4 foldback form of active multilinear nodal narratives. - fiction more like Ink, inkle, fallen london.
+5 active emergent narrative as facilitated through a system. </p>
+<p>remember also that emergence can be a site of enchantment. remember ABM too.</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+Voices Recognition
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wAdbynt4gyw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<aside class="notes"><p>an example of the emergent narrative. copplestone &amp; dunne write of their digital media performance piece &#39;clifford&#39;s tower&#39;, that used emergent features in a one-off performance &#39;the narrative progression in any given run of <em>Clifford&#39;s Tower: Voices</em> is entwined with the audience (past and present)&#39;</p>
+<p>&quot;the digital system that interfaced between the performers, the visualisation and the application used by the audience, was designed to log and map responses (both other audience perspectives and statements from expert sources). To this end each narrative pathway generated by the system would be informed by the links and networks that related interpretations, comments, artefacts and data. This system-generated narrative could create pathways, for example, that pulled all the different audience ideas about how it might have felt to inhabit the Tower during the 13th century, and align those against database images, reconstructions or a variety of expert interpretations - allowing a space for multivocality and discussion to manifest.&quot;</p>
+<p>...thus: ttrpgs!!</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+Another example - Ghosts in the Garden
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MsbBkcfdmbw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</script></section><section  data-markdown><script type="text/template">
+The point: 
+
+"certain media forms facilitate or prohibit certain narrative structures, but change in the media form does not directly correlate to change in narrative structure itself"
+
+<aside class="notes"><p>point is to get them to think about the actual structure of the experience, not the gee-whiz tech; so many &#39;digital&#39; implementations of storytelling are just souped-up treasure hunts overlaid on the more fundamental storytelling experience - which is achieved through movement.</p>
+<ul>
+<li>passive linear progression: good for &#39;authority&#39;, keeping the &#39;teller&#39; in a position of power (think again about Ikea...</li>
+<li>&#39;active nodal networks&#39;: &quot;the nodal network structure is incredibly effective for telling collages of information that are loosely linked, but not necessarily contingent or affective to each other. In other words, it is a structure which can tell <em>many</em> stories about the past as a collage of discrete events, yet it struggles to demonstrate processes, relationships or connections within or between narrative sections&quot;. &quot;it highlights a popular practice in wider heritage implementations of digital media and digital creativity – that digital media is often used to render existing structures, ideas and practices&quot;</li>
+</ul>
+</aside></script></section><section  data-markdown><script type="text/template">
+The point part 2: 
+
+multivocality and reflexive engagement emerge _through replay_. We move from **the** story to **a** story to many **stories**
+
+<aside class="notes"><p>send them out to find &#39;digital storytelling museums&#39; to see &amp; classify what they find? classify according to what?</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+The movement from passive consumer to active creator is an opportunity for enchantment.
+</script></section><section  data-markdown><script type="text/template">
+Sound, listening and the queer art of history
+
+<aside class="notes"><p>Evans article - get them to discuss that, explain to each other, then to a larger group, then everyone?</p>
+<ul>
+<li>how do evans&#39; case studies fit with what we&#39;ve been discussing?</li>
+</ul>
+</aside></script></section></div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/zoom/zoom.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/math/math.js"></script>
+	<script src="plugin/mermaid/mermaid.js"></script>
+	<script src="plugin/chart/chart.min.js"></script>
+	<script src="plugin/chart/plugin.js"></script>
+	<script src="plugin/menu/menu.js"></script>
+	<script src="plugin/customcontrols/plugin.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+	  function isLight(color) {
+		let hex = color.replace('#', '');
+
+		// convert #fff => #ffffff
+		if(hex.length == 3){
+			hex = `${hex[0]}${hex[0]}${hex[1]}${hex[1]}${hex[2]}${hex[2]}`;
+		}
+
+		const c_r = parseInt(hex.substr(0, 2), 16);
+		const c_g = parseInt(hex.substr(2, 2), 16);
+		const c_b = parseInt(hex.substr(4, 2), 16);
+		const brightness = ((c_r * 299) + (c_g * 587) + (c_b * 114)) / 1000;
+		return brightness > 155;
+	}
+
+	var bgColor = getComputedStyle(document.documentElement).getPropertyValue('--r-background-color').trim();
+
+	if(isLight(bgColor)){
+		document.body.classList.add('has-light-background');
+	} else {
+		document.body.classList.add('has-dark-background');
+	}
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealZoom,
+          RevealNotes,
+          RevealMath.MathJax3,
+		  RevealMermaid,
+		  RevealChart,
+		  RevealCustomControls,
+		  RevealMenu,
+        ],
+
+		mathjax3: {
+			mathjax: 'plugin/math/mathjax/tex-mml-chtml.js',
+		},
+
+		customcontrols: {
+			controls: [
+				{id: 'toggle-overview',
+				title: 'Toggle overview (O)',
+				icon: '<i class="fa fa-th"></i>',
+				action: 'Reveal.toggleOverview();'
+				},
+			]
+		},
+		menu: {
+			loadIcons: false
+		}
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal().getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"width":960,"height":700,"margin":0.04,"controls":true,"progress":true,"slideNumber":true,"transition":"slide","transitionSpeed":"default"}, queryOptions);
+    </script>
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
