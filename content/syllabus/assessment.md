@@ -32,7 +32,7 @@ Nor do you have to make a repository 'public'; you may set the repo to 'private'
 
 ## Example Repos and Vaults
 
-An example github repository showing the structure to follow for depositing your interestitial work online is [here](https://github.com/shawngraham/hist3812-f22/blob/main/static/obsidian/hist3812-obsidian-course-handbook.zip). 
+An example github repository showing the structure to follow for depositing your interestitial work online is [here](https://github.com/shawngraham/hist3812-starter). 
 
 The organization of the layout for your unessay will depend on the form it takes. You might wish to use [this vault for Obsidian](https://github.com/shawngraham/obsidian-game-design-vault) to organize the development of your Unessay. NB a 'vault' = 'folder of text files.' Download that folder, and use [Obsidian](https://obsidian.md) to explore/modify it.
 
