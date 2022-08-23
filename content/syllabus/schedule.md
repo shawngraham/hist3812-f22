@@ -59,7 +59,7 @@ Information about 'paradata' can be found [here, section 4.6](http://www.londonc
 
 Oct 3 & Oct 5 - We will explore [Twine](https://twinery.org) and [Ren'Py](https://www.renpy.org/) on these two dates. Twine runs in the browser. Have Ren'Py installed on a computer. If you don't have one, pair up with someone in the class who does. If access to a machine of some sort presents an obstacle, please let me know before this date and we'll figure out something together.
 
-Before class on October 3rd, read [Interactive Fiction in the Humanities Classroom](https://programminghistorian.org/en/lessons/interactive-text-games-using-twine), a Programming Historian tutorial by Gabi Kiriloff. I will also share with you some graduate work in history that revolves around making games ([Emslie's](https://cuhistory.github.io/grads/items/hist_339.html) and [Cronkite's.](https://cuhistory.github.io/grads/items/hist_2.html))
+Before class on October 3rd, read [Interactive Fiction in the Humanities Classroom](https://programminghistorian.org/en/lessons/interactive-text-games-using-twine), a Programming Historian tutorial by Gabi Kiriloff. I will also share with you some graduate work in history that revolves around making games ([Emslie's](https://hist3812.netlify.app/slides/Jenna_K_Emslie_MRE_in_PH_Sept2021.pdf) and [Cronkite's.](https://cuhistory.github.io/grads/items/hist_2.html))
 
 Take a Wikipedia article for some historic event that captures your imagination. We'll storyboard and consider how to express the story via these two different platforms (taking into account what we've discussed in prior meetings).
 
