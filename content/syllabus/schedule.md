@@ -59,7 +59,7 @@ Information about 'paradata' can be found [here, section 4.6](http://www.londonc
 
 Oct 3 & Oct 5 - We will explore [Twine](https://twinery.org) and [Ren'Py](https://www.renpy.org/) on these two dates. Twine runs in the browser. Have Ren'Py installed on a computer. If you don't have one, pair up with someone in the class who does. If access to a machine of some sort presents an obstacle, please let me know before this date and we'll figure out something together.
 
-Before class on October 3rd, read [Interactive Fiction in the Humanities Classroom](https://programminghistorian.org/en/lessons/interactive-text-games-using-twine), a Programming Historian tutorial by Gabi Kiriloff.
+Before class on October 3rd, read [Interactive Fiction in the Humanities Classroom](https://programminghistorian.org/en/lessons/interactive-text-games-using-twine), a Programming Historian tutorial by Gabi Kiriloff. I will also share with you some graduate work in history that revolves around making games ([Emslie's](https://cuhistory.github.io/grads/items/hist_339.html) and [Cronkite's.](https://cuhistory.github.io/grads/items/hist_2.html))
 
 Take a Wikipedia article for some historic event that captures your imagination. We'll storyboard and consider how to express the story via these two different platforms (taking into account what we've discussed in prior meetings).
 
@@ -145,7 +145,8 @@ Your **Reflection** will include your thoughts on all of the work in this module
 + Nov 28 - **Games that Play Themselves**
   - Have read for today:
     - Graham, S. 2017.'On Games that Play Themselves: Agent based models, archaeogaming, and the useful deaths of digital Romans' in Mol et al., eds. The Immersive Past, 123-132. [link](https://www.sidestone.com/openaccess/9789088904363.pdf).
-    - Copplestone, T. Designing and Developing a Playful Past in Video Games. in Mol, et al., eds. The Immersive Past, 85-98 [link](https://www.sidestone.com/openaccess/9789088904363.pdf)
+    - CSzczepanska, T., Angourakis, A., Graham, S., Borit, M. 2022. Quantum Leaper: A Methodology Journey From a Model in NetLogo to a Game in Unity. In: Czupryna, M., Kamiński, B. (eds) Advances in Social Simulation. Springer Proceedings in Complexity. Springer, Cham. [link](https://doi.org/10.1007/978-3-030-92843-8_15)
+    - optional: read [this](https://dlib.nyu.edu/awdl/isaw/isaw-papers/22-3/) if you're interested in an example moving from an agent based model to a board game
 + Nov 30 - [Netlogo](https://ccl.northwestern.edu/netlogo/) and its demo models: where is the story?
 
 `******************************`
