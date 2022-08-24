@@ -17,7 +17,7 @@ The course is divided into three parts, with three interstitial weeks where we b
 + Sept 20 - Last day for registration & course changes **If you join the class late, please contact Prof. Graham**.
 + Oct 10 - Holiday
 + Oct 24 - 28 Fall break
-+ Nov 15 - Last day for academic withdrawal
++ Nov 11 - Last day for academic withdrawal with full fee adjustment
 + Dec 9 - End of term
 
 # Module 1: Storytelling
@@ -51,7 +51,7 @@ Information about 'paradata' can be found [here, section 4.6](http://www.londonc
     - McCall, Jeremiah. 2019. Playing with the past: history and video games (and why it might matter) _Journal of Geek Studies_ [link](https://jgeekstudies.org/2019/04/22/playing-with-the-past-history-and-video-games-and-why-it-might-matter/)
     - Copplestone, Tara. 2017. Designing and Developing a Playful Past in Video Games, in Mol et al. eds, _The Interactive Pasts_. 85-97. [link](https://www.sidestone.com/openaccess/9789088904363.pdf)
     - Jayanth, Meghna. 2021. White Protagonism and Imperial Pleasures in Game Design #DIGRA21 Keynote. [link](https://medium.com/@betterthemask/white-protagonism-and-imperial-pleasures-in-game-design-digra21-a4bdb3f5583c)
-+ Sept 27: We'll play some [Action Castle](http://www.memento-mori.com/), and we'll also try some 'storytelling' games.
++ Sept 28: We'll play some [Action Castle](http://www.memento-mori.com/), and we'll also try some 'storytelling' games.
 
 `******************************`
 
