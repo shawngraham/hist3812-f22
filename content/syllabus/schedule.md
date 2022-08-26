@@ -161,12 +161,14 @@ Your **Reflection** will include your thoughts on all of the work in this module
 
 > Upload your Reflection, Log, and Ephemera for Interstitial Work 2 to your Github Repository by the end of this week (Sunday night); **notify me** that you have done so using the form at [this link](https://forms.gle/hFzXKvMku23AuY9XA).
 
+Dec 9th: This is a Friday, last one of the year and so follows a Monday schedule. We'll keep this date in reserve in case of interruptions or other necessities; I will let you know what is happening on this day as we get closer to it.
+
 `******************************`
 
 # Take Home Exam
 
 There is no take home exam in the sense of a bunch of questions to answer. But we'll say that there is; that way, you can submit your Unessay during the Examination period.
 
-Submit by Dec 17 please.
+Due December 22nd.
 
 > Upload all materials to your Github Repo or elsewhere as appropriate to the format of your Unessay, and notify me that you have done so using the form at [this link](https://forms.gle/hFzXKvMku23AuY9XA).
