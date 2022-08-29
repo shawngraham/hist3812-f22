@@ -14,11 +14,23 @@ According to section 2 of FASS Undergraduate Teaching Regulations and Procedures
 
 # Grade Breakdown
 
-+ in-class activities: satisfactory/unsatisfactory. These are normally on the second session in a given week. I am looking to see that you are participating in good faith. A habit of 'unsatisfactory' interactions will result in a conversation and perhaps, if necessary, penalty on the final unessay of 10%.
++ in-class activities: see 'engagement' below
 + interstitial 1: 10%
 + interstitial 2: 20%
 + interstitial 3: 30%
 + unessay:  40%
+
+## Engagement
+
+I'm not grading 'participation'. Instead, I'm recommending that you come to class **engaged**. (Thank you to [Mark Sample](https://twitter.com/samplereality/status/1564016056208949249) for sharing his thoughts on what engagement means). Let's understand 'engagement' to mean things like - 
+- you've read and thought about the readings
+- you've put your phone away, you've turned off notifications while we meet
+- you listen actively to your comrades when they speak (you **hear** them, including what *isn't* said, rather than use the time to think up what _you'll_ say)
+- you refer to specific examples from the readings, the discussions
+- you make connections between what you hear, read, say, and do
+- you practice [scholarly generosity](https://kfitz.info/generous-thinking-introduction/)
+
+Engagement isn't graded, either. If you're engaged, it'll show up in your other work. If you're not, that'll show up too. Your move.
 
 ## Real Names Policy
 
@@ -86,3 +98,9 @@ The unessay will be assessed on how compelling and effective it is (following Pa
 > + it is readable/watchable/listenable (i.e. the production values are appropriately high and the audience is not distracted by avoidable lapses in presentation)
 > + it is appropriate (i.e. it uses a format and medium that suits its topic and approach)
 > + it is attractive (i.e. it is presented in a way that leads the audience to trust the author and his or her arguments, examples, and conclusions).
+
+You might ask, 'can I collaborate on graded things?' Your interstitials are meant to be done by you alone but I fully expect that your ideas will emerge in discussion with other people: in that case, you would cite/acknowledge that interaction in your work you submit. 
+
+You are free to collaborate on the Unessay – even with someone outside of this course. 
+
+**BUT** you must fully document and discuss the complete nature of the collaboration, and demonstrate in what you submit to me that the work is equitable, appropriately apportioned, and that your contributions meet the goals of the exercise.  Therefore, every member of a collaborative group, vis-à-vis the Unessay, must make a submission.

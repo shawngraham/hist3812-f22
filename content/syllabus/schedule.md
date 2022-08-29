@@ -46,7 +46,7 @@ Information about 'paradata' can be found [here, section 4.6](http://www.londonc
 + Sept 21: Visual storytelling on the web with [Mural](https://getmural.io). Download and install prior to class.
 
 ## M1.3
-+ Sept 26: **Storytelling in Games (Video, Board, AR, ARGS)**.
++ Sept 26: **Storytelling in Games (Video, Board, AR, ARGS)**. Guest visit with Dany Guay-Belanger, Université de Montréal.
   - Have read for today:
     - McCall, Jeremiah. 2019. Playing with the past: history and video games (and why it might matter) _Journal of Geek Studies_ [link](https://jgeekstudies.org/2019/04/22/playing-with-the-past-history-and-video-games-and-why-it-might-matter/)
     - Copplestone, Tara. 2017. Designing and Developing a Playful Past in Video Games, in Mol et al. eds, _The Interactive Pasts_. 85-97. [link](https://www.sidestone.com/openaccess/9789088904363.pdf)
