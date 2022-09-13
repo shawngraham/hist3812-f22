@@ -45,7 +45,7 @@ Information about 'paradata' can be found [here, section 4.6](http://www.londonc
     - Evans, Jennifer. 2018. 'Sound, listening and the queer art of history' _Rethinking History_ 22.1: 25-43. [link](https://journals-scholarsportal-info.proxy.library.carleton.ca/details/13642529/v22i0001/25_latqaoh.xml)
     - Bedford, Leslie. ‘Storytelling: The Real Work of Museums’. _Curator: The Museum Journal_, vol. 44, no. 1, Jan. 2001, pp. 27–34. DOI.org (Crossref), https://doi.org/10.1111/j.2151-6952.2001.tb00027.x.
     - Sylaiou, & Dafiotis, P. (2020). Storytelling in Virtual Museums: Engaging A Multitude of Voices. In Visual Computing for Cultural Heritage (pp. 369–388). Springer International Publishing. [via MacOdrum Library](https://ocul-crl.primo.exlibrisgroup.com/permalink/01OCUL_CRL/1ortgfo/cdi_springer_books_10_1007_978_3_030_37191_3_19); Chapter 19 (link will get you the whole volume).
-+ Sept 21: Visual storytelling on the web with [Mural](https://getmural.io). Download and install prior to class.
++ Sept 21: Visual storytelling on the web with [Mural](https://www.getmural.io/). Download and install prior to class.
 
 ## M1.3
 + Sept 26: **Storytelling in Games (Video, Board, AR, ARGS)**. Guest visit with Dany Guay-Belanger, Université de Montréal.
