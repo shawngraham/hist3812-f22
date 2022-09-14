@@ -6,6 +6,10 @@ draft: false
 weight: 10
 ---
 
+{{< rawhtml >}}
+<img src="/images/pixeltrue-idea-1.png" align="right" width="30%"></img>
+{{< /rawhtml >}} Some more guidance regarding getting Obsidian set up.
+
 
 ## Using simple templates
 
@@ -28,7 +32,9 @@ If you downloaded the [Course Handbook Vault](https://github.com/shawngraham/his
 
 However, it might be that those extras did not get installed properly (due to security settings etc). You can check to see if they installed when you first opened this vault by clicking on the 'settings', then 'community plugins', then scrolling down to see what plugins are installed:
 
+{{< rawhtml >}}
 <img src="/images/what-plugins-installed.png">
+{{< /rawhtml >}}
 
 You should see: Templater; Zotero Integration; Tag Navigator. No worries if you don't. Here's what you do to get them going.
 
@@ -42,20 +48,27 @@ You should see: Templater; Zotero Integration; Tag Navigator. No worries if you 
 
 Now, hit the 'x' button to close the dialogue. Let's test it out. Hit ctrl+p or cmd+p to bring up the command palette. Type 'templater' and select:
 
+{{< rawhtml >}}
 <img src="/images/templater1.png">
+{{< /rawhtml >}}
 
 It will look in your `_complex-templates` folder, and see that you've got two options; select `hypothesis`
 
+{{< rawhtml >}}
 <img src="/images/templater2.png">
+{{< /rawhtml >}}
 
 The first time you run it, it will ask you for your Hypothesis developer key. 
 
+{{< rawhtml >}}
 <img src="/images/templater2.5.png">
+{{< /rawhtml >}}
 
 Log into Hypothesis in your web browser, go to your 'settings' and select 'developer'. Copy the key, paste it in. The box will change:
 
-
+{{< rawhtml >}}
 <img src="/images/templater3.png">
+{{< /rawhtml >}}
 
 ...and every time you run the hypothesis command again, you'll jump to this box. Select what you want to do; it will ask you for the URL etc.
 
@@ -73,9 +86,11 @@ This depends on you having Zotero installed on your machine, and the [Better Bib
 
 Under 'Import Formats' have everything set up like this:
 
+{{< rawhtml >}}
 <img src="/images/zot1.png">
 
 <img src="/images/zot2.png">
+{{< /rawhtml >}}
 
 Now test it out. Hit ctrl+p or cmd+p to bring up the command palette.
 
