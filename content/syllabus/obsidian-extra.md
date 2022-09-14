@@ -6,6 +6,22 @@ draft: false
 weight: 3
 ---
 
+
+## Using simple templates
+
+A 'template' is just a note file that you insert into a new note to provide you with guidance. In the course handbook vault, these are in the `_simple_templates` folder. Try it out:
+
+Hit ctrl+n or cmd+n to make a new note.
+
+Hit ctrl+p or cmd+p to open the command pallete; search 'templates: insert template'.
+
+Select the template you want to use. Boom! Consistent headings and metadata and hints all laid out for you.
+
+
+## Remember to look for links.
+
+Use the back links and outgoing links pane (arrow on the right hand side of the interface) to see what and how a note links out. If you don't see this pane, go to settings, core plugins, and turn on 'backlinks' and 'outgoing links'. See also my slides from [sept 14](https://hist3812.netlify.app/slides/sept14.html).
+
 ## Configuring Your Obsidian Vault
 
 If you downloaded the [Course Handbook Vault](https://github.com/shawngraham/hist3812-f22/blob/main/static/obsidian/hist3812-obsidian-course-handbook.zip), unzipped it (Windows users: right-click, select 'extract all'; double clicking to peak inside is not the right option!), you might be interested in using some of the 'extras' I configured.
