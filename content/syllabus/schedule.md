@@ -40,7 +40,7 @@ Information about 'paradata' can be found [here, section 4.6](http://www.londonc
 + Sept 14: Tech Check-in; Obsidian; GDD; and we might play some 'barely' games, maybe also play ['Domino City'](https://ewanmatthews.itch.io/domino-city). What stories might we tell using this system? [My slides from today.](https://hist3812.netlify.app/slides/sept14.html). See also this new page: [Obsidian Extra](https://hist3812.netlify.app/syllabus/obsidian-extra/).
 
 ## M1.2
-+ Sept 19: **Storytelling in Museums and other sites of Public History**.
++ Sept 19: **Storytelling in Museums and other sites of Public History**. [My slides from today.](https://hist3812.netlify.app/slides/sept19.html).
   - Have read for today:
     - Evans, Jennifer. 2018. 'Sound, listening and the queer art of history' _Rethinking History_ 22.1: 25-43. [link](https://journals-scholarsportal-info.proxy.library.carleton.ca/details/13642529/v22i0001/25_latqaoh.xml)
     - Bedford, Leslie. ‘Storytelling: The Real Work of Museums’. _Curator: The Museum Journal_, vol. 44, no. 1, Jan. 2001, pp. 27–34. DOI.org (Crossref), https://doi.org/10.1111/j.2151-6952.2001.tb00027.x.
@@ -53,13 +53,13 @@ Information about 'paradata' can be found [here, section 4.6](http://www.londonc
     - McCall, Jeremiah. 2019. Playing with the past: history and video games (and why it might matter) _Journal of Geek Studies_ [link](https://jgeekstudies.org/2019/04/22/playing-with-the-past-history-and-video-games-and-why-it-might-matter/)
     - Copplestone, Tara. 2017. Designing and Developing a Playful Past in Video Games, in Mol et al. eds, _The Interactive Pasts_. 85-97. [link](https://www.sidestone.com/openaccess/9789088904363.pdf)
     - Jayanth, Meghna. 2021. White Protagonism and Imperial Pleasures in Game Design #DIGRA21 Keynote. [link](https://medium.com/@betterthemask/white-protagonism-and-imperial-pleasures-in-game-design-digra21-a4bdb3f5583c)
-+ Sept 28: We'll play some [Action Castle](http://www.memento-mori.com/), and we'll also try some 'storytelling' games.
++ Sept 28: We'll play some [Action Castle](http://www.memento-mori.com/), and we'll also try some 'storytelling' games. Or maybe we'll make a twitterbot with [Tracery.io](https://tracery.io) and [Cheap Bots Done Quick!](https://cheapbotsdonequick.com/). Could go either way. 
 
 `******************************`
 
 # Interstitial 1
 
-Oct 3 & Oct 5 - We will explore [Twine](https://twinery.org) and [Ren'Py](https://www.renpy.org/) on these two dates. Twine runs in the browser. Have Ren'Py installed on a computer. If you don't have one, pair up with someone in the class who does. If access to a machine of some sort presents an obstacle, please let me know before this date and we'll figure out something together.
+Oct 3 & Oct 5 - We will explore [Twine](https://twinery.org) and [Ren'Py](https://www.renpy.org/) on these two dates. Twine runs in the browser. Have Ren'Py installed on a computer. If you don't have one, pair up with someone in the class who does. If access to a machine of some sort presents an obstacle, please let me know before this date and we'll figure out something together. Ren'Py has quite a steep curve, so maybe we'll focus on storytelling via a [twitterbots](https://programminghistorian.org/en/lessons/intro-to-twitterbots) (a tutorial by me, in the Programming Historian).
 
 Before class on October 3rd, read [Interactive Fiction in the Humanities Classroom](https://programminghistorian.org/en/lessons/interactive-text-games-using-twine), a Programming Historian tutorial by Gabi Kiriloff. I will also share with you some graduate work in history that revolves around making games ([Emslie's](https://hist3812.netlify.app/slides/Jenna_K_Emslie_MRE_in_PH_Sept2021.pdf) and [Cronkite's.](https://cuhistory.github.io/grads/items/hist_2.html))
 
