@@ -65,7 +65,15 @@ Before class on October 3rd, read [Interactive Fiction in the Humanities Classro
 
 Take a Wikipedia article for some historic event that captures your imagination. We'll storyboard and consider how to express the story via these two different platforms (taking into account what we've discussed in prior meetings).
 
-Your **Reflection** will include your thoughts on all of the work in this module; tie what you've read and heard  to what you've done. What is the main message of this module? How does it connect with your ideas for your Unessay? Your **Log** will be your record of your digital work in this module (including any Unessay work) - hiccups, successes, help found, help given. **Ephemera** is anything else you want to keep a record of, files created, screenshots, whatever.
+Your **Reflection** will include your thoughts on all of the work in this module; tie what you've read and heard  to what you've done. Some questions to help kick-start your reflection (you don't have to answer these in order; they're meant to show you the direction your thoughts ought to take)
+
++ What is the main message of this module?
++ What themes connect the various lectures/presentations/activities in module 1?
++ How does Belanger’s vision of what a game is, affect or intersect with the ideas we've discussed with regard to ‘storytelling’? 
++ What is the one most surprising thing about this module that has changed how you think about how we ‘do’ history?
++ How does it connect with your ideas for your Unessay? 
+
+Your **Log** will be your record of your digital work in this module (including any Unessay work) - hiccups, successes, help found, help given. **Ephemera** is anything else you want to keep a record of, files created, screenshots, whatever.
 
 > Upload your Reflection, Log, and Ephemera for Interstitial Work 1 to your Github Repository by the end of this week (Sunday night); **notify me** that you have done so using the form at [this link](https://forms.gle/hFzXKvMku23AuY9XA).
 
