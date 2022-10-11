@@ -105,7 +105,7 @@ Your **Log** will be your record of your digital work in this module (including 
 + Oct 31 - **Studying Play**
   - Have read for today:
     - McCall, Jeremiah. 2020. ['The Historical Problem Space Framework: Games as Historical Medium'](http://gamestudies.org/2003/articles/mccall) _Game Studies_ 20.3.
-    - Jayanth, Meghna. 2022. 'Game Design in the Imperial Mode #CGSA 2022' [Keynote, Canadian Game Studies Association 2022](https://medium.com/@betterthemask/game-design-in-the-imperial-mode-cgsa-2022-e5a9a6a57859) (You might also want to read/watch their 2021 DIGRA piece, 'White Protagonism and Imperial Pleasures in Game Design' [here](https://medium.com/@betterthemask/white-protagonism-and-imperial-pleasures-in-game-design-digra21-a4bdb3f5583c).)
+    - Jayanth, Meghna. 2022. 'Game Design in the Imperial Mode #CGSA 2022' [Keynote, Canadian Game Studies Association 2022](https://medium.com/@betterthemask/game-design-in-the-imperial-mode-cgsa-2022-e5a9a6a57859) 
 + Nov 2 - **The Historical Problem Space (HPS) Framework**
   - Have read for today:
     - Dream of Darkness, 2022. 'Can the Historical Problem Space framework help us make better history games?' [dreamofdarkness.com](https://www.dreamofdarkness.com/dev-journal/can-the-historical-problem-space-framework-help-us-make-better-history-games).
@@ -115,17 +115,20 @@ Your **Log** will be your record of your digital work in this module (including 
 `******************************`
 </div>
 
-# Interstitial 2
+# ~~Interstitial~~ Interlude 2
 
 Nov 7 & Nov 9
 
+_Why 'interlude'? Because 'interstitial' doesn't capture the spirit of what I want this week to be. I want it to be about playing around with things. A literal play within the middle._
+
+
 Before class, visit [Songs of the Ottawa](http://songsoftheottawa.ca/), explore the site and its sonifications, and read 'Introduction' and 'Why Sonification' in Wood's [MRE](http://songsoftheottawa.ca/content/CW%20MRE%20May%2014.pdf).
 
-In these two sessions, you will engage in some playful computing. We'll try some [sonification](https://programminghistorian.org/en/lessons/sonification). We'll try making some websites powered by the generative grammar engine [Tracery](https://tracery.io). (An example that we will 'fork' and you will adapt is at [Old Bones Daily](https://shawngraham.github.io/hj2017/).)
+In these two sessions, you will engage in some playful computing. We'll try some [sonification](https://programminghistorian.org/en/lessons/sonification). We'll work on our reflections together.
 
 Your **Reflection** will include your thoughts on all of the work in this module; tie what you've read and heard  to what you've done. What is the main message of this module? How does it connect with your ideas for your Unessay? Your **Log** will be your record of your digital work in this module (including any Unessay work) - hiccups, successes, help found, help given. **Ephemera** is anything else you want to keep a record of, files created, screenshots, whatever.
 
-> Upload your Reflection, Log, and Ephemera for Interstitial Work 2 to your Github Repository by the end of this week (Sunday night); **notify me** that you have done so using the form at [this link](https://forms.gle/hFzXKvMku23AuY9XA).
+> Upload your Reflection, Log, and Ephemera for ~~Interstitial~~ Interlude Work 2 to your Github Repository by the end of this week (Sunday night); **notify me** that you have done so using the form at [this link](https://forms.gle/hFzXKvMku23AuY9XA).
 
 <div align="center">
 `******************************`
@@ -139,7 +142,7 @@ Your **Reflection** will include your thoughts on all of the work in this module
     - Reed, Aaron. 2021. '2017: The Oregon Trail' _50 Years of Text Games_ [link](https://if50.substack.com/p/1971-the-oregon-trail?s=r)
     - Reed, Aaron. 2021. '2019: A.I. Dungeon' _50 Years of Text Games_ [link](https://if50.substack.com/p/2019-ai-dungeon?s=r)
     - Dzieza, Josh. 2022. 'The Great Fiction of AI - The strange world of high-speed semi-automated genre fiction' _The Verge_ [link](https://www.theverge.com/c/23194235/ai-fiction-writing-amazon-kindle-sudowrite-jasper)
-+ Nov 16 Raising the Dead with GPT-2
++ Nov 16 **Raising the Dead with GPT-2**
   - Blog post & Google Colab notebook by Max Woolf [here](https://minimaxir.com/2019/09/howto-gpt2/). We'll raise the dead.
   - We'll also play some [AI Dungeon](https://play.aidungeon.io/main/home). Can we co-create with the machine an interesting historical experience?
   - We might try some [worldbuilding.](https://o-date.github.io/draft/book/computational-creativity.html)
@@ -161,7 +164,7 @@ Your **Reflection** will include your thoughts on all of the work in this module
 
 `******************************`
 
-# Interstitial 3
+# ~~Interstitial~~ Interlude 3
 
 Dec 5 & Dec 7
 
@@ -169,7 +172,7 @@ At this point, you should have made significant progress on your Unessays. Durin
 
 Your **Reflection** will include your thoughts on all of the work in this module; tie what you've read and heard  to what you've done. What is the main message of this module? How does it connect with your ideas for your Unessay? Your **Log** will be your record of your digital work in this module (including any Unessay work) - hiccups, successes, help found, help given. **Ephemera** is anything else you want to keep a record of, files created, screenshots, whatever.
 
-> Upload your Reflection, Log, and Ephemera for Interstitial Work 2 to your Github Repository by the end of this week (Sunday night); **notify me** that you have done so using the form at [this link](https://forms.gle/hFzXKvMku23AuY9XA).
+> Upload your Reflection, Log, and Ephemera for ~~Interstitial~~ Interlude Work 3 to your Github Repository by the end of this week (Sunday night); **notify me** that you have done so using the form at [this link](https://forms.gle/hFzXKvMku23AuY9XA).
 
 Dec 9th: This is a Friday, last one of the year and so follows a Monday schedule. We'll keep this date in reserve in case of interruptions or other necessities; I will let you know what is happening on this day as we get closer to it.
 
