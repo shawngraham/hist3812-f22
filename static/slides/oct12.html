@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title></title>
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/night.css" id="theme" />
+    <link rel="stylesheet" href="plugin/highlight/zenburn.css" />
+	<link rel="stylesheet" href="css/layout.css" />
+	<link rel="stylesheet" href="plugin/customcontrols/style.css">
+
+
+    <script defer src="dist/fontawesome/all.min.js"></script>
+
+	<script type="text/javascript">
+		var forgetPop = true;
+		function onPopState(event) {
+			if(forgetPop){
+				forgetPop = false;
+			} else {
+				parent.postMessage(event.target.location.href, "app://obsidian.md");
+			}
+        }
+		window.onpopstate = onPopState;
+		window.onmessage = event => {
+			if(event.data == "reload"){
+				window.document.location.reload();
+			}
+			forgetPop = true;
+		}
+
+		function fitElements(){
+			const itemsToFit = document.getElementsByClassName('fitText');
+			for (const item in itemsToFit) {
+				if (Object.hasOwnProperty.call(itemsToFit, item)) {
+					var element = itemsToFit[item];
+					fitElement(element,1, 1000);
+					element.classList.remove('fitText');
+				}
+			}
+		}
+
+		function fitElement(element, start, end){
+
+			let size = (end + start) / 2;
+			element.style.fontSize = `${size}px`;
+
+			if(Math.abs(start - end) < 1){
+				while(element.scrollHeight > element.offsetHeight){
+					size--;
+					element.style.fontSize = `${size}px`;
+				}
+				return;
+			}
+
+			if(element.scrollHeight > element.offsetHeight){
+				fitElement(element, start, size);
+			} else {
+				fitElement(element, size, end);
+			}		
+		}
+
+
+		document.onreadystatechange = () => {
+			fitElements();
+			if (document.readyState === 'complete') {
+				if (window.location.href.indexOf("?export") != -1){
+					parent.postMessage(event.target.location.href, "app://obsidian.md");
+				}
+				if (window.location.href.indexOf("print-pdf") != -1){
+					let stateCheck = setInterval(() => {
+						clearInterval(stateCheck);
+						window.print();
+					}, 250);
+				}
+			}
+	};
+
+
+        </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides"><section  data-markdown><script type="text/template">
+
+<!-- .slide: data-background-opacity="0.5" data-background-image="https://hist3812.netlify.app/images/illustrations/old-school-game-controller-vector.svg" -->
+
+<div align="right">
+
+#### Theories of Play
+
+### Playful Engagement With The Past
+#### HIST 3812
+Sept 12 w/ Dr. Graham
+
+</div>
+</script></section><section  data-markdown><script type="text/template">
+What is 'play', to an animal? What does it achieve?
+
+<aside class="notes"><p>drawing heavily on the work of C. Thi Nguyen today. Go read his stuff if I&#39;m not clear. What I want you to be thinking at every point though is <em>what does this mean in the context of doing good history?</em></p>
+</aside></script></section><section  data-markdown><script type="text/template">
+What is 'play', to a child? What does it achieve?
+</script></section><section  data-markdown><script type="text/template">
+the stories children tell when they play
+
+<aside class="notes"><p>Legos, playsets, action figures, dolls 
+(gendering play!) ...stories so critical...</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+nordic live action role playing
+</script></section><section  data-markdown><script type="text/template">
+Some frameworks.
+
+The purpose of a framework is to make differences and similarities clear, to enable comparison, and to arrive at the truth of a matter. 
+
+What are some playful frameworks? (Which isn't the same thing as saying they are fun.)
+</script></section><section  data-markdown><script type="text/template">
+Johan Huizinga, _Homo Ludens_ 1938
+
+<aside class="notes"><p>ludo, ludere - no exact english trnaslation - can be play, sport, school, practice, learning
+he notes, as we have, that play predates humanity
+play underpins civilization, for Huizinga, because from it emerges social processes and the idea that somethings are done in some contexts, and are limited to those context, rather than others. play is tied to ritual, to theatre, to law courts, to parliaments... places where the everyday is suspended</p>
+<ul>
+<li>important: what are we doing then when we &#39;play&#39; a game?</li>
+</ul>
+</aside></script></section><section  data-markdown><script type="text/template">
+The Magic Circle
+- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->play happens inside;
+- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->players take new roles, different rules, actions
+- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->consequences stay within the circle
+
+<aside class="notes"><p>before H, people thought of play as instrumental, a way of teaching children, or outlet for energy. H argues instead that play lies outside, direct oppposite of seriousness.</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+Criticisms
+
+- actions inside the circle _do_ have an impact on life
+</script></section><section  data-markdown><script type="text/template">
+Roger Caillois, 1961:
+
+- agon (competition)
+- mimesis (make-believe)
+- luck & gambling
+- vertigo & disorientation
+
+<aside class="notes"><p>these emerge from <em>paida</em> (&#39;free exploration &amp; discovery&#39;) - refinded through <em>ludus</em> (&#39;regulation and measurement&#39;)</p>
+<p>Nguyen: children rolling in mud: paida. Adults in a wrestling match: ludus</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+Bernard Suits, 1978:
+
+To play a game is to take up uneccesary obstacles for the sake of the activity
+
+Sid Meier, 1989:
+
+A game is a series of interesting decisions
+</script></section><section  data-markdown><script type="text/template">
+**Important: this is an inversion of means and ends.**
+
+<div align="left"><i>
+I want to put pucks in a net.<br><br>
+If that goal was valuable in itself, I'd just stand in front of the net and put pucks in.<br><br>
+Instead, I concoct an opposing team, and conditions under which I have to hit the puck with a piece of wood.<br> <br>
+</i></div></script></section><section  data-markdown><script type="text/template">
+## Life, the universe, and everything
+
+- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->if 'work' seeks to eliminate itself 
+- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->and games do not try to eliminate themselves 
+- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->when work ceases - utopia - only games remain. 
+- &shy;<!-- .element: class="fragment" data-fragment-index="4" -->therefore, games are the purpose of life.
+
+<aside class="notes"><p>Suits&#39; argument also implies that games are the purpose of life</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+games/play - analyzed through narrative
+
+games/play - analyzed through art
+
+games/play - analyzed as sport
+</script></section><section  data-markdown><script type="text/template">
+## Narrative
+
+all you need to know about 'narratology' versus 'ludology'
+- the first applied the tools of narrative analysis to games
+- the second say the first were too strict in this application and didn't respect the unique features of (video) games
+</script></section><section  data-markdown><script type="text/template">
+narratives
+
+- story: chronology of events
+- discourse: the order in which those events emerge in the telling
+
+<aside class="notes"><p>we are told the narrative when we read, listen, or watch a story
+in games, a player enacts and creates the story</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+ludology - 
+- narratives are representations
+- games are simulations
+</script></section><section  data-markdown><script type="text/template">but
+
+- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->games are special
+- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->games have rules
+- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->games should be understood through the function of those rules
+</script></section><section  data-markdown><script type="text/template">
+Criticisms
+- sure, different, whatever, but the similarities to narrative are more important
+- and the similarities function the way various narrative tools do, even if we have to tweak'em a bit
+</script></section><section  data-markdown><script type="text/template">
+## Fiction theory
+(an example bringing narratological concepts to bear)
+
+- all engagements with representative artwork is a form of make-believe play
+- props for the imagination; in fiction, we use the props of words/games to imagine ourselves into mental states
+	- games can be seen as 'self-involving interactive fictions'
+	- the events of the game are true for the player as much as they are for the in-game avatar
+
+<aside class="notes"><p>this sidesteps the problem that the events and discourses can happen in any order at all wich is only a problem if you analyze games rigidly as a story.</p>
+<p>what does that imply for historical representation in games?</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+Roger Travis argues that video games - in particular first person shooters - really collapse the distinction b/w story & discourse 
+
+- and the distinction between 'reading' and 'playing' a story, in a way that harkens back to the origins of oral epics.
+</script></section><section  data-markdown><script type="text/template">
+
+Henry Jenkins: stop, you're too rigid. Narrative isn't a sequence of _events_, it's a sequence of _spaces_.
+
+- books deliver stories sequentially
+- games distribute information spatially
+	- explicitly ties game narratives to 'environmental storytelling' of architects eg at Disney World
+</script></section><section  data-markdown><script type="text/template">
+Ian Bogost:
+- games are simulations, can be used to represent real-world simulations
+- thus how you play with that simulation, can be read as a critique of that simulation
+- models aim at accuracy, while simulations aim for understanding
+</script></section><section  data-markdown><script type="text/template">
+Jesper Juul - games are _Half Real_
+- part fiction, part real
+- winning/losing - that's the real bit; the challenge
+	- thus the aesthetics of challenge
+		- progression v emergence
+		- progression: many rules/puzzles, can be solved with a walkthrough
+		- emergence: simple rules, many strategies
+
+<aside class="notes"><p>and thus the ludology / narratology debates have played themselves out</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+## Art?
+
+- if we think of computer-mediated play as _art_ we have to consider the relationship between the artist and audience
+- unfinished art, only completely realized through play, artist/audience collaborate
+- alternative: this confuses the art with its display; the art is finished, but the way it displays (is played) is what the audience explores, the possibility space
+
+<aside class="notes"><p>occurs to me that I have argued for both positions, the first in the context of games, the second in the context of agent models. And then I&#39;ve also argued that abm are games that play themselves... which a player can sometimes also enter into.</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+Some argue that this is still too ludological/narratological, and is prescriptive: this is how _you_ should interact with _games_
+
+What about glitches? cheats? deliberately breaking things, cheat codes? player fora? let's-play videos? twitch?
+
+<aside class="notes"><p>intersection with Dany&#39;s understanding of game. But maybe these aren&#39;t in tension, suggestions nguyen: one is about what it is like to play the game, the other is about interacting with software.</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+Which brings us back to the magic circle: 
+
+_the circle is porous._
+
+<aside class="notes"><p>approaches that really prioritize rulesets are called &#39;formalism&#39;; but critics say games are not &#39;formally fixed structures&#39; but ongoing processes in changing contexts.</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+Re-imaginging the magic circle, Jaakko Stenro:
+
+- the bubble
+	- which encompasses the arena
+		- which encompasses the magic circle intself
+
+<aside class="notes"><p>the bubble is a state of mind through which the person approaches play; the arena is a culturally recognized zone for play, and are the &#39;physical residues&#39; of play; then the magic circle. Thus we can see things like world of warcraft as merely the arena; the GAME is the arena, not the magic circle.</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+## Sport?
+
+- games are a variation of a social contract
+- designer sets rules, players consent to follow
+
+thus, analysis focusses on why/how one consents, and what norms might structure the activity
+
+<aside class="notes"><p>thus, from the rules, one can derive guiding values to infer what structured those rules, and so the purpose of the activity - ie, how sportsmanship emerges. This also gives us grounds to decide whether or how a rule might be changed or is valid.</p>
+<p>also, other approaches treat games as artifacts, but a perspective brought from sports brings us the idea of the game as a site for skilled activity. What is the implication here for history games? Games as a site for demonstraing one&#39;s ability as a historian/ What are the implications for rules? Rules must be crafted to permit the purpose of demonstrating historical thinking.</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+### Aesthetics
+- narrative/ludological approaches discussed today put the game artifact front and centre, and consider the game as an object of appreciation
+- sports puts the aesthetic on player action
+<br><br>
+- narrative/ludological approaches consider the aesthetic of player experience
+- sports examines the spectators' aesthetic experience
+
+<aside class="notes"><p>again, consider the implications for history games</p>
+</aside></script></section><section  data-markdown><script type="text/template">
+## NOW YOU
+
+- Nguyen goes on, in his book, to develop an idea that games are an art form, and their expressive medium is 'painting with agency'
+- Morgan considers what it means to have digital agency through the medium of the 'cyborg'
+- in the light of those readings, and today's talk, <br><br>sketch out an answer to the question: 
+	- **what might it mean to be able to 'play history'?**
+
+- this will become the kernal for your module 2 reflection. Talk it out with people around you.</script></section></div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script src="plugin/zoom/zoom.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/math/math.js"></script>
+	<script src="plugin/mermaid/mermaid.js"></script>
+	<script src="plugin/chart/chart.min.js"></script>
+	<script src="plugin/chart/plugin.js"></script>
+	<script src="plugin/menu/menu.js"></script>
+	<script src="plugin/customcontrols/plugin.js"></script>
+
+    <script>
+      function extend() {
+        var target = {};
+        for (var i = 0; i < arguments.length; i++) {
+          var source = arguments[i];
+          for (var key in source) {
+            if (source.hasOwnProperty(key)) {
+              target[key] = source[key];
+            }
+          }
+        }
+        return target;
+      }
+
+	  function isLight(color) {
+		let hex = color.replace('#', '');
+
+		// convert #fff => #ffffff
+		if(hex.length == 3){
+			hex = `${hex[0]}${hex[0]}${hex[1]}${hex[1]}${hex[2]}${hex[2]}`;
+		}
+
+		const c_r = parseInt(hex.substr(0, 2), 16);
+		const c_g = parseInt(hex.substr(2, 2), 16);
+		const c_b = parseInt(hex.substr(4, 2), 16);
+		const brightness = ((c_r * 299) + (c_g * 587) + (c_b * 114)) / 1000;
+		return brightness > 155;
+	}
+
+	var bgColor = getComputedStyle(document.documentElement).getPropertyValue('--r-background-color').trim();
+
+	if(isLight(bgColor)){
+		document.body.classList.add('has-light-background');
+	} else {
+		document.body.classList.add('has-dark-background');
+	}
+
+      // default options to init reveal.js
+      var defaultOptions = {
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'default', // none/fade/slide/convex/concave/zoom
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealZoom,
+          RevealNotes,
+          RevealMath.MathJax3,
+		  RevealMermaid,
+		  RevealChart,
+		  RevealCustomControls,
+		  RevealMenu,
+        ],
+
+		mathjax3: {
+			mathjax: 'plugin/math/mathjax/tex-mml-chtml.js',
+		},
+
+		customcontrols: {
+			controls: [
+				{id: 'toggle-overview',
+				title: 'Toggle overview (O)',
+				icon: '<i class="fa fa-th"></i>',
+				action: 'Reveal.toggleOverview();'
+				},
+			]
+		},
+		menu: {
+			loadIcons: false
+		}
+      };
+
+      // options from URL query string
+      var queryOptions = Reveal().getQueryHash() || {};
+
+      var options = extend(defaultOptions, {"width":960,"height":700,"margin":0.04,"controls":true,"progress":true,"slideNumber":true,"transition":"slide","transitionSpeed":"default"}, queryOptions);
+    </script>
+
+    <script>
+      Reveal.initialize(options);
+    </script>
+  </body>
+</html>
