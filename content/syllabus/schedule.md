@@ -53,13 +53,13 @@ Information about 'paradata' can be found [here, section 4.6](http://www.londonc
     - McCall, Jeremiah. 2019. Playing with the past: history and video games (and why it might matter) _Journal of Geek Studies_ [link](https://jgeekstudies.org/2019/04/22/playing-with-the-past-history-and-video-games-and-why-it-might-matter/)
     - Copplestone, Tara. 2017. Designing and Developing a Playful Past in Video Games, in Mol et al. eds, _The Interactive Pasts_. 85-97. [link](https://www.sidestone.com/openaccess/9789088904363.pdf)
     - Jayanth, Meghna. 2021. White Protagonism and Imperial Pleasures in Game Design #DIGRA21 Keynote. [link](https://medium.com/@betterthemask/white-protagonism-and-imperial-pleasures-in-game-design-digra21-a4bdb3f5583c)
-+ Sept 28: We'll play some [Action Castle](http://www.memento-mori.com/), and we'll also try some 'storytelling' games. Or maybe we'll make a twitterbot with [Tracery.io](https://tracery.io) and [Cheap Bots Done Quick!](https://cheapbotsdonequick.com/). Could go either way. 
++ Sept 28: We'll play some [Action Castle](http://www.memento-mori.com/), and we'll also try some 'storytelling' games. [Some slides too](https://hist3812.netlify.app/slides/sept28.html#/)
 
 `******************************`
 
 # Interstitial 1
 
-Oct 3 & Oct 5 - We will explore [Twine](https://twinery.org) and [Ren'Py](https://www.renpy.org/) on these two dates. Twine runs in the browser. Have Ren'Py installed on a computer. If you don't have one, pair up with someone in the class who does. If access to a machine of some sort presents an obstacle, please let me know before this date and we'll figure out something together. Ren'Py has quite a steep curve, so maybe we'll focus on storytelling via a [twitterbots](https://programminghistorian.org/en/lessons/intro-to-twitterbots) (a tutorial by me, in the Programming Historian).
+Oct 3 & Oct 5 - We will explore [Twine](https://twinery.org) and [Ren'Py](https://www.renpy.org/) on these two dates. Twine runs in the browser. Have Ren'Py installed on a computer. If you don't have one, pair up with someone in the class who does. If access to a machine of some sort presents an obstacle, please let me know before this date and we'll figure out something together. Ren'Py has quite a steep curve, so maybe we'll focus on storytelling via a [twitterbots](https://programminghistorian.org/en/lessons/intro-to-twitterbots) (a tutorial by me, in the Programming Historian). (Update - we made a twitterbot with [Tracery.io](https://tracery.io) and [Cheap Bots Done Quick!](https://cheapbotsdonequick.com/).)
 
 Before class on October 3rd, read [Interactive Fiction in the Humanities Classroom](https://programminghistorian.org/en/lessons/interactive-text-games-using-twine), a Programming Historian tutorial by Gabi Kiriloff. I will also share with you some graduate work in history that revolves around making games ([Emslie's](https://hist3812.netlify.app/slides/Jenna_K_Emslie_MRE_in_PH_Sept2021.pdf) and [Cronkite's.](https://cuhistory.github.io/grads/items/hist_2.html))
 
@@ -89,6 +89,8 @@ Your **Log** will be your record of your digital work in this module (including 
   - Have read for today:
     - Chapter 1 & 2, in [Nguyen, C. Thi. Games : Agency as Art. New York, NY: Oxford University Press, 2020](https://ocul-crl.primo.exlibrisgroup.com/permalink/01OCUL_CRL/1gqvnf4/alma991022774628305153)
     - Morgan, Colleen. 2019. 'Avatars, Monsters, and Machines: A Cyborg Archaeology' _European Journal of Archaeology_ 22.3. [https://doi.org/10.1017/eaa.2019.22](https://doi.org/10.1017/eaa.2019.22) (Remember to access through the library)
+
+_by the way_ Came across this [radio program from the CBC](https://www.cbc.ca/radio/ideas/understandings-games-may-hold-the-secret-to-living-the-good-life-says-philosopher-1.6613927) which intersects with [today's talk](https://hist3812.netlify.app/slides/oct12.html). Nb, some questions in that talk to kickstart your thinking re Interlude 2's reflection.
 
 ## M2.2
 - Oct 17 - **History is a Remix**
