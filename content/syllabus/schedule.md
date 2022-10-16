@@ -99,7 +99,7 @@ _by the way_ Came across this [radio program from the CBC](https://www.cbc.ca/ra
     - Perry, S. 2019. 'The Enchantment of the Archaeological Record.' _European Journal of Archaeology_ 22.3 [link](https://www-cambridge-org.proxy.library.carleton.ca/core/journals/european-journal-of-archaeology/article/enchantment-of-the-archaeological-record/6B71DCDB28D3FABE22660EEA860ED7FE)
     - Watch: Ferguson, Kirby. 2015. Everyting is a Remix (remastered). [youtube](https://www.youtube.com/watch?v=nJPERZDfyWc).
 
-+ Oct 19 - In this session, I want _you_ to teach _me_ something new, something enchanting, something that remixes 'history' (broadly conceived) via a medium or technology that you know well. Come prepared to collaborate with your peers to create and teach.
++ Oct 19 - In this session, I want _you_ to teach _me_ something new, something enchanting, something that remixes 'history' (broadly conceived) via a medium or technology that you know well. Come prepared to collaborate with your peers to create and teach. Or we might do some Augmented Reality using [MindAR](https://hiukim.github.io/mind-ar-js-doc/) and github pages.
 
 **FALL BREAK** Week of Oct 24
 
@@ -154,7 +154,7 @@ Your **Reflection** will include your thoughts on all of the work in this module
   - Have read for today:
     - Graham, Shawn. 2020 An Approach to the Ethics of Archaeogaming, Internet Archaeology 55. https://doi.org/10.11141/ia.55.2
     - Nicholls, Florence Smith, and Michael Cook. 'The Dark Souls of Archaeology: Recording Elden Ring' arxiv.org [link](https://arxiv.org/pdf/2204.10949.pdf)
-+ Nov 23 - Build a quick 'archaeogame' with [Bitsy](http://make.bitsy.org/).
++ Nov 23 - Build a quick 'archaeogame' with [Bitsy](http://make.bitsy.org/). [Here's a tutorial](https://www.shimmerwitch.space/bitsyTutorial.html) and you can use that tutorial to complete this [Unfinished Temple](https://itch.io/queue/c/2785676/bitsy?game_id=1689045).
 
 ## M3.3
 + Nov 28 - **Games that Play Themselves**
