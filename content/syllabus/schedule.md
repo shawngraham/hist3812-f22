@@ -125,9 +125,13 @@ Nov 7 & Nov 9
 _Why 'interlude'? Because 'interstitial' doesn't capture the spirit of what I want this week to be. I want it to be about playing around with things. A literal play within the middle._
 
 
-Before class, visit [Songs of the Ottawa](http://songsoftheottawa.ca/), explore the site and its sonifications, and read 'Introduction' and 'Why Sonification' in Wood's [MRE](http://songsoftheottawa.ca/content/CW%20MRE%20May%2014.pdf).
+~~Before class, visit [Songs of the Ottawa](http://songsoftheottawa.ca/), explore the site and its sonifications, and read 'Introduction' and 'Why Sonification' in Wood's [MRE](http://songsoftheottawa.ca/content/CW%20MRE%20May%2014.pdf).~~
 
-In these two sessions, you will engage in some playful computing. We'll try some [sonification](https://programminghistorian.org/en/lessons/sonification). We'll work on our reflections together.
+~~In these two sessions, you will engage in some playful computing. We'll try some [sonification](https://programminghistorian.org/en/lessons/sonification). We'll work on our reflections together.~~
+
+Look, I changed my mind. Each week in module 2, I closed with some questions. On these two days, I want you to start crafting your reflection in the context of those questions, and by analyzing your ideas for your unessays within the HPS framework. Bounce ideas off each other. Work together. Maybe even select a game or playful experience (video, board, whatever) that you find on the web - Atuel, maybe; maybe something else - and drop it through the framework, see what emerges.
+
+Maybe we'll try [Inky & Ink from Inkle](https://www.inklestudios.com/ink/). Try the tutorial, explore the demo game. Do we need to adjust HPS framework to account for a game like this?
 
 Your **Reflection** will include your thoughts on all of the work in this module; tie what you've read and heard  to what you've done. What is the main message of this module? How does it connect with your ideas for your Unessay? Your **Log** will be your record of your digital work in this module (including any Unessay work) - hiccups, successes, help found, help given. **Ephemera** is anything else you want to keep a record of, files created, screenshots, whatever.
 
