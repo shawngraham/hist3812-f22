@@ -4,7 +4,7 @@ date: 2018-02-22T17:01:34+07:00
 
 ---
 {{< rawhtml >}}
-<img src="/images/illustrations/pixeltrue-web-development-1.png" align="right" width="30%"></img>
+<img src="https://raw.githubusercontent.com/shawngraham/images/illustrations/pixeltrue-web-development-1.png/images/illustrations/pixeltrue-web-development-1.png" align="right" width="30%"></img>
 {{< /rawhtml >}}
 
 **How do we write 'good history' through playful engagements? What does 'good history' look like, how is it constructed, and what happens when it meets digital technologies?**
