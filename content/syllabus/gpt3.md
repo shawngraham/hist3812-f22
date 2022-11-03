@@ -153,7 +153,9 @@ At this point, you can use a photo editor like Photoshop or [Pixlr](https://pixl
 
 ### Where's the history?
 
-In that particular comic we just generated, there wasn't much 'history' per se. But with a little creativity we could do something like this:
+In the particular comic we just generated in the previous section, there wasn't much 'history' per se. (If you dig into the details of OpenAI's documentation, you could for instance fine-tune GPT-3 on a series of academic articles about Louis Riel, and then create a question-and-answer bot to power a website; that would be something 'obviously' historical. Really, the potential for AI and history is enormous; have a look around, and see what inspires you.) 
+
+But, staying with the comics/graphic novel theme, and with a little creativity, we could do something like this:
 
 ```
 Louis Riel was a Canadian politician, a founder of the province of Manitoba, and a political leader of the Métis people.
@@ -176,9 +178,7 @@ He is thinking about how everything has changed since John A. Macdonald became t
 Riel remembers when the Métis were in control of their own destiny and he wonders what will become of his people now that they are under the Canadian government's control.
 ```
 
-If you dig into the details, you could fine-tune GPT-3 on a series of academic articles about Louis Riel, and then create a question-and-answer bot to power a website. Really, the potential for AI and history is enormous. Have a look around, and see what inspires you.
-
-Now you have a series of scenes that you could use GPT-3 to generate dialogue for, or artwork for. Notice that I'm generating histories about *very traditional* topics in Canadian History. Remembering our discussion about the work of [Saidiya Hartman](https://doi.org/10.1215/-12-2-1), how might you craft 'critical fabulations' that follow her lead?
+Now you have a series of scenes that you could use GPT-3 to generate dialogue for, or artwork for; you could give it examples of Riel's speeches and cadences and so on. Notice that I'm generating histories about *very traditional* topics in Canadian History. Remembering our discussion about the work of [Saidiya Hartman](https://doi.org/10.1215/-12-2-1), how might you craft 'critical fabulations' that follow her lead? 
 
 BUT, as students, as historians, we can't just make things willy-nilly. Any creation you make with GPT-3 _must_ be accompanied with your analysis of its design. **Without** that critical engagement, you are not doing history, you're merely _toying_ with it.
 
