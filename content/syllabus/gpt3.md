@@ -6,9 +6,11 @@ draft: false
 weight: 10
 ---
 
-{< rawhtml >}}
-<img src="/images/pixeltrue-idea-1.png" align="right" width="30%"></img>
-{{< /rawhtml >}} Let's use AI for _good_ instead of evil.
+{{< rawhtml >}}
+<img src="/images/illustrations/pixeltrue-web-development-1.png" align="right" width="30%"></img>
+{{< /rawhtml >}}
+
+Let's use AI for _good_ instead of evil.
 
 Some of you might want to explore the power of what popularly is called 'AI', but specifically, is a large-language model called GPT3. You may have come across this by reading sensationalist articles like 'This article was written by an AI!' or, 'Students Are Writing Essays Using AI!'
 
