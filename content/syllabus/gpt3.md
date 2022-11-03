@@ -83,7 +83,7 @@ First thing's first: Get an account with [OpenAI](https://beta.openai.com/). Thi
 
 Then, you can examine the examples that OpenAI provides you. For instance, here's the example for the two-line horror story generator:
 
-{< rawhtml >}}
+{{< rawhtml >}}
 <img src="/images/horror.png"></img>
 {{< /rawhtml >}}
 
@@ -137,7 +137,7 @@ DALL-E is trained by feeding it masses of imagery culled from the internet paire
 
 You can select from the results, and ask DALL-E to generate variations; eventually you'll find something you like. It might be nightmarish. There are other generators you could try. 
 
-{< rawhtml >}}
+{{< rawhtml >}}
 <img src="/images/demo-comic.png"></img>
 {{< /rawhtml >}}
 
