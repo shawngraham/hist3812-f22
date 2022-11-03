@@ -7,7 +7,9 @@ weight: 10
 <img src="/images/illustrations/pixeltrue-web-development-1.png" align="right" width="30%"></img>
 {{< /rawhtml >}}
 
-Let's use AI for _good_ instead of evil.
+Let's use AI for _good_ instead of evil. 
+
+> (nb this is my first draft. When you encounter things that need more explaining, please use the Hypothesis annotation bar at right, while being logged into our HIST3812 reading group, to indicate where things are unclear for you or require deeper discussion).
 
 Some of you might want to explore the power of what popularly is called 'AI', but specifically, is a large-language model called GPT3. You may have come across this by reading sensationalist articles like 'This article was written by an AI!' or, 'Students Are Writing Essays Using AI!'
 
@@ -45,7 +47,7 @@ Asking what we _can_ do is not the same as asking what we _should_ do.
 <img src="/images/goldblummeme-708544511.png" align="right" width="40%"></img>
 {{< /rawhtml >}}
 
-GPT-3 has been used to power chatbots, develop Q&A systems, write code, design websites (you can give it an example of html and then ask it to write the markup to achieve particular effects)... you can find many examples with a trivial amount of googling. I've already indicated though that I find 'essay writing' the least interesting feature that GPT-3 can do _because this is a class about playful engagement_. Wouldn't it be interesting to fine-tune GPT-3 on the diary of William Lyon MacKenzie King and then ask him questions about his life? I mean, he _was_ into seances and believed spirits could speak with the living (if you check the schedule, we'll look at how to do this with a smaller version of the same kind of AI, GPT-2, via [this notebook by Max Woolf](https://minimaxir.com/2019/09/howto-gpt2/); the advantage here is that since the model is smaller and older, it doesn't cost us anything to use; more on price in a moment).
+GPT-3 has been used to power chatbots, develop Q&A systems, write code, design websites (you can give it an example of html and then ask it to write the markup to achieve particular effects)... you can find many examples with a trivial amount of googling. I've already indicated though that I find 'essay writing' the least interesting feature that GPT-3 can do _because this is a class about playful engagement_. Wouldn't it be interesting to fine-tune GPT-3 on the diary of William Lyon MacKenzie King and then ask him questions about his life? I mean, he _was_ into seances and believed spirits could speak with the living (if you check the schedule, we'll look at how to do this with a smaller version of the same kind of AI, GPT-2, via [this notebook by Max Woolf](https://minimaxir.com/2019/09/howto-gpt2/); the advantage of using GPT-2 is that since the model is smaller and older, it doesn't cost us anything to use; more on price in a moment).
 
 That raises an obvious ethical question: what if the model says something that MacKenzie King would never have said? Or even worse, considering King's antisemitism, something he _did_ say/think or plausibly could've said?
 
@@ -53,7 +55,9 @@ That's why it's not enough to just _make_ something with GPT-3 and similar model
 
 ### Think through what you do in terms of HPS
 
-McCall's HPS framework gives us a model for mapping out the elements of an interactive experience (which in this case also includes training and fine-tuning data) to see what kinds of historical experiences are possible. If you haven't read [this](http://gamestudies.org/2003/articles/mccall), [this]https://medium.com/@betterthemask/game-design-in-the-imperial-mode-cgsa-2022-e5a9a6a57859, and [this](https://www.dreamofdarkness.com/dev-journal/can-the-historical-problem-space-framework-help-us-make-better-history-games) yet, now's the time to stop and read them. 
+McCall's HPS framework gives us a model for mapping out the elements of an interactive experience (which in this case also includes training and fine-tuning data) to see what kinds of historical experiences are possible. If you haven't read [this](http://gamestudies.org/2003/articles/mccall), [this](https://medium.com/@betterthemask/game-design-in-the-imperial-mode-cgsa-2022-e5a9a6a57859), and [this](https://www.dreamofdarkness.com/dev-journal/can-the-historical-problem-space-framework-help-us-make-better-history-games) yet, now's the time to stop and read them. 
+
+Go ahead, I'll wait.
 
 McCall draws attention to the way 'genre' conventions in games curtail the kinds of ideas that can be realized in games; games are mathematical systems of interlocking parts, so once we start narrowing down those parts they can only mesh in particular ways. Jayanth's piece suggests that the _material conditions_ of game design _also_ play a role in what kinds of experiences can be imagined, reflected, and realized in games. What's the analogous situation here? For our present purposes, games and large language models are both representations of the/a world. And if we are fine-tuning on the work of someone like King, the material conditions of his life and world are going to turn up: we have to think _hard_ about the intersection of King's antisemitism with the ways antisemitism emerges in our own day and age (in the training set, in the ways the model might draw connections). A modified 'historical problem space framework' can help us map these out. 
 
@@ -71,13 +75,15 @@ Take some time now to think through the various layers of interesecting systems 
 
 For 'player agent' perhaps we should think about who the 'ideal reader' is of your experience, as in Jayanth's terms... are you designing for a person much like yourself? What's your position in the world? How does that affect how you imagine one might approach what you're designing?
 
-The other blocks that constrain a game-based experience might be usefully re-written depending on the conventions of whatever approach you are taking. The key thing, after mapping all of these out, is to ask yourself, how do these elements all combine to enable some ways of curating the past and not others? What choices have they forced me to make about what is _important_? Form shapes content, McCall tells us, and the HPS allows you to formalize your answer to this question: 'how did the [you] employ [your] skills and talents in the medium to communicate the past in a [playful] history?'
+The other blocks that constrain a game-based experience might be usefully re-written depending on the conventions of whatever approach you are taking. The key thing, after mapping all of these out, is to ask yourself, how do these elements all combine to enable some ways of curating the past and not others? What choices have they forced me to make about what is _important_? Form shapes content, McCall tells us, and the HPS allows you to formalize your answer to this question: 'how did [you] employ [your] skills and talents in the medium to communicate the past in a [playful] history?'
 
 I'll admit that I often _do_ before I _think_ or reflect on what I've done. With digital techs, it often takes a long period of farting around with things before you really get to grips on how things work. But once you start getting a sense of the possibilities, that's when it's time to start plotting out how it all works. 
 
-### A Comic
+### Fart Around and Maybe Find Out?
 
-For the rest of this tutorial, I'll gently adapt [Robert Gonsalves' tutorial on how to make a comic strip with AI](https://towardsdatascience.com/using-ai-to-create-new-comic-strips-without-writing-any-code-cc669bb317a7). The _craft_ of what we do lies in the construction of the 'prompt', sometimes called 'prompt engineering' (and note I can't ask GPT-3 what 'prompt engineering' is because the term emerged _after_ the creation of GPT-3 and the need to craft cunning prompts). 
+For the rest of this tutorial, I'll gently adapt [Robert Gonsalves' tutorial on how to make a comic strip with AI](https://towardsdatascience.com/using-ai-to-create-new-comic-strips-without-writing-any-code-cc669bb317a7). 
+
+Now, you may have taken HIST2809: The Historian's Craft. The _craft_ of what we do in this case lies in the construction of the 'prompt', sometimes called 'prompt engineering' (and note I can't ask GPT-3 what 'prompt engineering' is because the term emerged _after_ the creation of GPT-3 and the need to craft cunning prompts). 
 
 First thing's first: Get an account with [OpenAI](https://beta.openai.com/). This will give you $18 worth of credits to play with. Everytime you create a generation, a microscopicly small amount of money pays for the computing time. (Speaking of computing time, the environmental impacts of training such models is [huuuuuge](https://arxiv.org/abs/2007.03051) which also prompts me to ask: should we even be doing this?).
 
@@ -125,7 +131,7 @@ John: Sounds boring.
 Amy: You're just saying that because you don't have an archaeologist's handbook to life.
 ```
 
-That's actually _funny!_
+That's actually _funny!_ (Admittedly, in a dad-joke kind of way. But still!)
 
 ### The Artwork 
 
@@ -133,7 +139,9 @@ Now let's generate some artwork. We'll use DALL-E, also from OpenAI, available [
 
 ```A three-panel comic featuring archaeologists Amy who is studious and John who is a goof as they chat in an archaeological laboratory. Marvel```
 
-DALL-E is trained by feeding it masses of imagery culled from the internet paired with short descriptions. It decomposes these images to patterns of static, which it then associates with the words (and the words are associated with each other rather like how GPT-3 approaches things). When you give it a phrase, it examines the 'space' that these words occupy, and extrapolates the relevant pattern of static, from which it then evolves the resulting image. Intense, eh? [See this piece by Eryk Salvaggio for a much better discussion of how this process works](https://cyberneticforests.substack.com/p/ghosts-of-diffusion).
+DALL-E is trained by feeding it masses of imagery culled from the internet paired with short descriptions. It decomposes these images to patterns of static, which it then associates with the words (and the words are associated with each other rather like how GPT-3 approaches things). [Here is an interactive exploration of how that all plays out for a similar model, via the folks at Nomic.ai](https://atlas.nomic.ai/map/809ef16a-5b2d-4291-b772-a913f4c8ee61/9ed7d171-650b-4526-85bf-3592ee51ea31).
+
+When you give DALL-E or similar 'diffusion models' a phrase, it examines the 'space' that these words occupy, and extrapolates the relevant pattern of static, from which it then evolves the resulting image. Intense, eh? [See this piece by Eryk Salvaggio for a much better discussion of how this process works](https://cyberneticforests.substack.com/p/ghosts-of-diffusion).
 
 You can select from the results, and ask DALL-E to generate variations; eventually you'll find something you like. It might be nightmarish. There are other generators you could try. 
 
@@ -141,14 +149,20 @@ You can select from the results, and ask DALL-E to generate variations; eventual
 <img src="/images/demo-comic.png"></img>
 {{< /rawhtml >}}
 
-At this point, you can use a photo editor like Photoshop or [Pixlr](https://pixlr.com/e/) to edit out DALL-E's wonky attempt at text, and put the text that GPT-3 generated into it. Et volia! You've used GPT-3 to make a comic, and another similar model to generate the artwork.
+At this point, you can use a photo editor like Photoshop or [Pixlr](https://pixlr.com/e/) to edit out DALL-E's wonky attempt at text, and put the text that GPT-3 generated into it. Et volia! You've used GPT-3 to make a comic, and another similar model to generate the artwork. (I tried to indulge my interest in archaeology and the uncanny by generating a Lovecraft-inspired horror/archaeology/ancient history mashup [here](https://electricarchaeology.ca/2022/11/02/house-of-flies/) using this approach.)
 
 ### Where's the history?
 
 In that particular comic we just generated, there wasn't much 'history' per se. But with a little creativity we could do something like this:
 
 ```
-Louis Riel was a Canadian politician, a founder of the province of Manitoba, and a political leader of the Métis people. He led two resistance movements against the Government of Canada and its first prime minister John A. Macdonald. Riel sought to defend Métis rights and identity as the Northwest Territories came progressively under the Canadian sphere of influence. The first resistance movement led by Riel was the Red River Resistance of 1869–1870. The provisional government established by Riel ultimately negotiated the terms under which the new province of Manitoba entered the Canadian Confederation. However, while carrying out the resistance, Riel had a Canadian nationalist, Thomas Scott, executed. Riel soon fled to the United States to escape prosecution. He was elected three times as member of the House of Commons, but, fearing for his life, he could never take his seat.
+Louis Riel was a Canadian politician, a founder of the province of Manitoba, and a political leader of the Métis people.
+He led two resistance movements against the Government of Canada and its first prime minister John A. Macdonald.
+Riel sought to defend Métis rights and identity as the Northwest Territories came progressively under the Canadian sphere of influence.The first resistance movement led by Riel was the Red River Resistance of 1869–1870.
+The provisional government established by Riel ultimately negotiated the terms under which the new province of Manitoba entered the Canadian Confederation. 
+However, while carrying out the resistance, Riel had a Canadian nationalist, Thomas Scott, executed. 
+Riel soon fled to the United States to escape prosecution. 
+He was elected three times as member of the House of Commons, but, fearing for his life, he could never take his seat.
 
 Create the opening scene for a graphic novel about Riel's relationship with Macdonald.
 ```
@@ -156,12 +170,15 @@ Create the opening scene for a graphic novel about Riel's relationship with Macd
 I took the opening summary of Louis Riel's life from wikipedia, pasted it in, and asked GPT-3 to summarize his life. I then used that summary in the prompt above. The result was this:
 
 ```
-Riel is standing on the banks of the Red River, looking out over the peaceful landscape. In the distance, he can see the smoke rising from the chimneys of the homes in Winnipeg. He is thinking about how everything has changed since John A. Macdonald became the first prime minister of Canada. Riel remembers when the Métis were in control of their own destiny and he wonders what will become of his people now that they are under the Canadian government's control.
+Riel is standing on the banks of the Red River, looking out over the peaceful landscape. 
+In the distance, he can see the smoke rising from the chimneys of the homes in Winnipeg. 
+He is thinking about how everything has changed since John A. Macdonald became the first prime minister of Canada. 
+Riel remembers when the Métis were in control of their own destiny and he wonders what will become of his people now that they are under the Canadian government's control.
 ```
 
-Now you have a series of scenes that you could use GPT-3 to generate dialogue for, or artwork for.
-
 If you dig into the details, you could fine-tune GPT-3 on a series of academic articles about Louis Riel, and then create a question-and-answer bot to power a website. Really, the potential for AI and history is enormous. Have a look around, and see what inspires you.
+
+Now you have a series of scenes that you could use GPT-3 to generate dialogue for, or artwork for. Notice that I'm generating histories about *very traditional* topics in Canadian History. Remembering our discussion about the work of [Saidiya Hartman](https://doi.org/10.1215/-12-2-1), how might you craft 'critical fabulations' that follow her lead?
 
 BUT, as students, as historians, we can't just make things willy-nilly. Any creation you make with GPT-3 _must_ be accompanied with your analysis of its design. **Without** that critical engagement, you are not doing history, you're merely _toying_ with it.
 
