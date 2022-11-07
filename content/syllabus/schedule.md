@@ -109,6 +109,7 @@ _by the way_ Came across this [radio program from the CBC](https://www.cbc.ca/ra
   - Have read for today:
     - McCall, Jeremiah. 2020. ['The Historical Problem Space Framework: Games as Historical Medium'](http://gamestudies.org/2003/articles/mccall) _Game Studies_ 20.3.
     - Jayanth, Meghna. 2022. 'Game Design in the Imperial Mode #CGSA 2022' [Keynote, Canadian Game Studies Association 2022](https://medium.com/@betterthemask/game-design-in-the-imperial-mode-cgsa-2022-e5a9a6a57859) 
+    - today's [slides](https://hist3812.netlify.app/slides/oct31.html#/)
 + Nov 2 - **The Historical Problem Space (HPS) Framework**
   - Have read for today:
     - Dream of Darkness, 2022. 'Can the Historical Problem Space framework help us make better history games?' [dreamofdarkness.com](https://www.dreamofdarkness.com/dev-journal/can-the-historical-problem-space-framework-help-us-make-better-history-games).
@@ -131,11 +132,14 @@ _Why 'interlude'? Because 'interstitial' doesn't capture the spirit of what I wa
 
 Look, I changed my mind. Each week in module 2, I closed with some questions. On these two days, I want you to start crafting your reflection in the context of those questions, and by analyzing your ideas for your unessays within the HPS framework. Bounce ideas off each other. Work together. Maybe even select a game or playful experience (video, board, whatever) that you find on the web - Atuel, maybe; maybe something else - and drop it through the framework, see what emerges.
 
-Maybe we'll try [Inky & Ink from Inkle](https://www.inklestudios.com/ink/). Try the tutorial, explore the demo game. Do we need to adjust HPS framework to account for a game like this?
+**Where are these questions, I hear you say?** Again, if you check the final slides for [Oct 12](https://hist3812.netlify.app/slides/oct12.html#/), [Oct 17](https://hist3812.netlify.app/slides/oct17.html#/), [Oct 31](https://hist3812.netlify.app/slides/oct31.html#/), **and the section on 'HPS' [here](https://hist3812.netlify.app/syllabus/gpt3/)**, you'll find a plethora of questions to get you going. Remember, you're not necessarily meant to answer all of those questions in turn: they are merely meant to guide your thinking in the channel(s) I want you to follow.
+
+**Something we might do**- Maybe we'll try [Inky & Ink from Inkle](https://www.inklestudios.com/ink/). Try the tutorial, explore the demo game. Do we need to adjust HPS framework to account for a game like this?
 
 Your **Reflection** will include your thoughts on all of the work in this module; tie what you've read and heard  to what you've done. What is the main message of this module? How does it connect with your ideas for your Unessay? Your **Log** will be your record of your digital work in this module (including any Unessay work) - hiccups, successes, help found, help given. **Ephemera** is anything else you want to keep a record of, files created, screenshots, whatever.
 
-> Upload your Reflection, Log, and Ephemera for ~~Interstitial~~ Interlude Work 2 to your Github Repository by the end of this week (Sunday night); **notify me** that you have done so using the form at [this link](https://forms.gle/hFzXKvMku23AuY9XA).
+
+> Upload your Reflection, Log, and Ephemera for ~~Interstitial~~ Interlude Work 2 to your Github Repository by the end of this week; if you work on it during the work week (rather than leaving it for the last minute on the weekend) I can help you if you have any issues. **Notify me** that you have done so using the form at [this link](https://forms.gle/hFzXKvMku23AuY9XA).
 
 <div align="center">
 `******************************`
