@@ -1,0 +1,542 @@
+<html lang=""><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="https://intrigue-app.github.io/favicon.ico"><title>intrigue</title><script defer="defer" src="/js/chunk-vendors.966cb890.js"></script><script defer="defer" src="https://intrigue-app.github.io/js/app.bdb5736c.js"></script><link href="https://intrigue-app.github.io/css/chunk-vendors.5dee0538.css" rel="stylesheet"><link href="https://intrigue-app.github.io/css/app.623d5fe7.css" rel="stylesheet"><style type="text/css" data-styled-id="rCSzc73wf">.rCSzc73wf {
+    position: relative;
+    overscroll-behavior: none;
+}
+.rCSzc73wf .infinite-viewer-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    will-change: scroll-position;
+}
+.rCSzc73wf .infinite-viewer-wrapper::-webkit-scrollbar {
+    display: none;
+}
+.rCSzc73wf .infinite-viewer-scroll-area {
+    position:absolute;
+    top:0;
+    left:0;
+    transform-origin: 0 0;
+}
+.rCSzc73wf .infinite-viewer-scroll-bar {
+    position:absolute;
+    width: 10px;
+    height: 10px;
+    box-sizing: border-box;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+.rCSzc73wf .infinite-viewer-horizontal-scroll-bar {
+    width: 100%;
+    height: 14px;
+}
+.rCSzc73wf .infinite-viewer-vertical-scroll-bar {
+    height: 100%;
+    width: 14px;
+}
+.rCSzc73wf .infinite-viewer-scroll-thumb {
+    position:relative;
+    opacity: 0.7;
+    background: #333;
+    border-radius: 3px;
+    left: 0px;
+    top: 0px;
+    z-index: 10;
+    width: 6px;
+    height: 6px;
+    transition: all ease 0.2s;
+}
+.rCSzc73wf .infinite-viewer-horizontal-scroll-bar .infinite-viewer-scroll-thumb {
+    margin: 4px 0px;
+    transition-property: margin, height, border-radius;
+}
+.rCSzc73wf .infinite-viewer-vertical-scroll-bar .infinite-viewer-scroll-thumb {
+    margin: 0px 4px;
+    transition-property: margin, width, border-radius;
+}
+.rCSzc73wf .infinite-viewer-horizontal-scroll-bar:hover .infinite-viewer-scroll-thumb {
+    height: 10px;
+    margin: 2px 0px;
+    border-radius: 5px;
+}
+.rCSzc73wf .infinite-viewer-vertical-scroll-bar:hover .infinite-viewer-scroll-thumb {
+    width: 10px;
+    margin: 0px 2px;
+    border-radius: 5px;
+}
+</style><style type="text/css" data-styled-id="rCS179bs95">
+.rCS179bs95 {
+    position: fixed;
+    display: none;
+    border: 1px solid #4af;
+    background: rgba(68, 170, 255, 0.5);
+    pointer-events: none;
+    will-change: transform;
+    z-index: 100;
+}
+</style><style data-tiptap-style="">.ProseMirror {
+  position: relative;
+}
+
+.ProseMirror {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  white-space: break-spaces;
+  -webkit-font-variant-ligatures: none;
+  font-variant-ligatures: none;
+  font-feature-settings: "liga" 0; /* the above doesn't seem to work in Edge */
+}
+
+.ProseMirror [contenteditable="false"] {
+  white-space: normal;
+}
+
+.ProseMirror [contenteditable="false"] [contenteditable="true"] {
+  white-space: pre-wrap;
+}
+
+.ProseMirror pre {
+  white-space: pre-wrap;
+}
+
+img.ProseMirror-separator {
+  display: inline !important;
+  border: none !important;
+  margin: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+}
+
+.ProseMirror-gapcursor {
+  display: none;
+  pointer-events: none;
+  position: absolute;
+  margin: 0;
+}
+
+.ProseMirror-gapcursor:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2px;
+  width: 20px;
+  border-top: 1px solid black;
+  animation: ProseMirror-cursor-blink 1.1s steps(2, start) infinite;
+}
+
+@keyframes ProseMirror-cursor-blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+.ProseMirror-hideselection *::selection {
+  background: transparent;
+}
+
+.ProseMirror-hideselection *::-moz-selection {
+  background: transparent;
+}
+
+.ProseMirror-hideselection * {
+  caret-color: transparent;
+}
+
+.ProseMirror-focused .ProseMirror-gapcursor {
+  display: block;
+}
+
+.tippy-box[data-animation=fade][data-state=hidden] {
+  opacity: 0
+}</style><style type="text/css" data-styled-id="rCS1rb3a7w">.rCS1rb3a7w {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	left: 0;
+	top: 0;
+    z-index: 3000;
+    --moveable-color: #4af;
+    --zoom: 1;
+    --zoompx: 1px;
+    will-change: transform;
+}
+.rCS1rb3a7w .moveable-control-box {
+    z-index: 0;
+}
+.rCS1rb3a7w .moveable-line, .rCS1rb3a7w .moveable-control {
+    position: absolute;
+	left: 0;
+    top: 0;
+    will-change: transform;
+}
+.rCS1rb3a7w .moveable-control {
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	box-sizing: border-box;
+    background: #4af;
+    background: var(--moveable-color);
+	margin-top: -7px;
+    margin-left: -7px;
+    border: 2px solid #fff;
+    z-index: 10;
+}
+.rCS1rb3a7w .moveable-padding {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100px;
+    height: 100px;
+    transform-origin: 0 0;
+}
+.rCS1rb3a7w .moveable-line {
+	width: 1px;
+    height: 1px;
+    background: #4af;
+    background: var(--moveable-color);
+	transform-origin: 0px 50%;
+}
+.rCS1rb3a7w .moveable-line.moveable-edge {
+    z-index: 1;
+    background: transparent;
+}
+.rCS1rb3a7w .moveable-line.moveable-dashed {
+    box-sizing: border-box;
+    background: transparent;
+}
+.rCS1rb3a7w .moveable-line.moveable-dashed.moveable-horizontal {
+    border-top: 1px dashed #4af;
+    border-top-color: #4af;
+    border-top-color: var(--moveable-color);
+}
+.rCS1rb3a7w .moveable-line.moveable-dashed.moveable-vertical {
+    border-left: 1px dashed #4af;
+    border-left-color: #4af;
+    border-left-color: var(--moveable-color);
+}
+.rCS1rb3a7w .moveable-line.moveable-vertical {
+    transform: translateX(-50%);
+}
+.rCS1rb3a7w .moveable-line.moveable-horizontal {
+    transform: translateY(-50%);
+}
+.rCS1rb3a7w .moveable-line.moveable-vertical.moveable-bold {
+    width: 2px;
+}
+.rCS1rb3a7w .moveable-line.moveable-horizontal.moveable-bold {
+    height: 2px;
+}
+
+.rCS1rb3a7w .moveable-control.moveable-origin {
+	border-color: #f55;
+	background: #fff;
+	width: 12px;
+	height: 12px;
+	margin-top: -6px;
+    margin-left: -6px;
+	pointer-events: none;
+}
+
+.rCS1rb3a7w .moveable-direction[data-rotation="0"] {
+	cursor:ns-resize;cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 32 32" ><path d="M 16,5 L 12,10 L 14.5,10 L 14.5,22 L 12,22 L 16,27 L 20,22 L 17.5,22 L 17.5,10 L 20, 10 L 16,5 Z" stroke-linejoin="round" stroke-width="1.2" fill="black" stroke="white" style="transform:rotate(0deg);transform-origin: 16px 16px"></path></svg>') 16 16, ns-resize;
+}
+
+
+.rCS1rb3a7w .moveable-direction[data-rotation="15"] {
+	cursor:ns-resize;cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 32 32" ><path d="M 16,5 L 12,10 L 14.5,10 L 14.5,22 L 12,22 L 16,27 L 20,22 L 17.5,22 L 17.5,10 L 20, 10 L 16,5 Z" stroke-linejoin="round" stroke-width="1.2" fill="black" stroke="white" style="transform:rotate(15deg);transform-origin: 16px 16px"></path></svg>') 16 16, ns-resize;
+}
+
+
+.rCS1rb3a7w .moveable-direction[data-rotation="30"] {
+	cursor:nesw-resize;cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 32 32" ><path d="M 16,5 L 12,10 L 14.5,10 L 14.5,22 L 12,22 L 16,27 L 20,22 L 17.5,22 L 17.5,10 L 20, 10 L 16,5 Z" stroke-linejoin="round" stroke-width="1.2" fill="black" stroke="white" style="transform:rotate(30deg);transform-origin: 16px 16px"></path></svg>') 16 16, nesw-resize;
+}
+
+
+.rCS1rb3a7w .moveable-direction[data-rotation="45"] {
+	cursor:nesw-resize;cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 32 32" ><path d="M 16,5 L 12,10 L 14.5,10 L 14.5,22 L 12,22 L 16,27 L 20,22 L 17.5,22 L 17.5,10 L 20, 10 L 16,5 Z" stroke-linejoin="round" stroke-width="1.2" fill="black" stroke="white" style="transform:rotate(45deg);transform-origin: 16px 16px"></path></svg>') 16 16, nesw-resize;
+}
+
+
+.rCS1rb3a7w .moveable-direction[data-rotation="60"] {
+	cursor:nesw-resize;cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 32 32" ><path d="M 16,5 L 12,10 L 14.5,10 L 14.5,22 L 12,22 L 16,27 L 20,22 L 17.5,22 L 17.5,10 L 20, 10 L 16,5 Z" stroke-linejoin="round" stroke-width="1.2" fill="black" stroke="white" style="transform:rotate(60deg);transform-origin: 16px 16px"></path></svg>') 16 16, nesw-resize;
+}
+
+
+.rCS1rb3a7w .moveable-direction[data-rotation="75"] {
+	cursor:ew-resize;cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 32 32" ><path d="M 16,5 L 12,10 L 14.5,10 L 14.5,22 L 12,22 L 16,27 L 20,22 L 17.5,22 L 17.5,10 L 20, 10 L 16,5 Z" stroke-linejoin="round" stroke-width="1.2" fill="black" stroke="white" style="transform:rotate(75deg);transform-origin: 16px 16px"></path></svg>') 16 16, ew-resize;
+}
+
+
+.rCS1rb3a7w .moveable-direction[data-rotation="90"] {
+	cursor:ew-resize;cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 32 32" ><path d="M 16,5 L 12,10 L 14.5,10 L 14.5,22 L 12,22 L 16,27 L 20,22 L 17.5,22 L 17.5,10 L 20, 10 L 16,5 Z" stroke-linejoin="round" stroke-width="1.2" fill="black" stroke="white" style="transform:rotate(90deg);transform-origin: 16px 16px"></path></svg>') 16 16, ew-resize;
+}
+
+
+.rCS1rb3a7w .moveable-direction[data-rotation="105"] {
+	cursor:ew-resize;cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 32 32" ><path d="M 16,5 L 12,10 L 14.5,10 L 14.5,22 L 12,22 L 16,27 L 20,22 L 17.5,22 L 17.5,10 L 20, 10 L 16,5 Z" stroke-linejoin="round" stroke-width="1.2" fill="black" stroke="white" style="transform:rotate(105deg);transform-origin: 16px 16px"></path></svg>') 16 16, ew-resize;
+}
+
+
+.rCS1rb3a7w .moveable-direction[data-rotation="120"] {
+	cursor:nwse-resize;cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 32 32" ><path d="M 16,5 L 12,10 L 14.5,10 L 14.5,22 L 12,22 L 16,27 L 20,22 L 17.5,22 L 17.5,10 L 20, 10 L 16,5 Z" stroke-linejoin="round" stroke-width="1.2" fill="black" stroke="white" style="transform:rotate(120deg);transform-origin: 16px 16px"></path></svg>') 16 16, nwse-resize;
+}
+
+
+.rCS1rb3a7w .moveable-direction[data-rotation="135"] {
+	cursor:nwse-resize;cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 32 32" ><path d="M 16,5 L 12,10 L 14.5,10 L 14.5,22 L 12,22 L 16,27 L 20,22 L 17.5,22 L 17.5,10 L 20, 10 L 16,5 Z" stroke-linejoin="round" stroke-width="1.2" fill="black" stroke="white" style="transform:rotate(135deg);transform-origin: 16px 16px"></path></svg>') 16 16, nwse-resize;
+}
+
+
+.rCS1rb3a7w .moveable-direction[data-rotation="150"] {
+	cursor:nwse-resize;cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 32 32" ><path d="M 16,5 L 12,10 L 14.5,10 L 14.5,22 L 12,22 L 16,27 L 20,22 L 17.5,22 L 17.5,10 L 20, 10 L 16,5 Z" stroke-linejoin="round" stroke-width="1.2" fill="black" stroke="white" style="transform:rotate(150deg);transform-origin: 16px 16px"></path></svg>') 16 16, nwse-resize;
+}
+
+
+.rCS1rb3a7w .moveable-direction[data-rotation="165"] {
+	cursor:ns-resize;cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 32 32" ><path d="M 16,5 L 12,10 L 14.5,10 L 14.5,22 L 12,22 L 16,27 L 20,22 L 17.5,22 L 17.5,10 L 20, 10 L 16,5 Z" stroke-linejoin="round" stroke-width="1.2" fill="black" stroke="white" style="transform:rotate(165deg);transform-origin: 16px 16px"></path></svg>') 16 16, ns-resize;
+}
+
+.rCS1rb3a7w .moveable-group {
+    z-index: -1;
+}
+.rCS1rb3a7w .moveable-area {
+    position: absolute;
+}
+.rCS1rb3a7w .moveable-area-pieces {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.rCS1rb3a7w .moveable-area.moveable-avoid, .rCS1rb3a7w .moveable-area.moveable-pass {
+    pointer-events: none;
+}
+.rCS1rb3a7w .moveable-area.moveable-avoid+.moveable-area-pieces {
+    display: block;
+}
+.rCS1rb3a7w .moveable-area-piece {
+    position: absolute;
+}
+
+
+.rCS1rb3a7w {
+    --bounds-color: #d66;
+}
+.rCS1rb3a7w .moveable-guideline {
+    pointer-events: none;
+    z-index: 2;
+}
+.rCS1rb3a7w .moveable-guideline.moveable-bounds {
+    background: #d66;
+    background: var(--bounds-color);
+}
+.rCS1rb3a7w .moveable-guideline-group {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.rCS1rb3a7w .moveable-guideline-group .moveable-size-value {
+    position: absolute;
+    color: #f55;
+    font-size: 12px;
+    font-weight: bold;
+}
+.rCS1rb3a7w .moveable-guideline-group.moveable-horizontal .moveable-size-value {
+    transform-origin: 50% 100%;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 5px;
+}
+.rCS1rb3a7w .moveable-guideline-group.moveable-vertical .moveable-size-value {
+    transform-origin: 0% 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px;
+}
+.rCS1rb3a7w .moveable-guideline.moveable-gap {
+    background: #f55;
+}
+.rCS1rb3a7w .moveable-size-value.moveable-gap {
+    color: #f55;
+}
+
+.rCS1rb3a7w .moveable-edge.moveable-edgeDraggable.moveable-line {
+    cursor: move;
+}
+.rCS1rb3a7w .moveable-rotation {
+    position: absolute;
+    height: 40px;
+    width: 1px;
+    transform-origin: 50% 100%;
+    height: calc(40px * var(--zoom));
+    top: auto;
+    left: 0;
+    bottom: 100%;
+    will-change: transform;
+}
+.rCS1rb3a7w .moveable-rotation .moveable-rotation-line {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transform-origin: 50% 50%;
+}
+.rCS1rb3a7w .moveable-rotation .moveable-rotation-control {
+    border-color: #4af;
+    border-color: var(--moveable-color);
+    background:#fff;
+    cursor: alias;
+}
+.rCS1rb3a7w .moveable-rotatable.moveable-direction.moveable-control {
+    cursor: alias;
+}
+.rCS1rb3a7w .moveable-around-control {
+    position: absolute;
+    will-change: transform;
+    width: 20px;
+    height: 20px;
+    left: -10px;
+    top: -10px;
+    box-sizing: border-box;
+    background: transparent;
+    z-index: 8;
+    cursor: alias;
+    transform-origin: center center;
+}
+.rCS1rb3a7w .moveable-rotatable.moveable-direction.moveable-control.moveable-move {
+    cursor: move;
+}
+.rCS1rb3a7w .moveable-around-control[data-direction*="n"] {
+        top: -20px;
+        transform-origin: center bottom;
+    }
+.rCS1rb3a7w .moveable-around-control[data-direction*="w"] {
+        left: -20px;
+        transform-origin: right center;
+    }
+.rCS1rb3a7w .moveable-around-control[data-direction*="s"] {
+        top: 0px;
+        transform-origin: center top;
+    }
+.rCS1rb3a7w .moveable-around-control[data-direction*="e"] {
+        left: 0px;
+        transform-origin: left center;
+    }
+.rCS1rb3a7w .moveable-around-control[data-direction*="nw"] {
+        left: -20px;top: -20px;
+        transform-origin: right bottom;
+    }
+.rCS1rb3a7w .moveable-around-control[data-direction*="ne"] {
+        left: 0px;top: -20px;
+        transform-origin: left bottom;
+    }
+.rCS1rb3a7w .moveable-around-control[data-direction*="sw"] {
+        left: -20px;top: 0px;
+        transform-origin: right top;
+    }
+.rCS1rb3a7w .moveable-around-control[data-direction*="se"] {
+        left: 0px;top: 0px;
+        transform-origin: left top;
+    }
+
+.rCS1rb3a7w[data-able-origindraggable] .moveable-control.moveable-origin {
+    pointer-events: auto;
+}
+.rCS1rb3a7w .moveable-control.moveable-clip-control {
+    background: #6d6;
+    cursor: pointer;
+}
+.rCS1rb3a7w .moveable-control.moveable-clip-control.moveable-clip-radius {
+    background: #d66;
+}
+.rCS1rb3a7w .moveable-line.moveable-clip-line {
+    background: #6e6;
+    cursor: move;
+    z-index: 1;
+}
+.rCS1rb3a7w .moveable-clip-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.rCS1rb3a7w .moveable-clip-ellipse {
+    position: absolute;
+    cursor: move;
+    border: 1px solid #6d6;
+    border: var(--zoompx) solid #6d6;
+    border-radius: 50%;
+    transform-origin: 0px 0px;
+}
+.rCS1rb3a7w {
+    --bounds-color: #d66;
+}
+.rCS1rb3a7w .moveable-guideline {
+    pointer-events: none;
+    z-index: 2;
+}
+.rCS1rb3a7w .moveable-line.moveable-guideline.moveable-bounds {
+    background: #d66;
+    background: var(--bounds-color);
+}
+.rCS1rb3a7w .moveable-control.moveable-border-radius {
+    background: #d66;
+    cursor: pointer;
+}
+.rCS1rb3a7w[data-able-roundable] .moveable-line.moveable-direction {
+    cursor: pointer;
+}</style></head><body><noscript><strong>We're sorry but intrigue doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app" data-v-app=""><div class="titlebar-container" data-v-4f42f7a4=""><div class="arco-row arco-row-align-center arco-row-justify-center browser noselect" data-v-4f42f7a4=""><div class="arco-col arco-col-8" data-v-4f42f7a4=""><div class="arco-btn-group" style="margin-left: 1rem;" data-v-4f42f7a4=""><button class="arco-btn arco-btn-text arco-btn-shape-square arco-btn-size-small arco-btn-status-normal arco-btn-only-icon" type="button" data-v-4f42f7a4=""><span class="arco-btn-icon"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" class="arco-icon arco-icon-undo" stroke-width="4" stroke-linecap="butt" stroke-linejoin="miter" data-v-4f42f7a4=""><path d="m15.322 23.78-7.778-7.778 7.778-7.778M8.81 16H29.5C35.851 16 41 21.15 41 27.5 41 33.852 35.851 39 29.5 39H17"></path></svg></span></button><button class="arco-btn arco-btn-text arco-btn-shape-square arco-btn-size-small arco-btn-status-normal arco-btn-disabled arco-btn-only-icon" type="button" data-v-4f42f7a4="" disabled=""><span class="arco-btn-icon"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" class="arco-icon arco-icon-redo" stroke-width="4" stroke-linecap="butt" stroke-linejoin="miter" data-v-4f42f7a4=""><path d="m32.678 23.78 7.778-7.778-7.778-7.778M39.19 16H18.5C12.149 16 7 21.15 7 27.5 7 33.852 12.149 39 18.5 39H31"></path></svg></span></button></div></div><div class="arco-col arco-col-8" data-v-4f42f7a4="" align="center"> To save this document, bookmark this page or copy the share link → </div><div class="arco-col arco-col-8" style="padding-right: 0.5rem;" data-v-4f42f7a4="" align="right"><button class="arco-btn arco-btn-secondary arco-btn-shape-square arco-btn-size-small arco-btn-status-normal" type="button" data-v-4f42f7a4=""><!--v-if-->Share</button></div></div></div><div style="width: 100%; height: 100%;"><div class="canvas rCSzc73wf" style="background-position: 325px 204px; background-size: 13px 13px; --resize-handle-height: 0px;"><div class="infinite-viewer-wrapper"><div class="infinite-viewer-scroll-area" style="width: calc(100% + 1000px); height: calc(100% + 1000px);"></div><div class="viewport" style="transform-origin: 0px 0px 0px; transform: translate3d(500px, 500px, 0px) scale(1);"><svg class="link" xmlns="http://www.w3.org/2000/svg" width="726" height="283" style="left: -8.75px; top: -33px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 508 31C 367 31,367 211,226 211" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(226, 211) rotate(180)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="237" height="979" style="left: -27.75px; top: 106px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 128 144C 128 513,109 513,109 882" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(109, 882) rotate(90)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="750" height="231" style="left: 499.25px; top: -33px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 218 31C 371 31,371 214,524 214" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(524, 214) rotate(0)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="368" height="685" style="left: 881.25px; top: 164px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 150 17C 120 17,132 143.5,132 270" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(132, 270) rotate(90)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="373" height="346" style="left: 344.25px; top: -33px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 155 31C 125 31,109 147,109 263" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(109, 263) rotate(90)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="359" height="184" style="left: 203.25px; top: 238px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 250 75C 250 114,256 153,226 153" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(226, 153) rotate(180)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="414" height="182" style="left: 344.25px; top: 238px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 109 75C 109 109.75,148.5 144.5,188 144.5" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(188, 144.5) rotate(0)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="473" height="570" style="left: 672.25px; top: 442px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 341 407C 341 469.75,283.5 532.5,226 532.5" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(226, 532.5) rotate(180)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="577" height="848" style="left: 672.25px; top: 164px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 359 17C 234 17,109 391,109 765" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(109, 765) rotate(90)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="334" height="402" style="left: 203.25px; top: 360px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 109 62C 109 183.5,225 183.5,225 305" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(225, 305) rotate(90)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="439" height="417" style="left: 319.25px; top: 345px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 221 37.5C 165 37.5,109 178.75,109 320" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(109, 320) rotate(90)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="477" height="136" style="left: 1186.25px; top: 503px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 218 51.5C 248 51.5,221 126,251 126" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(251, 126) rotate(0)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="262" height="540" style="left: 1401.25px; top: 99px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 109 34C 109 273,153 273,153 512" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(153, 512) rotate(90)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="245" height="454" style="left: 319.25px; top: 673px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 109 89C 109 230,136 230,136 371" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(136, 371) rotate(90)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="385" height="233" style="left: 1686.25px; top: 1261px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 167 37.5C 137 37.5,109 93.75,109 150" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(109, 150) rotate(90)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="496" height="692" style="left: 1854px; top: 645px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 388 103C 388 378.75,306 654.5,224 654.5" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(224, 654.5) rotate(180)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="237" height="718" style="left: 2134px; top: 645px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 108 103C 108 369,129 369,129 635" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(129, 635) rotate(90)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="548" height="131" style="left: 1356.25px; top: 1371px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 330 85.5C 278 85.5,278 65.5,226 65.5" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(226, 65.5) rotate(180)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="346" height="449" style="left: 672.25px; top: 937px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 109 75C 109 192.5,237 192.5,237 310" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(237, 310) rotate(90)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="774" height="247" style="left: 800.25px; top: 1255px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 556 181.5C 391 181.5,391 65.5,226 65.5" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(226, 65.5) rotate(180)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="672" height="334" style="left: 346.25px; top: 1052px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 218 37.5C 332 37.5,332 268.5,446 268.5" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(446, 268.5) rotate(0)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="523" height="407" style="left: 881.25px; top: 442px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 305 112.5C 275 112.5,302 203.5,272 203.5" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(272, 203.5) rotate(180)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="592" height="131" style="left: -27.75px; top: 996px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 218 44.5C 292 44.5,292 93.5,366 93.5" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(366, 93.5) rotate(0)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="631.5333862304688" height="402.2166748046875" style="left: 1445.25px; top: 619px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 218 10C 322.34169006347656 10,426.6833801269531 47.10833740234375,426.6833801269531 84.2166748046875" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(426.6833801269531, 84.2166748046875) rotate(90)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="440.4833984375" height="349.449951171875" style="left: 1222.77px; top: 619px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 222.4833984375 10C 192.4833984375 10,173.85000610351562 110.2249755859375,173.85000610351562 210.449951171875" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(173.85000610351562, 210.449951171875) rotate(90)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="453" height="345" style="left: 1121.25px; top: 1157px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 218 17C 281 17,344 111.5,344 206" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(344, 206) rotate(90)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="449.21661376953125" height="353.550048828125" style="left: 1121.25px; top: 837.45px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 218 336.550048828125C 248 336.550048828125,275.3666076660156 237.7750244140625,275.3666076660156 139" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(275.3666076660156, 139) rotate(270)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="599.5333862304688" height="520.7833251953125" style="left: 1477.25px; top: 711.217px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 394.6833801269531 310C 394.6833801269531 386.14166259765625,310.34169006347656 462.2833251953125,226 462.2833251953125" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(226, 462.2833251953125) rotate(180)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="539" height="229" style="left: 800.25px; top: 1157px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 321 17C 273.5 17,273.5 163.5,226 163.5" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(226, 163.5) rotate(180)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="574" height="117" style="left: 1121.25px; top: 1115px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 356 58.5C 291 58.5,291 59,226 59" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(226, 59) rotate(180)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="230" height="349" style="left: 788.25px; top: 1255px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 121 131C 121 161,109 153,109 183" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(109, 183) rotate(90)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="545" height="227" style="left: 460px; top: 1447px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 329 79.5C 276.5 79.5,276.5 120.5,224 120.5" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(224, 120.5) rotate(180)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="948" height="648" style="left: 1402px; top: 100px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 216 17C 470 17,470 596.5,724 596.5" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(724, 596.5) rotate(0)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="342" height="257" style="left: 1032px; top: 165px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 216 17.5C 246 17.5,234 61.25,234 105" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(234, 105) rotate(90)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="1118" height="166" style="left: 500px; top: -32px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 216 31.5C 555 31.5,555 149,894 149" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(894, 149) rotate(0)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="367" height="415" style="left: 2134px; top: 645px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 216 51.5C 246 51.5,259 108.75,259 166" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(259, 166) rotate(90)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="489" height="111" style="left: 345px; top: 203px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 216 73.5C 246 73.5,235 31,265 31" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(265, 31) rotate(0)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><!----><div class="node noselect selectable" id="jdvf78UwJ-rGJdDPVenKS" style="width: 200px; transform: translate(500px, -32px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="white" gradient="false"><div class="note"><div><div translate="no" class="ProseMirror" contenteditable="false"><p>If games/media are designed systems that can be analyzed through HPS, what about systems that are <strong>emergent?</strong></p></div></div></div><!----><!----></div><div class="node noselect selectable" id="gL1pjmmSgwkBsh-BcRWy0" style="width: 200px; transform: translate(-8px, 107px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="white" gradient="false"><div class="note"><div><div translate="no" class="ProseMirror" contenteditable="false"><p>emergence</p><p>highways example already used. Termites - structure from simple rules</p><p><a target="_blank" rel="noopener noreferrer nofollow" href="http://www.netlogoweb.org/launch#http://ccl.northwestern.edu/netlogo/models/models/Sample%20Models/Biology/Termites.nlogo">http://www.netlogoweb.org/launch#http://ccl.northwestern.edu/netlogo/models/models/Sample%20Models/Biology/Termites.nlogo</a></p></div></div></div><!----><!----></div><div class="node noselect selectable" id="2Iz5hywdy9OTqt3qF9sA2" style="width: 200px; transform: translate(-27px, 997px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="white" gradient="false"><div class="note"><div><div translate="no" class="ProseMirror" contenteditable="false"><p>connection with enchantment</p><p><br class="ProseMirror-trailingBreak"></p><ul><li><p>an 'encounter' with order from randomness</p></li><li><p>leads to unexpected &amp; expected transformations</p></li></ul></div></div></div><!----><!----></div><div class="node noselect selectable" id="RYWGz39rGGyhPC3ox6Kb6" style="width: 200px; transform: translate(1032px, 165px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="white" gradient="false"><div class="note"><div><div translate="no" class="ProseMirror" contenteditable="false"><p>Oregon Trail: 1971</p><p>Not Emergent</p></div></div></div><!----><!----></div><div class="node noselect selectable" id="hFO37SdS2H1mLgssWz4rH" style="width: 246px; transform: translate(882px, 443px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="white" gradient="false"><div class="note"><div><div translate="no" class="ProseMirror" contenteditable="false"><p>Modern parser based IF, often written with Inform10: can look like this:</p><p><br class="ProseMirror-trailingBreak"></p><p>"Cave Entrance"</p><p><br class="ProseMirror-trailingBreak"></p><p>The Cobble Crawl is a room. "You are crawling over cobbles in a low passage. There is a dim light at the east end of the passage."</p><p><br class="ProseMirror-trailingBreak"></p><p>A wicker cage is here. "There is a small wicker cage discarded nearby."</p><p><br class="ProseMirror-trailingBreak"></p><p>The Debris Room is west of the Crawl. "You are in a debris room filled with stuff washed in from the surface. A low wide passage with cobbles becomes plugged with mud and debris here, but an awkward canyon leads upward and west. A note on the wall says, 'Magic word XYZZY'."</p><p><br class="ProseMirror-trailingBreak"></p><p>The black rod is here. "A three foot black rod with a rusty star on one end lies nearby."</p><p><br class="ProseMirror-trailingBreak"></p><p>Above the Debris Room is the Sloping E/W Canyon. West of the Canyon is the Orange River Chamber.</p><p><br class="ProseMirror-trailingBreak"></p></div></div></div><!----><!----></div><div class="node noselect selectable" id="q0FZJBs_I_YDqraFSkQHC" style="width: 200px; transform: translate(345px, 239px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="white" gradient="false"><div class="note"><div><div translate="no" class="ProseMirror" contenteditable="false"><p>ELIZA: 1966, by Joseph Weizenbaum... for him, it showed the limits of human-computer interaction: and that it was undesireable</p></div></div></div><!----><!----></div><div class="node noselect selectable reference" id="r5TdstOr_U5B5aBc1jtUy" style="width: 200px; transform: translate(204px, 361px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="primary" gradient="true"><!----><div class="reference-content" data-v-8d4a73d4=""><span class="title" data-v-8d4a73d4="">Fetching title...</span> <br data-v-8d4a73d4=""><span class="authors" data-v-8d4a73d4="">Fetching authors...</span> <br data-v-8d4a73d4=""><span class="identifier" data-v-8d4a73d4="">https://www.masswerk.at/elizabot/eliza.html</span></div><!----></div><div class="node noselect selectable reference" id="nU_RGk_Fl82fqzgqiuHek" style="width: 200px; transform: translate(541px, 346px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="primary" gradient="true"><!----><div class="reference-content" data-v-8d4a73d4=""><span class="title" data-v-8d4a73d4="">Fetching title...</span> <br data-v-8d4a73d4=""><span class="authors" data-v-8d4a73d4="">Fetching authors...</span> <br data-v-8d4a73d4=""><span class="identifier" data-v-8d4a73d4="">https://sites.google.com/view/elizagen-org/the-original-eliza</span></div><!----></div><div class="node noselect selectable" id="_J8j3rJbAzqhhHhsG16Ch" style="width: 200px; transform: translate(673px, 938px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="white" gradient="false"><div class="note"><div><div translate="no" class="ProseMirror" contenteditable="false"><p>outcomes largely ordained; there might be many of them, but they are all a function of how you traverse the 'map' of connected 'rooms' - ie, a network</p></div></div></div><!----><!----></div><div class="node noselect selectable" id="Q2nD9uNYrKoy7C78_UXLj" style="width: 200px; transform: translate(320px, 674px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="white" gradient="false"><div class="note"><div><div translate="no" class="ProseMirror" contenteditable="false"><p>Code was deterministic in the sense it searched for keywords and made substitutions BUT any particular 'play' had impossible to predict outcome</p><p><br class="ProseMirror-trailingBreak"></p></div></div></div><!----><!----></div><div class="node noselect selectable" id="83f74maREKUkEkJhZmhsH" style="width: 200px; transform: translate(1187px, 504px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="white" gradient="false"><div class="note"><div><div translate="no" class="ProseMirror" contenteditable="false"><p>Emergence of D&amp;D in the 1970s</p><ul><li><p>systems for generating 'dungeons', characters, objects,</p></li><li><p>dungeon master or storyteller reacts dynamically to players within these worlds/constraints</p></li></ul></div></div></div><!----><!----></div><div class="node noselect selectable" id="VjSzgvxfvEPpZr8n_bfjL" style="width: 200px; transform: translate(1402px, 100px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="white" gradient="false"><div class="note"><div><div translate="no" class="ProseMirror" contenteditable="false"><p>Early computing hardware: serious memory &amp; computing limits.</p></div></div></div><!----><!----></div><div class="node noselect selectable" id="s6-fesrwspJUJm07RQpQb" style="width: 200px; transform: translate(1446px, 620px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="white" gradient="false"><div class="note"><div><div translate="no" class="ProseMirror" contenteditable="false"><p>Rogue et al 1980</p></div></div></div><!----><!----></div><div class="node noselect selectable" id="gyup5EA9yLoK8eLwyQ8TS" style="width: 200px; transform: translate(347px, 1053px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="white" gradient="false"><div class="note"><div><div translate="no" class="ProseMirror" contenteditable="false"><p>Eliza Effect</p><ul><li><p>human motivations, aspirations, reasons ascribed to machines</p></li><li><p>note also the gendered aspect</p></li></ul></div></div></div><!----><!----></div><div class="node noselect selectable" id="rOUti_2Hfk5RDfe-_qfap" style="width: 200px; transform: translate(1158px, 278px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="white" gradient="false"><div class="note"><div><div translate="no" class="ProseMirror" contenteditable="false"><p><a target="_blank" rel="noopener noreferrer nofollow" href="https://upload.wikimedia.org/wikipedia/en/2/26/TheOregonTrail1971Gameplay.png">https://upload.wikimedia.org/wikipedia/en/2/26/TheOregonTrail1971Gameplay.png</a></p><p><br class="ProseMirror-trailingBreak"></p><p><a target="_blank" rel="noopener noreferrer nofollow" href="https://archive.org/details/OregonTrailMainframe">https://archive.org/details/OregonTrailMainframe</a></p><p><br class="ProseMirror-trailingBreak"></p><p><br class="ProseMirror-trailingBreak"></p><p>note small file size! played at first via teletype</p></div></div></div><!----><!----></div><div class="node noselect selectable" id="JZjp_6f8REzheddV-DTPW" style="width: 200px; transform: translate(2134px, 645px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="white" gradient="false"><div class="note"><div><div translate="no" class="ProseMirror" contenteditable="false"><p>perceptron 1943. Warren McCulloch, Walter Pitts invent the algorithm of the perceptron</p><p><br class="ProseMirror-trailingBreak"></p><p><a target="_blank" rel="noopener noreferrer nofollow" href="https://www.simplilearn.com/tutorials/deep-learning-tutorial/perceptron">https://www.simplilearn.com/tutorials/deep-learning-tutorial/perceptron</a></p></div></div></div><!----><!----></div><div class="node noselect selectable" id="jsHwL6lPIOker05jZDQsS" style="width: 200px; transform: translate(1357px, 1372px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="white" gradient="false"><div class="note"><div><div translate="no" class="ProseMirror" contenteditable="false"><p>perceptron seemed a dead end until we figured out how to add more layers, how to feed forward and backpropogate, and how to feed it not just images...</p><p><br class="ProseMirror-trailingBreak"></p><p>add many more layers;</p><p>add many more inputs;</p><p>you get a modern neural network</p></div></div></div><!----><!----></div><div class="node noselect selectable" id="XzDTyvgIGBe8lZjN4EMxJ" style="width: 200px; transform: translate(2155px, 1288px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="white" gradient="false"><div class="note"><div><div translate="no" class="ProseMirror" contenteditable="false"><p>biological analogy</p><p><a target="_blank" rel="noopener noreferrer nofollow" href="https://www.simplilearn.com/ice9/free_resources_article_thumb/Perceptron/diagram-of-a-biological-neuron_1.jpg">https://www.simplilearn.com/ice9/free_resources_article_thumb/Perceptron/diagram-of-a-biological-neuron_1.jpg</a></p></div></div></div><!----><!----></div><div class="node noselect selectable" id="bv7z4s2ZwBHP6b6_cNTj1" style="width: 200px; transform: translate(1854px, 1262px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="white" gradient="false"><div class="note"><div><div translate="no" class="ProseMirror" contenteditable="false"><p>artificial:</p><p><a target="_blank" rel="noopener noreferrer nofollow" href="https://www.simplilearn.com/ice9/free_resources_article_thumb/Perceptron/diagram-for-general-view-of-artificial-neuron_2.JPG">https://www.simplilearn.com/ice9/free_resources_article_thumb/Perceptron/diagram-for-general-view-of-artificial-neuron_2.JPG</a></p></div></div></div><!----><!----></div><div class="node noselect selectable" id="Fhnw8YrWbTIIQ4ZynGLNy" style="width: 200px; transform: translate(1687px, 1420px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="white" gradient="false"><div class="note"><div><div translate="no" class="ProseMirror" contenteditable="false"><p>And here's how the perceptron does the math</p><p><a target="_blank" rel="noopener noreferrer nofollow" href="https://miro.medium.com/max/1002/1*ztXU57QEETPHGXczHrSWSA.gif">https://miro.medium.com/max/1002/1*ztXU57QEETPHGXczHrSWSA.gif</a></p></div></div></div><!----><!----></div><div class="node noselect selectable" id="HKKPgSlhZUVWBdkeX_WAz" style="width: 200px; transform: translate(801px, 1256px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="white" gradient="false"><div class="note"><div><div translate="no" class="ProseMirror" contenteditable="false"><p>And you get AI writing stories, or being chatbots. AI Dungeon trained on old parser based stories; chatbots trained on phonecall transcripts</p><p><br class="ProseMirror-trailingBreak"></p><p><a target="_blank" rel="noopener noreferrer nofollow" href="https://huggingface.co/spaces/awacke1/CB-GR-Chatbot-Blenderbot">https://huggingface.co/spaces/awacke1/CB-GR-Chatbot-Blenderbot</a></p></div></div></div><!----><!----></div><div class="node noselect selectable" id="gs57kCi6c_4lRgbnHOU3e" style="width: 200px; transform: translate(517px, -127px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="white" gradient="false"><div class="note"><div><div translate="no" class="ProseMirror" contenteditable="false"><p>key themes:</p><ul><li><p>emergence</p></li><li><p>eliza effect</p></li><li><p>non-linear systems</p></li></ul></div></div></div><!----><!----></div><div class="node noselect selectable" id="ccAohDpSzztl6pbGt8hvd" style="width: 329.7px; transform: translate(1223.52px, 838.444px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="white" gradient="false"><div class="note"><div><div translate="no" class="ProseMirror" contenteditable="false"><p>No Man's Sky</p><ul><li><p>formulae to cover evolution of species</p></li><li><p>fractals to generate forms</p></li><li><p>formulae to explain connections between air temeperature, pressure, terrain etc</p></li><li><p>VAST universe, all of it generated from random chaos EXCEPT the 'source seed' which comes with the game; hence every player explores the same universe (MC has a different seed for each game)</p></li></ul></div></div></div><!----><!----></div><div class="node noselect selectable" id="HUVwTNY-DEcLmTrLmUR3M" style="width: 391.7px; transform: translate(1667.83px, 712.222px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="white" gradient="false"><div class="note"><div><div translate="no" class="ProseMirror" contenteditable="false"><p>here's some python, similar in spirit (<a target="_blank" rel="noopener noreferrer nofollow" href="https://python.plainenglish.io/create-a-random-dungeon-with-python-f17118c1eebd">https://python.plainenglish.io/create-a-random-dungeon-with-python-f17118c1eebd</a>):</p><pre><code>def init_rooms():
+    """Initializes the rooms in the dungeon."""    
+total_rooms = randrange(min_rooms,max_rooms)
+    for i in range(max_iters):
+        for r in range(total_rooms):
+            if len(rooms) &gt;= max_rooms:
+                break    x = randrange(0,map_width)
+            y = randrange(0,map_height)    width = randrange(min_room_size,max_room_size)
+            height = randrange(min_room_size,max_room_size)
+            room = Room(x,y,width,height)    if check_for_overlap(room, rooms):
+                pass
+            else:
+                rooms.append(room)    for room in rooms:
+        for y in range(room.y, room.y+room.height):
+            for x in range(room.x, room.x+room.width):
+                map[x,y] = 1</code></pre></div></div></div><!----><!----></div><div class="node noselect selectable" id="TrU1tIpnC9uq4lJYQIad8" style="width: 200px; transform: translate(1122px, 1158px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="white" gradient="false"><div class="note"><div><div translate="no" class="ProseMirror" contenteditable="false"><p>these two trends not connected yet, but give it time!</p></div></div></div><!----><!----></div><div class="node noselect selectable" id="ww-vo03Hnd6xG4oWbBY9n" style="width: 200px; transform: translate(1478px, 1116px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="white" gradient="false"><div class="note"><div><div translate="no" class="ProseMirror" contenteditable="false"><p>Watabou - ProcGen Arcana</p><p><br class="ProseMirror-trailingBreak"></p><ul><li><p>systems for ttrpg</p></li></ul><p><br class="ProseMirror-trailingBreak"></p><p><a target="_blank" rel="noopener noreferrer nofollow" href="https://watabou.github.io/">https://watabou.github.io/</a></p><p><br class="ProseMirror-trailingBreak"></p><p>...just need a story teller to connect them</p></div></div></div><!----><!----></div><div class="node noselect selectable" id="wweiidw5vCnIiHciP7xRs" style="width: 200px; transform: translate(789px, 1447px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="white" gradient="false"><div class="note"><div><div translate="no" class="ProseMirror" contenteditable="false"><ul><li><p>take incredibly lifelike simulations, generated by the machine</p></li><li><p>take incredibly lifelike HUMANS, generated by the machine</p></li><li><p>Put them into historical situations</p></li><li><p>Where is the 'history' here?</p></li><li><p>How do we deal with the dangers of the Eliza effect?</p></li></ul></div></div></div><!----><!----></div><div class="node noselect selectable" id="NHfwyGMRWUVbRN4H1-A-j" style="width: 200px; transform: translate(460px, 1461px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="white" gradient="false"><div class="note"><div><div translate="no" class="ProseMirror" contenteditable="false"><p>for next day: we raise the dead with <a target="_blank" rel="noopener noreferrer nofollow" href="https://minimaxir.com/2019/09/howto-gpt2/">https://minimaxir.com/2019/09/howto-gpt2/</a></p><p><br class="ProseMirror-trailingBreak"></p><ul><li><p>to prepare, find the writing of a historical individual on Gutenberg Project</p></li><li><p>compile their writing into a single text document</p></li><li><p>DO NOT copy the copyright notices etc</p></li><li><p>aim for &lt; 10 mb in size</p></li><li><p>We're creating the source for an experiment in raising the dead</p></li></ul></div></div></div><!----><!----></div><div class="node noselect selectable" id="I78o9p_6IzN1qWwbo8nbw" style="width: 200px; transform: translate(2285px, 819px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="white" gradient="false"><div class="note"><div><div translate="no" class="ProseMirror" contenteditable="false"><p>Frank Rosenblatt builds the Perceptron Mark 1958</p><p><br class="ProseMirror-trailingBreak"></p><p>Machine meant for image recognition. Would learn shapes as a statistical distribution. Even then, it was realized that the framework could learn <em>other</em> things too.</p><p><br class="ProseMirror-trailingBreak"></p><p>depends on feedback loop [key part of emergence in complex systems, eh?]</p><p><br class="ProseMirror-trailingBreak"></p><p><a target="_blank" rel="noopener noreferrer nofollow" href="https://www.glass-bead.org/article/machines-that-morph-logic/?lang=enview">https://www.glass-bead.org/article/machines-that-morph-logic/?lang=enview</a></p></div></div></div><!----><!----></div><div class="node noselect selectable" id="fMIxA5VSFLRNWG3_w2EAS" style="width: 200px; transform: translate(961px, -149px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="white" gradient="false"><div class="note"><div><div translate="no" class="ProseMirror" contenteditable="false"><p>You may add notes by double clicking.</p><p><br class="ProseMirror-trailingBreak"></p><p>Single click on a note to turn on linking; click on link icon, then click on note to link to. Click the canvas again to turn off linking.</p></div></div></div><!----><!----></div><div class="node noselect selectable reference" id="upUYUj2TpMzkmLrAjGzZa" style="width: 200px; transform: translate(618px, 203px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="primary" gradient="true"><!----><div class="reference-content" data-v-8d4a73d4=""><span class="title" data-v-8d4a73d4="">Fetching title...</span> <br data-v-8d4a73d4=""><span class="authors" data-v-8d4a73d4="">Fetching authors...</span> <br data-v-8d4a73d4=""><span class="identifier" data-v-8d4a73d4="">https://link.springer.com/article/10.1007/s00146-018-0825-9</span></div><!----></div><div><!----></div><div data-styled-id="rCS1rb3a7w" portalcontainer="[object HTMLDivElement]" data-able-draggable="true" data-able-padding="true" data-able-origin="true" class="moveable-control-box   moveable rCS1rb3a7w" style="position: absolute; display: none; transform: translate3d(0px, 0px, 0px); --zoom: 1; --zoompx: 1px;" data-able-groupable="true" data-able-dragarea="true"><div class="moveable-control moveable-origin" style="transform: translateZ(0px) translate(0px) rotate(0rad) scale(1);"></div><div data-rotation="-1" data-line-index="0" data-direction="" class="moveable-line moveable-direction  " style="transform: translateY(-50%) translate(0px) rotate(0rad) scaleY(1); width: 0px;"></div><div data-rotation="-1" data-line-index="1" data-direction="" class="moveable-line moveable-direction  " style="transform: translateY(-50%) translate(0px) rotate(0rad) scaleY(1); width: 0px;"></div><div data-rotation="-1" data-line-index="2" data-direction="" class="moveable-line moveable-direction  " style="transform: translateY(-50%) translate(0px) rotate(0rad) scaleY(1); width: 0px;"></div><div data-rotation="-1" data-line-index="3" data-direction="" class="moveable-line moveable-direction  " style="transform: translateY(-50%) translate(0px) rotate(0rad) scaleY(1); width: 0px;"></div></div></div></div><div class="infinite-viewer-horizontal-scroll-bar infinite-viewer-scroll-bar" style="display: block;"><div class="infinite-viewer-scroll-thumb" style="width: 1436.67px; transform: translateX(178.368px);"></div></div><div class="infinite-viewer-vertical-scroll-bar infinite-viewer-scroll-bar" style="display: block;"><div class="infinite-viewer-scroll-thumb" style="height: 285.979px; transform: translateY(151.807px);"></div></div></div><div class="selecto-selection rCS179bs95" style="width: 1px; height: 2px; position: fixed; left: 0px; top: 0px; transform: translate(1102px, 64px); display: none;"></div><svg class="links" id="links" xmlns="http://www.w3.org/2000/svg"></svg></div><div id="pointer-location" style="left: 224px; top: 604px;" data-v-0fb01106=""></div><!----></div></body></html>
