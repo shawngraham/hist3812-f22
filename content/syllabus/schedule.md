@@ -148,7 +148,7 @@ Your **Reflection** will include your thoughts on all of the work in this module
 # Module 3: Computation
 
 ## M3.1
-+ Nov 14 **Procedural Generation**
++ Nov 14 **Procedural Generation** (static version of the interactive mind map for today's speaking notes [here](https://hist3812.netlify.app/slides/nov14.html/))
   - Have read for today:
     - Reed, Aaron. 2021. '2017: The Oregon Trail' _50 Years of Text Games_ [link](https://if50.substack.com/p/1971-the-oregon-trail?s=r)
     - Reed, Aaron. 2021. '2019: A.I. Dungeon' _50 Years of Text Games_ [link](https://if50.substack.com/p/2019-ai-dungeon?s=r)
