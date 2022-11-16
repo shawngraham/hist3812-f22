@@ -47,3 +47,36 @@ gpt2.generate(sess, run_name='franklinrun1',
 ```
 
 The **prefix** setting is where we steer the model onto the topics we're interested in. Given the nature of the source text, how might you craft prompts to 'get inside' Franklin's mind? Prompt engineering involves a great deal of close reading and an understanding of the source texts... 
+
+Here's the output, by the way, from the prompt above.
+
+```
+Something dreadful happened. As the
+whole party was loaded with hunger, much wind, and a keen
+arth
+rush, the morning of the 31st was very cold. The following
+chronological record is sufficient to give the course of events
+around the point
+====================
+Something dreadful happened. We were all frozen
+in-place for the greater part of a winter in which the gale
+has subsided, and snow was falling more brightly than before. Yet
+each of us was reduced to much colder prevails in the day,
+====================
+Something dreadful happened. I
+saw Mr. Back and his party being pushed about with a
+strong pull of the wind from the tents, being covered with snow.
+Accurate charts and drawings, were absolutely
+not possible, and we were in some degree in error
+====================
+Something dreadful happened. I felt a kind of swell around my knee, and was
+in a state of shock throughout the whole enterprise. The Doctor having
+ain't leisure to drop by our quarters during the night,
+asked if I was still lame. I told
+====================
+Something dreadful happened. The dogs became very ill, and one of them was
+affected with an ulcer, which was now our palliation
+evasion. I was now so much exhausted, that my legs were raw, and
+some other articles too, raw,
+====================
+```
