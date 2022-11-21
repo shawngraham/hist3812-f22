@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang=""><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="https://intrigue-app.github.io/favicon.ico"><title>intrigue</title><script defer="defer" src="https://intrigue-app.github.io/nov21_files/chunk-vendors.966cb890.js"></script><script defer="defer" src="nov21_files/app.bdb5736c.js"></script><link href="nov21_files/chunk-vendors.5dee0538.css" rel="stylesheet"><link href="nov21_files/app.623d5fe7.css" rel="stylesheet"><style type="text/css" data-styled-id="rCS1rb3a7w">.rCS1rb3a7w {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	left: 0;
+	top: 0;
+    z-index: 3000;
+    --moveable-color: #4af;
+    --zoom: 1;
+    --zoompx: 1px;
+    will-change: transform;
+}
+.rCS1rb3a7w .moveable-control-box {
+    z-index: 0;
+}
+.rCS1rb3a7w .moveable-line, .rCS1rb3a7w .moveable-control {
+    position: absolute;
+	left: 0;
+    top: 0;
+    will-change: transform;
+}
+.rCS1rb3a7w .moveable-control {
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+	box-sizing: border-box;
+    background: #4af;
+    background: var(--moveable-color);
+	margin-top: -7px;
+    margin-left: -7px;
+    border: 2px solid #fff;
+    z-index: 10;
+}
+.rCS1rb3a7w .moveable-padding {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100px;
+    height: 100px;
+    transform-origin: 0 0;
+}
+.rCS1rb3a7w .moveable-line {
+	width: 1px;
+    height: 1px;
+    background: #4af;
+    background: var(--moveable-color);
+	transform-origin: 0px 50%;
+}
+.rCS1rb3a7w .moveable-line.moveable-edge {
+    z-index: 1;
+    background: transparent;
+}
+.rCS1rb3a7w .moveable-line.moveable-dashed {
+    box-sizing: border-box;
+    background: transparent;
+}
+.rCS1rb3a7w .moveable-line.moveable-dashed.moveable-horizontal {
+    border-top: 1px dashed #4af;
+    border-top-color: #4af;
+    border-top-color: var(--moveable-color);
+}
+.rCS1rb3a7w .moveable-line.moveable-dashed.moveable-vertical {
+    border-left: 1px dashed #4af;
+    border-left-color: #4af;
+    border-left-color: var(--moveable-color);
+}
+.rCS1rb3a7w .moveable-line.moveable-vertical {
+    transform: translateX(-50%);
+}
+.rCS1rb3a7w .moveable-line.moveable-horizontal {
+    transform: translateY(-50%);
+}
+.rCS1rb3a7w .moveable-line.moveable-vertical.moveable-bold {
+    width: 2px;
+}
+.rCS1rb3a7w .moveable-line.moveable-horizontal.moveable-bold {
+    height: 2px;
+}
+
+.rCS1rb3a7w .moveable-control.moveable-origin {
+	border-color: #f55;
+	background: #fff;
+	width: 12px;
+	height: 12px;
+	margin-top: -6px;
+    margin-left: -6px;
+	pointer-events: none;
+}
+
+.rCS1rb3a7w .moveable-direction[data-rotation="0"] {
+	cursor:ns-resize;cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 32 32" ><path d="M 16,5 L 12,10 L 14.5,10 L 14.5,22 L 12,22 L 16,27 L 20,22 L 17.5,22 L 17.5,10 L 20, 10 L 16,5 Z" stroke-linejoin="round" stroke-width="1.2" fill="black" stroke="white" style="transform:rotate(0deg);transform-origin: 16px 16px"></path></svg>') 16 16, ns-resize;
+}
+
+
+.rCS1rb3a7w .moveable-direction[data-rotation="15"] {
+	cursor:ns-resize;cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 32 32" ><path d="M 16,5 L 12,10 L 14.5,10 L 14.5,22 L 12,22 L 16,27 L 20,22 L 17.5,22 L 17.5,10 L 20, 10 L 16,5 Z" stroke-linejoin="round" stroke-width="1.2" fill="black" stroke="white" style="transform:rotate(15deg);transform-origin: 16px 16px"></path></svg>') 16 16, ns-resize;
+}
+
+
+.rCS1rb3a7w .moveable-direction[data-rotation="30"] {
+	cursor:nesw-resize;cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 32 32" ><path d="M 16,5 L 12,10 L 14.5,10 L 14.5,22 L 12,22 L 16,27 L 20,22 L 17.5,22 L 17.5,10 L 20, 10 L 16,5 Z" stroke-linejoin="round" stroke-width="1.2" fill="black" stroke="white" style="transform:rotate(30deg);transform-origin: 16px 16px"></path></svg>') 16 16, nesw-resize;
+}
+
+
+.rCS1rb3a7w .moveable-direction[data-rotation="45"] {
+	cursor:nesw-resize;cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 32 32" ><path d="M 16,5 L 12,10 L 14.5,10 L 14.5,22 L 12,22 L 16,27 L 20,22 L 17.5,22 L 17.5,10 L 20, 10 L 16,5 Z" stroke-linejoin="round" stroke-width="1.2" fill="black" stroke="white" style="transform:rotate(45deg);transform-origin: 16px 16px"></path></svg>') 16 16, nesw-resize;
+}
+
+
+.rCS1rb3a7w .moveable-direction[data-rotation="60"] {
+	cursor:nesw-resize;cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 32 32" ><path d="M 16,5 L 12,10 L 14.5,10 L 14.5,22 L 12,22 L 16,27 L 20,22 L 17.5,22 L 17.5,10 L 20, 10 L 16,5 Z" stroke-linejoin="round" stroke-width="1.2" fill="black" stroke="white" style="transform:rotate(60deg);transform-origin: 16px 16px"></path></svg>') 16 16, nesw-resize;
+}
+
+
+.rCS1rb3a7w .moveable-direction[data-rotation="75"] {
+	cursor:ew-resize;cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 32 32" ><path d="M 16,5 L 12,10 L 14.5,10 L 14.5,22 L 12,22 L 16,27 L 20,22 L 17.5,22 L 17.5,10 L 20, 10 L 16,5 Z" stroke-linejoin="round" stroke-width="1.2" fill="black" stroke="white" style="transform:rotate(75deg);transform-origin: 16px 16px"></path></svg>') 16 16, ew-resize;
+}
+
+
+.rCS1rb3a7w .moveable-direction[data-rotation="90"] {
+	cursor:ew-resize;cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 32 32" ><path d="M 16,5 L 12,10 L 14.5,10 L 14.5,22 L 12,22 L 16,27 L 20,22 L 17.5,22 L 17.5,10 L 20, 10 L 16,5 Z" stroke-linejoin="round" stroke-width="1.2" fill="black" stroke="white" style="transform:rotate(90deg);transform-origin: 16px 16px"></path></svg>') 16 16, ew-resize;
+}
+
+
+.rCS1rb3a7w .moveable-direction[data-rotation="105"] {
+	cursor:ew-resize;cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 32 32" ><path d="M 16,5 L 12,10 L 14.5,10 L 14.5,22 L 12,22 L 16,27 L 20,22 L 17.5,22 L 17.5,10 L 20, 10 L 16,5 Z" stroke-linejoin="round" stroke-width="1.2" fill="black" stroke="white" style="transform:rotate(105deg);transform-origin: 16px 16px"></path></svg>') 16 16, ew-resize;
+}
+
+
+.rCS1rb3a7w .moveable-direction[data-rotation="120"] {
+	cursor:nwse-resize;cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 32 32" ><path d="M 16,5 L 12,10 L 14.5,10 L 14.5,22 L 12,22 L 16,27 L 20,22 L 17.5,22 L 17.5,10 L 20, 10 L 16,5 Z" stroke-linejoin="round" stroke-width="1.2" fill="black" stroke="white" style="transform:rotate(120deg);transform-origin: 16px 16px"></path></svg>') 16 16, nwse-resize;
+}
+
+
+.rCS1rb3a7w .moveable-direction[data-rotation="135"] {
+	cursor:nwse-resize;cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 32 32" ><path d="M 16,5 L 12,10 L 14.5,10 L 14.5,22 L 12,22 L 16,27 L 20,22 L 17.5,22 L 17.5,10 L 20, 10 L 16,5 Z" stroke-linejoin="round" stroke-width="1.2" fill="black" stroke="white" style="transform:rotate(135deg);transform-origin: 16px 16px"></path></svg>') 16 16, nwse-resize;
+}
+
+
+.rCS1rb3a7w .moveable-direction[data-rotation="150"] {
+	cursor:nwse-resize;cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 32 32" ><path d="M 16,5 L 12,10 L 14.5,10 L 14.5,22 L 12,22 L 16,27 L 20,22 L 17.5,22 L 17.5,10 L 20, 10 L 16,5 Z" stroke-linejoin="round" stroke-width="1.2" fill="black" stroke="white" style="transform:rotate(150deg);transform-origin: 16px 16px"></path></svg>') 16 16, nwse-resize;
+}
+
+
+.rCS1rb3a7w .moveable-direction[data-rotation="165"] {
+	cursor:ns-resize;cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32px" height="32px" viewBox="0 0 32 32" ><path d="M 16,5 L 12,10 L 14.5,10 L 14.5,22 L 12,22 L 16,27 L 20,22 L 17.5,22 L 17.5,10 L 20, 10 L 16,5 Z" stroke-linejoin="round" stroke-width="1.2" fill="black" stroke="white" style="transform:rotate(165deg);transform-origin: 16px 16px"></path></svg>') 16 16, ns-resize;
+}
+
+.rCS1rb3a7w .moveable-group {
+    z-index: -1;
+}
+.rCS1rb3a7w .moveable-area {
+    position: absolute;
+}
+.rCS1rb3a7w .moveable-area-pieces {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.rCS1rb3a7w .moveable-area.moveable-avoid, .rCS1rb3a7w .moveable-area.moveable-pass {
+    pointer-events: none;
+}
+.rCS1rb3a7w .moveable-area.moveable-avoid+.moveable-area-pieces {
+    display: block;
+}
+.rCS1rb3a7w .moveable-area-piece {
+    position: absolute;
+}
+
+
+.rCS1rb3a7w {
+    --bounds-color: #d66;
+}
+.rCS1rb3a7w .moveable-guideline {
+    pointer-events: none;
+    z-index: 2;
+}
+.rCS1rb3a7w .moveable-guideline.moveable-bounds {
+    background: #d66;
+    background: var(--bounds-color);
+}
+.rCS1rb3a7w .moveable-guideline-group {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.rCS1rb3a7w .moveable-guideline-group .moveable-size-value {
+    position: absolute;
+    color: #f55;
+    font-size: 12px;
+    font-weight: bold;
+}
+.rCS1rb3a7w .moveable-guideline-group.moveable-horizontal .moveable-size-value {
+    transform-origin: 50% 100%;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 5px;
+}
+.rCS1rb3a7w .moveable-guideline-group.moveable-vertical .moveable-size-value {
+    transform-origin: 0% 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 5px;
+}
+.rCS1rb3a7w .moveable-guideline.moveable-gap {
+    background: #f55;
+}
+.rCS1rb3a7w .moveable-size-value.moveable-gap {
+    color: #f55;
+}
+
+.rCS1rb3a7w .moveable-edge.moveable-edgeDraggable.moveable-line {
+    cursor: move;
+}
+.rCS1rb3a7w .moveable-rotation {
+    position: absolute;
+    height: 40px;
+    width: 1px;
+    transform-origin: 50% 100%;
+    height: calc(40px * var(--zoom));
+    top: auto;
+    left: 0;
+    bottom: 100%;
+    will-change: transform;
+}
+.rCS1rb3a7w .moveable-rotation .moveable-rotation-line {
+    display: block;
+    width: 100%;
+    height: 100%;
+    transform-origin: 50% 50%;
+}
+.rCS1rb3a7w .moveable-rotation .moveable-rotation-control {
+    border-color: #4af;
+    border-color: var(--moveable-color);
+    background:#fff;
+    cursor: alias;
+}
+.rCS1rb3a7w .moveable-rotatable.moveable-direction.moveable-control {
+    cursor: alias;
+}
+.rCS1rb3a7w .moveable-around-control {
+    position: absolute;
+    will-change: transform;
+    width: 20px;
+    height: 20px;
+    left: -10px;
+    top: -10px;
+    box-sizing: border-box;
+    background: transparent;
+    z-index: 8;
+    cursor: alias;
+    transform-origin: center center;
+}
+.rCS1rb3a7w .moveable-rotatable.moveable-direction.moveable-control.moveable-move {
+    cursor: move;
+}
+.rCS1rb3a7w .moveable-around-control[data-direction*="n"] {
+        top: -20px;
+        transform-origin: center bottom;
+    }
+.rCS1rb3a7w .moveable-around-control[data-direction*="w"] {
+        left: -20px;
+        transform-origin: right center;
+    }
+.rCS1rb3a7w .moveable-around-control[data-direction*="s"] {
+        top: 0px;
+        transform-origin: center top;
+    }
+.rCS1rb3a7w .moveable-around-control[data-direction*="e"] {
+        left: 0px;
+        transform-origin: left center;
+    }
+.rCS1rb3a7w .moveable-around-control[data-direction*="nw"] {
+        left: -20px;top: -20px;
+        transform-origin: right bottom;
+    }
+.rCS1rb3a7w .moveable-around-control[data-direction*="ne"] {
+        left: 0px;top: -20px;
+        transform-origin: left bottom;
+    }
+.rCS1rb3a7w .moveable-around-control[data-direction*="sw"] {
+        left: -20px;top: 0px;
+        transform-origin: right top;
+    }
+.rCS1rb3a7w .moveable-around-control[data-direction*="se"] {
+        left: 0px;top: 0px;
+        transform-origin: left top;
+    }
+
+.rCS1rb3a7w[data-able-origindraggable] .moveable-control.moveable-origin {
+    pointer-events: auto;
+}
+.rCS1rb3a7w .moveable-control.moveable-clip-control {
+    background: #6d6;
+    cursor: pointer;
+}
+.rCS1rb3a7w .moveable-control.moveable-clip-control.moveable-clip-radius {
+    background: #d66;
+}
+.rCS1rb3a7w .moveable-line.moveable-clip-line {
+    background: #6e6;
+    cursor: move;
+    z-index: 1;
+}
+.rCS1rb3a7w .moveable-clip-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.rCS1rb3a7w .moveable-clip-ellipse {
+    position: absolute;
+    cursor: move;
+    border: 1px solid #6d6;
+    border: var(--zoompx) solid #6d6;
+    border-radius: 50%;
+    transform-origin: 0px 0px;
+}
+.rCS1rb3a7w {
+    --bounds-color: #d66;
+}
+.rCS1rb3a7w .moveable-guideline {
+    pointer-events: none;
+    z-index: 2;
+}
+.rCS1rb3a7w .moveable-line.moveable-guideline.moveable-bounds {
+    background: #d66;
+    background: var(--bounds-color);
+}
+.rCS1rb3a7w .moveable-control.moveable-border-radius {
+    background: #d66;
+    cursor: pointer;
+}
+.rCS1rb3a7w[data-able-roundable] .moveable-line.moveable-direction {
+    cursor: pointer;
+}</style><style type="text/css" data-styled-id="rCSzc73wf">.rCSzc73wf {
+    position: relative;
+    overscroll-behavior: none;
+}
+.rCSzc73wf .infinite-viewer-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    top: 0;
+    left: 0;
+    will-change: scroll-position;
+}
+.rCSzc73wf .infinite-viewer-wrapper::-webkit-scrollbar {
+    display: none;
+}
+.rCSzc73wf .infinite-viewer-scroll-area {
+    position:absolute;
+    top:0;
+    left:0;
+    transform-origin: 0 0;
+}
+.rCSzc73wf .infinite-viewer-scroll-bar {
+    position:absolute;
+    width: 10px;
+    height: 10px;
+    box-sizing: border-box;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+.rCSzc73wf .infinite-viewer-horizontal-scroll-bar {
+    width: 100%;
+    height: 14px;
+}
+.rCSzc73wf .infinite-viewer-vertical-scroll-bar {
+    height: 100%;
+    width: 14px;
+}
+.rCSzc73wf .infinite-viewer-scroll-thumb {
+    position:relative;
+    opacity: 0.7;
+    background: #333;
+    border-radius: 3px;
+    left: 0px;
+    top: 0px;
+    z-index: 10;
+    width: 6px;
+    height: 6px;
+    transition: all ease 0.2s;
+}
+.rCSzc73wf .infinite-viewer-horizontal-scroll-bar .infinite-viewer-scroll-thumb {
+    margin: 4px 0px;
+    transition-property: margin, height, border-radius;
+}
+.rCSzc73wf .infinite-viewer-vertical-scroll-bar .infinite-viewer-scroll-thumb {
+    margin: 0px 4px;
+    transition-property: margin, width, border-radius;
+}
+.rCSzc73wf .infinite-viewer-horizontal-scroll-bar:hover .infinite-viewer-scroll-thumb {
+    height: 10px;
+    margin: 2px 0px;
+    border-radius: 5px;
+}
+.rCSzc73wf .infinite-viewer-vertical-scroll-bar:hover .infinite-viewer-scroll-thumb {
+    width: 10px;
+    margin: 0px 2px;
+    border-radius: 5px;
+}
+</style><style type="text/css" data-styled-id="rCS179bs95">
+.rCS179bs95 {
+    position: fixed;
+    display: none;
+    border: 1px solid #4af;
+    background: rgba(68, 170, 255, 0.5);
+    pointer-events: none;
+    will-change: transform;
+    z-index: 100;
+}
+</style><style data-tiptap-style="">.ProseMirror {
+  position: relative;
+}
+
+.ProseMirror {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  white-space: break-spaces;
+  -webkit-font-variant-ligatures: none;
+  font-variant-ligatures: none;
+  font-feature-settings: "liga" 0; /* the above doesn't seem to work in Edge */
+}
+
+.ProseMirror [contenteditable="false"] {
+  white-space: normal;
+}
+
+.ProseMirror [contenteditable="false"] [contenteditable="true"] {
+  white-space: pre-wrap;
+}
+
+.ProseMirror pre {
+  white-space: pre-wrap;
+}
+
+img.ProseMirror-separator {
+  display: inline !important;
+  border: none !important;
+  margin: 0 !important;
+  width: 1px !important;
+  height: 1px !important;
+}
+
+.ProseMirror-gapcursor {
+  display: none;
+  pointer-events: none;
+  position: absolute;
+  margin: 0;
+}
+
+.ProseMirror-gapcursor:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2px;
+  width: 20px;
+  border-top: 1px solid black;
+  animation: ProseMirror-cursor-blink 1.1s steps(2, start) infinite;
+}
+
+@keyframes ProseMirror-cursor-blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+.ProseMirror-hideselection *::selection {
+  background: transparent;
+}
+
+.ProseMirror-hideselection *::-moz-selection {
+  background: transparent;
+}
+
+.ProseMirror-hideselection * {
+  caret-color: transparent;
+}
+
+.ProseMirror-focused .ProseMirror-gapcursor {
+  display: block;
+}
+
+.tippy-box[data-animation=fade][data-state=hidden] {
+  opacity: 0
+}</style></head><body><noscript><strong>We're sorry but intrigue doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app" data-v-app=""><div class="titlebar-container" data-v-4f42f7a4=""><div class="arco-row arco-row-align-center arco-row-justify-center browser noselect" data-v-4f42f7a4=""><div class="arco-col arco-col-8" data-v-4f42f7a4=""><div class="arco-btn-group" style="margin-left: 1rem;" data-v-4f42f7a4=""><button class="arco-btn arco-btn-text arco-btn-shape-square arco-btn-size-small arco-btn-status-normal arco-btn-disabled arco-btn-only-icon" type="button" disabled="disabled" data-v-4f42f7a4=""><span class="arco-btn-icon"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" class="arco-icon arco-icon-undo" stroke-width="4" stroke-linecap="butt" stroke-linejoin="miter" data-v-4f42f7a4=""><path d="m15.322 23.78-7.778-7.778 7.778-7.778M8.81 16H29.5C35.851 16 41 21.15 41 27.5 41 33.852 35.851 39 29.5 39H17"></path></svg></span></button><button class="arco-btn arco-btn-text arco-btn-shape-square arco-btn-size-small arco-btn-status-normal arco-btn-disabled arco-btn-only-icon" type="button" disabled="disabled" data-v-4f42f7a4=""><span class="arco-btn-icon"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" class="arco-icon arco-icon-redo" stroke-width="4" stroke-linecap="butt" stroke-linejoin="miter" data-v-4f42f7a4=""><path d="m32.678 23.78 7.778-7.778-7.778-7.778M39.19 16H18.5C12.149 16 7 21.15 7 27.5 7 33.852 12.149 39 18.5 39H31"></path></svg></span></button></div></div><div class="arco-col arco-col-8" data-v-4f42f7a4="" align="center"> To save this document, bookmark this page or copy the share link → </div><div class="arco-col arco-col-8" style="padding-right: 0.5rem;" data-v-4f42f7a4="" align="right"><button class="arco-btn arco-btn-secondary arco-btn-shape-square arco-btn-size-small arco-btn-status-normal" type="button" data-v-4f42f7a4=""><!--v-if-->Share</button></div></div></div><div style="width: 100%; height: 100%;"><div class="canvas rCSzc73wf" style="background-position: 506px -120px; background-size: 13px 13px; --resize-handle-height: 62px;"><div class="infinite-viewer-wrapper"><div class="infinite-viewer-scroll-area" style="width: calc(100% + 1000px); height: calc(100% + 1000px);"></div><div class="viewport" style="transform-origin: 0px 0px 0px; transform: translate3d(1006px, 500px, 0px) scale(1);"><svg class="link" xmlns="http://www.w3.org/2000/svg" width="229" height="207" style="left: 206px; top: 296.5px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 120 117C 120 148,109 148,109 179" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(109, 179) rotate(90)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="389" height="213" style="left: 611px; top: 363.5px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 171 10C 140 10,109 49,109 88" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(109, 88) rotate(90)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="349" height="161" style="left: 782px; top: 363.5px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 218 10C 248 10,239 49.5,239 89" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(239, 89) rotate(90)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="488" height="335" style="left: 217px; top: 78.5px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 270 31C 189.5 31,109 120.5,109 210" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(109, 210) rotate(90)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="256" height="98" style="left: 168px; top: 483.5px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 147 20C 147 50,109 26,109 56" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(109, 56) rotate(90)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="337" height="133" style="left: 49px; top: 547.5px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 119 17C 89 17,109 33,109 63" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(109, 63) rotate(90)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="326" height="140" style="left: 168px; top: 547.5px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 218 17C 248 17,217 40,217 70" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(217, 70) rotate(90)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="242" height="311" style="left: 758px; top: 72.5px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 109 131C 109 207,133 207,133 283" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(133, 283) rotate(90)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="352" height="124" style="left: 487px; top: 16.5px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 134 10C 104 10,109 24,109 54" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(109, 54) rotate(90)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="355" height="187" style="left: 621px; top: 16.5px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 218 10C 248 10,246 18,246 48" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(246, 48) rotate(90)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="380" height="312" style="left: 611px; top: 459.5px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 109 117C 109 192.25,124 267.5,154 267.5" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(154, 267.5) rotate(0)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="358" height="311" style="left: 773px; top: 460.5px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 138 32C 108 32,109 123,109 214" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(109, 214) rotate(90)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="253" height="124" style="left: 49px; top: 618.5px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 109 62C 109 92,144 52,144 82" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(144, 82) rotate(90)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="337" height="118" style="left: 276px; top: 625.5px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 109 62C 109 92,81 108,111 108" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(111, 108) rotate(0)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="229" height="222" style="left: 773px; top: 682.5px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 109 89C 109 119,120 95,120 125" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(120, 125) rotate(90)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="284" height="244" style="left: 784px; top: 815.5px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 109 89C 109 119,175 89,175 119" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(175, 119) rotate(90)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="371" height="418" style="left: 395px; top: 723.5px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 218 10C 248 10,262 151.5,262 293" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(262, 293) rotate(90)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="520" height="199" style="left: 548px; top: 942.5px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 302 58.5C 264 58.5,264 140.5,226 140.5" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(226, 140.5) rotate(180)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="581" height="130" style="left: 185px; top: 1011.5px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 363 71.5C 294.5 71.5,294.5 31,226 31" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(226, 31) rotate(180)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="515" height="211" style="left: -91px; top: 292.5px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 218 58.5C 253.5 58.5,253.5 201,289 201" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(289, 201) rotate(0)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="234" height="222" style="left: 532px; top: 1024.5px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 125 117C 125 147,109 122,109 152" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(109, 152) rotate(90)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="468" height="215" style="left: 548px; top: 1024.5px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 218 58.5C 248 58.5,212 191,242 191" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(242, 191) rotate(0)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="225" height="142" style="left: 185px; top: 1011.5px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 109 62C 109 92,116 84,116 114" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(116, 114) rotate(90)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="487" height="62" style="left: -84px; top: 1011.5px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 269 31C 239 31,256 39,226 39" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(226, 39) rotate(180)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="236" height="218" style="left: -102px; top: 1033.5px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 127 34C 127 64,109 63,109 93" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(109, 93) rotate(90)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><svg class="link" xmlns="http://www.w3.org/2000/svg" width="585" height="75" style="left: -161px; top: 460.5px;" data-v-1bc3dcbd=""><g style="pointer-events: auto;" data-v-1bc3dcbd=""><path style="cursor: pointer;" d="M 367 33C 296.5 33,296.5 37.5,226 37.5" stroke="#9A9A9B" stroke-width="1.3333333333333333" fill="none" data-v-1bc3dcbd=""></path><polygon points="0,-4 8,0,
+                          0,4" transform="translate(226, 37.5) rotate(180)" fill="#9A9A9B" data-v-1bc3dcbd=""></polygon></g></svg><!----><div class="node noselect selectable" id="sQD3B2S_NzTwFdp3OR3SJ" style="width: 200px; transform: translate(622px, 17px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="white" gradient="false"><div class="note"><div><div translate="no" class="ProseMirror" contenteditable="false"><p>Nov 21, Listening to Data</p></div></div></div><!----><!----></div><div class="node noselect selectable reference" id="eYDxSQ2bshQ7VXmxceyWt" style="width: 200px; transform: translate(218px, 297px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="primary" gradient="true"><!----><div class="reference-content" data-v-8d4a73d4=""><span class="title" data-v-8d4a73d4="">New NASA Black Hole Sonifications with a Remix | NASA</span> <br data-v-8d4a73d4=""><span class="authors" data-v-8d4a73d4="">Web link</span> <br data-v-8d4a73d4=""><span class="identifier" data-v-8d4a73d4="">https://www.nasa.gov/mission_pages/chandra/news/new-nasa-black-hole-sonifications-with-a-remix.html</span></div><!----></div><div class="node noselect selectable snap-top reference" id="LHULzZYySM46zwx9gkm6-" style="width: 200px; transform: translate(612px, 460px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="primary" gradient="true"><!----><div class="reference-content" data-v-8d4a73d4=""><span class="title" data-v-8d4a73d4="">Stream Reflexivity (instrumental) by Shawn Graham | Listen online for free on SoundCloud</span> <br data-v-8d4a73d4=""><span class="authors" data-v-8d4a73d4="">Web link</span> <br data-v-8d4a73d4=""><span class="identifier" data-v-8d4a73d4="">https://soundcloud.com/shawn-graham-60451318/reflexivity-instrumental</span></div><!----></div><div class="node selected noselect selectable snap-top reference" id="f-kA00ifjwLu3hhKM6wmz" style="width: 200px; transform: translate(913px, 462px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="primary" gradient="true"><!----><div class="reference-content" data-v-8d4a73d4=""><span class="title" data-v-8d4a73d4="">watlingstreet2 - YouTube</span> <br data-v-8d4a73d4=""><span class="authors" data-v-8d4a73d4="">Web link</span> <br data-v-8d4a73d4=""><span class="identifier" data-v-8d4a73d4="">https://www.youtube.com/watch?v=vv0oswpr18o</span></div><button class="link-button"><svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="currentColor" class="arco-icon arco-icon-link" stroke-width="4" stroke-linecap="butt" stroke-linejoin="miter"><path d="m14.1 25.414-4.95 4.95a6 6 0 0 0 8.486 8.485l8.485-8.485a6 6 0 0 0 0-8.485m7.779.707 4.95-4.95a6 6 0 1 0-8.486-8.485l-8.485 8.485a6 6 0 0 0 0 8.485"></path></svg></button></div><div class="node noselect selectable" id="cgGm0w509ePpf-ZnIvSBx" style="width: 200px; transform: translate(207px, 484px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="white" gradient="false"><div class="note"><div><div translate="no" class="ProseMirror" contenteditable="false"><p>Parameter mapping</p></div></div></div><!----><!----></div><div class="node noselect selectable" id="WwpGteuOUow6b9VA5KhKu" style="width: 200px; transform: translate(783px, 364px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="white" gradient="false"><div class="note"><div><div translate="no" class="ProseMirror" contenteditable="false"><p>musical aesthetics</p></div></div></div><!----><!----></div><div class="node noselect selectable snap-top" id="MApG_JJ8fxLwww5j_0hwW" style="width: 200px; transform: translate(488px, 79px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="white" gradient="false"><div class="note"><div><div translate="no" class="ProseMirror" contenteditable="false"><p>"Sonification is the data-dependent generation of sound, if the transformation is systematic, objective and reproducible"</p></div></div></div><!----><!----></div><div class="node noselect selectable snap-bottom reference" id="YJkLL2CNO5BZlJjj9u1L-" style="width: 200px; transform: translate(488px, 146px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="primary" gradient="true"><!----><div class="reference-content" data-v-8d4a73d4=""><span class="title" data-v-8d4a73d4="">Material Media Sonification: Sounding the visibly present artefact | Organised Sound | Cambridge Core</span> <br data-v-8d4a73d4=""><span class="authors" data-v-8d4a73d4="">Web link</span> <br data-v-8d4a73d4=""><span class="identifier" data-v-8d4a73d4="">https://www.cambridge.org/core/journals/organised-sound/article/material-media-sonification-sounding-the-visibly-present-artefact/9925AD575CCBE5BC4BC3503BCDD0942F</span></div><!----></div><div class="node noselect selectable" id="afAqxwb_poKwAz7Z4Yv7x" style="width: 200px; transform: translate(169px, 548px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="white" gradient="false"><div class="note"><div><div translate="no" class="ProseMirror" contenteditable="false"><p>Intentionality Matters</p><p>Scaletti et al 2018:</p></div></div></div><!----><!----></div><div class="node noselect selectable" id="ZhLB4sZb_1iVnnLRysXyj" style="width: 200px; transform: translate(50px, 619px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="white" gradient="false"><div class="note"><div><div translate="no" class="ProseMirror" contenteditable="false"><p>"&nbsp;purpose of data sonification as the discovery of something new about the original phenomenon that produced the data"</p></div></div></div><!----><!----></div><div class="node noselect selectable" id="E-_KeurWHQJkdte5A80Er" style="width: 200px; transform: translate(277px, 626px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="white" gradient="false"><div class="note"><div><div translate="no" class="ProseMirror" contenteditable="false"><p>‘data-based music’, ‘data-based sound art’ or simply music to describe the ‘use of data as a component of artistic expression’</p></div></div></div><!----><!----></div><div class="node noselect selectable" id="JHaTKiuvzdNLgMxRee9Ey" style="width: 200px; transform: translate(759px, 73px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="white" gradient="false"><div class="note"><div><div translate="no" class="ProseMirror" contenteditable="false"><p>musification, defined as the representation of data through the musical interpretation of source processes or a course of events in the data ‘designed to go beyond direct sonification and include elements of tonality and the use of modal scales to create musical auralizations’</p></div></div></div><!----><!----></div><div class="node noselect selectable" id="octgKsr6xQY9zcAyJIr4L" style="width: 200px; transform: translate(774px, 683px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="white" gradient="false"><div class="note"><div><div translate="no" class="ProseMirror" contenteditable="false"><p>framing data sonification within musically stylistic forms can be one method of highlighting or framing familiarity and difference in data patterns - Gresham-Lancaster 2012</p></div></div></div><!----><!----></div><div class="node noselect selectable snap-bottom reference" id="ZcmAiuxrmCtjykJitq1Xo" style="width: 200px; transform: translate(913px, 529px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="primary" gradient="true"><!----><div class="reference-content" data-v-8d4a73d4=""><span class="title" data-v-8d4a73d4="">Listening to Watling Street_new &amp;#8211; Heritage Jam</span> <br data-v-8d4a73d4=""><span class="authors" data-v-8d4a73d4="">Web link</span> <br data-v-8d4a73d4=""><span class="identifier" data-v-8d4a73d4="">https://heritagejam.hosted.york.ac.uk/index.php/listening-to-watling-street_new/</span></div><!----></div><div class="node noselect selectable snap-bottom reference" id="PS5T07p6_jLlZ-26jV_vt" style="width: 200px; transform: translate(612px, 582px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="primary" gradient="true"><!----><div class="reference-content" data-v-8d4a73d4=""><span class="title" data-v-8d4a73d4="">Datacore - Epoiesen</span> <br data-v-8d4a73d4=""><span class="authors" data-v-8d4a73d4="">Web link</span> <br data-v-8d4a73d4=""><span class="identifier" data-v-8d4a73d4="">https://epoiesen.carleton.ca/2020/10/30/datacore/</span></div><!----></div><div class="node noselect selectable" id="WrS6cbuFeaCqyyx2p8Noc" style="width: 200px; transform: translate(85px, 709px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="white" gradient="false"><div class="note"><div><div translate="no" class="ProseMirror" contenteditable="false"><p>might be hard to listen to, but that's not the point</p></div></div></div><!----><!----></div><div class="node noselect selectable" id="Q8brQCvCEc1Ri_UxqyAte" style="width: 200px; transform: translate(396px, 724px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="white" gradient="false"><div class="note"><div><div translate="no" class="ProseMirror" contenteditable="false"><p>reductive, dismissive!</p></div></div></div><!----><!----></div><div class="node noselect selectable" id="ArLpzz9w-wpToEDsN8twi" style="width: 200px; transform: translate(785px, 816px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="white" gradient="false"><div class="note"><div><div translate="no" class="ProseMirror" contenteditable="false"><p>Varni et al: musification can have ‘narrative qualities that can convey … affective musical dimensions of valence and arousal’ as a basis for affective sonification.</p></div></div></div><!----><!----></div><div class="node noselect selectable" id="iwcp4q1n0TmhK4WjS1nbN" style="width: 200px; transform: translate(851px, 943px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="white" gradient="false"><div class="note"><div><div translate="no" class="ProseMirror" contenteditable="false"><p>using music material should be allowed in sonification, provided that the main goal is ‘to optimise efficiency of information communication’ and not ‘to be pleasant to hear or to arouse particular feelings for the participants’.</p></div></div></div><!----><!----></div><div class="node noselect selectable" id="nY5Z6hy-H856jXeoBATKN" style="width: 200px; transform: translate(549px, 1025px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="white" gradient="false"><div class="note"><div><div translate="no" class="ProseMirror" contenteditable="false"><p>embracing elements of aesthetic representation, giving an audience a ‘sense’ of the underlying data, which is less about hard facts and ‘more how it might serve as a stimulant for curiosity’, may be an appropriate compromise (Neuhoff [Reference Neuhoff2019)</p></div></div></div><!----><!----></div><div class="node noselect selectable" id="aruaRkyFbTGBou6MCBRpF" style="width: 200px; transform: translate(186px, 1012px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="white" gradient="false"><div class="note"><div><div translate="no" class="ProseMirror" contenteditable="false"><p>Let's give it a whirl:</p><p><br class="ProseMirror-trailingBreak"></p><p><a target="_blank" rel="noopener noreferrer nofollow" href="https://twotone-midiout-beta.netlify.app/">https://twotone-midiout-beta.netlify.app/</a></p></div></div></div><!----><!----></div><div class="node noselect selectable reference" id="0380eQfFyfEf4pJnfoMeT" style="width: 200px; transform: translate(-90px, 293px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="primary" gradient="true"><!----><div class="reference-content" data-v-8d4a73d4=""><span class="title" data-v-8d4a73d4="">Listening to Dura Europos: An Experiment in Archaeological Image Sonification. Graham and Simons. Internet Archaeology 56.</span> <br data-v-8d4a73d4=""><span class="authors" data-v-8d4a73d4="">Web link</span> <br data-v-8d4a73d4=""><span class="identifier" data-v-8d4a73d4="">https://intarch.ac.uk/journal/issue56/8/</span></div><!----></div><div class="node noselect selectable reference" id="aEOXna6wdVp73VZe5zxBZ" style="width: 200px; transform: translate(533px, 1185px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="primary" gradient="true"><!----><div class="reference-content" data-v-8d4a73d4=""><span class="title" data-v-8d4a73d4="">Remixing the Ottawa</span> <br data-v-8d4a73d4=""><span class="authors" data-v-8d4a73d4="">Web link</span> <br data-v-8d4a73d4=""><span class="identifier" data-v-8d4a73d4="">https://jaimesimns.github.io/remixingtheottawa/</span></div><!----></div><div class="node noselect selectable snap-bottom reference" id="GO9lDl1tbit8FrMHTamYb" style="width: 200px; transform: translate(193px, 1159px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="primary" gradient="true"><!----><div class="reference-content" data-v-8d4a73d4=""><span class="title" data-v-8d4a73d4="">The Sound of Data (a gentle introduction to sonification for historians) | Programming Historian</span> <br data-v-8d4a73d4=""><span class="authors" data-v-8d4a73d4="">Web link</span> <br data-v-8d4a73d4=""><span class="identifier" data-v-8d4a73d4="">https://programminghistorian.org/en/lessons/sonification</span></div><!----></div><div class="node noselect selectable reference" id="upIbGulxKrE8M2wQ45EPU" style="width: 200px; transform: translate(799px, 1192px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="primary" gradient="true"><!----><div class="reference-content" data-v-8d4a73d4=""><span class="title" data-v-8d4a73d4="">Songs of the Ottawa</span> <br data-v-8d4a73d4=""><span class="authors" data-v-8d4a73d4="">Web link</span> <br data-v-8d4a73d4=""><span class="identifier" data-v-8d4a73d4="">http://songsoftheottawa.ca/</span></div><!----></div><div class="node noselect selectable snap-top" id="7YLYoLqy18RQwSJpDOnfh" style="width: 200px; transform: translate(193px, 1134px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="white" gradient="false"><div class="note"><div><div translate="no" class="ProseMirror" contenteditable="false"><p>For some other methods</p></div></div></div><!----><!----></div><div class="node noselect selectable" id="80Ct7ikuGGXZWcKCQ00ZG" style="width: 200px; transform: translate(-83px, 1034px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="white" gradient="false"><div class="note"><div><div translate="no" class="ProseMirror" contenteditable="false"><p>How do you deal with the problem of temporality?</p></div></div></div><!----><!----></div><div class="node noselect selectable" id="Zj6bT7fnhQm-x5S3QQFEi" style="width: 200px; transform: translate(-101px, 1135px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="white" gradient="false"><div class="note"><div><div translate="no" class="ProseMirror" contenteditable="false"><p>For wednesday:</p><p><br class="ProseMirror-trailingBreak"></p><ol><li><p>Find some data</p></li><li><p>Feed it into TwoTone</p></li><li><p>Think about how it ties into procedural generation</p></li><li><p>Think about what it might mean, historically</p></li></ol></div></div></div><!----><!----></div><div class="node noselect selectable snap-top" id="so25CTYBeKU5IaPmMjZDt" style="width: 200px; transform: translate(-160px, 461px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="white" gradient="false"><div class="note"><div><div translate="no" class="ProseMirror" contenteditable="false"><p>Parameters we can play with:</p><p>timbre,</p><p>key,</p><p>tempo,</p><p>...there's actually a lot!</p></div></div></div><!----><!----></div><div class="node noselect selectable snap-bottom reference" id="vHyoOXzQJky_3jXQdQwoh" style="width: 200px; transform: translate(-160px, 541px); --bg-color: rgb(250, 248, 229); --border-color: rgb(233, 183, 109);" color="primary" gradient="true"><!----><div class="reference-content" data-v-8d4a73d4=""><span class="title" data-v-8d4a73d4="">Fetching title...</span> <br data-v-8d4a73d4=""><span class="authors" data-v-8d4a73d4="">Fetching authors...</span> <br data-v-8d4a73d4=""><span class="identifier" data-v-8d4a73d4="">https://sonification.de/handbook/chapters/chapter15/</span></div><!----></div><div><!----></div><div data-styled-id="rCS1rb3a7w" portalcontainer="[object HTMLDivElement]" data-able-draggable="true" data-able-padding="true" data-able-origin="true" class="moveable-control-box   moveable rCS1rb3a7w" style="position: absolute; display: block; transform: translate3d(911px, 460px, 0px); --zoom: 1; --zoompx: 1px;" data-able-resizable="true"><div data-rotation="90" data-direction="e" class="moveable-control moveable-direction moveable-e moveable-resizable" style="transform: translateZ(0px) translate(220px, 32.8px) rotate(0rad) scale(1);"></div><div class="moveable-control moveable-origin" style="transform: translateZ(0px) translate(110px, 32.8px) rotate(0rad) scale(1);"></div><div data-rotation="-1" data-line-index="0" data-direction="" class="moveable-line moveable-direction  " style="transform: translateY(-50%) translate(0px) rotate(0rad) scaleY(1); width: 220px;"></div><div data-rotation="-1" data-line-index="1" data-direction="" class="moveable-line moveable-direction  " style="transform: translateY(-50%) translate(220px) rotate(1.5708rad) scaleY(1); width: 65.6px;"></div><div data-rotation="-1" data-line-index="2" data-direction="" class="moveable-line moveable-direction  " style="transform: translateY(-50%) translate(220px, 65.6px) rotate(3.14159rad) scaleY(1); width: 220px;"></div><div data-rotation="-1" data-line-index="3" data-direction="" class="moveable-line moveable-direction  " style="transform: translateY(-50%) translate(0px, 65.6px) rotate(4.71239rad) scaleY(1); width: 65.6px;"></div></div></div></div><div class="infinite-viewer-horizontal-scroll-bar infinite-viewer-scroll-bar" style="display: block;"><div class="infinite-viewer-scroll-thumb" style="width: 1431.42px; transform: translateX(349.615px);"></div></div><div class="infinite-viewer-vertical-scroll-bar infinite-viewer-scroll-bar" style="display: block;"><div class="infinite-viewer-scroll-thumb" style="height: 536.299px; transform: translateY(346.621px);"></div></div></div><div class="selecto-selection rCS179bs95" style="position: fixed; left: 0px; top: 0px; transform: translate(1618px, 356px); display: none;"></div><svg class="links" id="links" xmlns="http://www.w3.org/2000/svg"></svg></div><div id="pointer-location" style="left: 625px; top: 1108px;" data-v-0fb01106=""></div><!----></div></body></html>

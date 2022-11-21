@@ -160,6 +160,9 @@ Your **Reflection** will include your thoughts on all of the work in this module
 
 ## M3.2
 + Nov 21 **Archaeogaming**
+  
+**Change of plans** We dove into sonification today. Concepts mapped [here](https://hist3812.netlify.app/slides/nov21.html). We might integrate some of what was originally imagined (below) into next week.
+
   - Have read for today:
     - Graham, Shawn. 2020 An Approach to the Ethics of Archaeogaming, Internet Archaeology 55. https://doi.org/10.11141/ia.55.2
     - Nicholls, Florence Smith, and Michael Cook. 'The Dark Souls of Archaeology: Recording Elden Ring' arxiv.org [link](https://arxiv.org/pdf/2204.10949.pdf)
@@ -167,6 +170,7 @@ Your **Reflection** will include your thoughts on all of the work in this module
 
 ## M3.3
 + Nov 28 - **Games that Play Themselves**
+
   - Have read for today:
     - Graham, S. 2017.'On Games that Play Themselves: Agent based models, archaeogaming, and the useful deaths of digital Romans' in Mol et al., eds. The Immersive Past, 123-132. [link](https://www.sidestone.com/openaccess/9789088904363.pdf).
     - CSzczepanska, T., Angourakis, A., Graham, S., Borit, M. 2022. Quantum Leaper: A Methodology Journey From a Model in NetLogo to a Game in Unity. In: Czupryna, M., Kamiński, B. (eds) Advances in Social Simulation. Springer Proceedings in Complexity. Springer, Cham. [link](https://doi.org/10.1007/978-3-030-92843-8_15)
