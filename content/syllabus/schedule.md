@@ -177,6 +177,10 @@ Your **Reflection** will include your thoughts on all of the work in this module
     - optional: read [this](https://dlib.nyu.edu/awdl/isaw/isaw-papers/22-3/) if you're interested in an example moving from an agent based model to a board game
 + Nov 30 - [Netlogo](https://ccl.northwestern.edu/netlogo/) and its demo models: where is the story?
 
+[Slides from Monday are here](hist3812.netlify.app/slides/nov28); we worked through chapter 1. You'll need the map from the chapter 1 repo, and you'll need to have [netlogo](http://ccl.northwestern.edu/netlogo/) installed. You _can_ make it work with [netlogo web version](http://www.netlogoweb.org/launch#NewModel) but you'll have to modify the code somewhat (see this [gist from me](https://gist.github.com/shawngraham/76412d2b636687a07639ce22ecc6ab86); to add buttons or modify the interface window, you also need to click on the 'unlock' icon in netlogo web). **READ CAREFULLY** Don't just randomly type in code because the authors are discussing something - they explicitly say when to type, what to type, and why to type. Consider also the [Parable of the Polygons](https://ncase.me/polygons/) for its model of how to integrate simulation with explanation and communication of tricky concepts.
+
+https://santafeinstitute.github.io/ABMA/
+
 `******************************`
 
 # ~~Interstitial~~ Interlude 3
@@ -185,7 +189,10 @@ Dec 5 & Dec 7
 
 At this point, you should have made significant progress on your Unessays. During these two sessions, we will break into smaller groups where people who are working on similar projects can collaborate and help troubleshoot each other's work. We will work together December 5th on your Game Design Documents, while on December 7th we will consider your Paradata. Both are necessary for your final Unessay.
 
-Your **Reflection** will include your thoughts on all of the work in this module; tie what you've read and heard  to what you've done. What is the main message of this module? How does it connect with your ideas for your Unessay? Your **Log** will be your record of your digital work in this module (including any Unessay work) - hiccups, successes, help found, help given. **Ephemera** is anything else you want to keep a record of, files created, screenshots, whatever.
+Your **Reflection** will include your thoughts on all of the work in this module; tie what you've read and heard  to what you've done. What is the main message of this module? How does it connect with your ideas for your Unessay? What is 'history' when the machine is a co-creator of the experience working on its own - that is, you haven't explicitly coded particular elements or experiences, they **emerge** on their own: what's the role of the historian here? How does this intersect with things you saw in module 1, module 2? BE EXPLICIT.
+
+
+Your **Log** will be your record of your digital work in this module (including any Unessay work) - hiccups, successes, help found, help given. **Ephemera** is anything else you want to keep a record of, files created, screenshots, whatever.
 
 > Upload your Reflection, Log, and Ephemera for ~~Interstitial~~ Interlude Work 3 to your Github Repository by the end of this week (Sunday night); **notify me** that you have done so using the form at [this link](https://forms.gle/hFzXKvMku23AuY9XA).
 
