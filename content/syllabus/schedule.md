@@ -189,7 +189,17 @@ Dec 5 & Dec 7
 
 At this point, you should have made significant progress on your Unessays. During these two sessions, we will break into smaller groups where people who are working on similar projects can collaborate and help troubleshoot each other's work. We will work together December 5th on your Game Design Documents, while on December 7th we will consider your Paradata. Both are necessary for your final Unessay.
 
-Your **Reflection** will include your thoughts on all of the work in this module; tie what you've read and heard  to what you've done. What is the main message of this module? How does it connect with your ideas for your Unessay? What is 'history' when the machine is a co-creator of the experience working on its own - that is, you haven't explicitly coded particular elements or experiences, they **emerge** on their own: what's the role of the historian here? How does this intersect with things you saw in module 1, module 2? BE EXPLICIT.
+Failing that, you can use these two sessions to get your final reflection/log complete and submitted.
+
+Your **Reflection** will include your thoughts on all of the work in this module; tie what you've read and heard  to what you've done. 
+- What is the main message of this module? 
+- How does it connect with your ideas for your Unessay? 
+- What does it mean to 'do history' when the machine is a co-creator of the experience working on its own 
+  - that is, you haven't explicitly coded particular elements or experiences, they **emerge** on their own: what's the role of the historian here? 
+- How does this intersect with things you saw in module 1, module 2? BE EXPLICIT.
+  - revamp the HPS framework: what is the 'problem space' when you're trying to simulate some phenomenon in the past?
+  - what is the 'problem space' when you are 'raising the dead', and creating some kind of simulacrum of a historical figure?
+  - how does this feed into my question about what it means to do history in such a world? You might want to reflect/draw connections, analogies with, this piece by [Alan Liu, "Theses on Large Language Models and 'Good' Writing"](https://liu.english.ucsb.edu/theses-on-large-language-models-and-good-writing/).
 
 
 Your **Log** will be your record of your digital work in this module (including any Unessay work) - hiccups, successes, help found, help given. **Ephemera** is anything else you want to keep a record of, files created, screenshots, whatever.
